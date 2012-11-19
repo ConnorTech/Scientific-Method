@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523B5329165ACFF60040A12A /* NigelsTableFull.gif in Resources */ = {isa = PBXBuildFile; fileRef = 523B5328165ACFF60040A12A /* NigelsTableFull.gif */; };
 		B3D065A71659AE8F00F78932 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065A61659AE8F00F78932 /* UIKit.framework */; };
 		B3D065A91659AE8F00F78932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065A81659AE8F00F78932 /* Foundation.framework */; };
 		B3D065AB1659AE8F00F78932 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065AA1659AE8F00F78932 /* CoreGraphics.framework */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		523B5328165ACFF60040A12A /* NigelsTableFull.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = NigelsTableFull.gif; sourceTree = "<group>"; };
 		B3D065A21659AE8F00F78932 /* Scientific Method.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scientific Method.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D065A61659AE8F00F78932 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3D065A81659AE8F00F78932 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,7 +60,7 @@
 		B3D065BF1659AE8F00F78932 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B3D065C21659AE8F00F78932 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B3D065C41659AE8F00F78932 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B3D065C51659AE8F00F78932 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B3D065C51659AE8F00F78932 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B3D065C71659AE8F00F78932 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		B3D065C91659AE8F00F78932 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		B3D065CB1659AE8F00F78932 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				B3D065C71659AE8F00F78932 /* first.png */,
 				B3D065C91659AE8F00F78932 /* first@2x.png */,
 				B3D065CB1659AE8F00F78932 /* SecondViewController.h */,
+				523B5328165ACFF60040A12A /* NigelsTableFull.gif */,
 				B3D065CC1659AE8F00F78932 /* SecondViewController.m */,
 				B3D065CE1659AE8F00F78932 /* second.png */,
 				B3D065D01659AE8F00F78932 /* second@2x.png */,
@@ -261,6 +264,7 @@
 				B3D065CA1659AE8F00F78932 /* first@2x.png in Resources */,
 				B3D065CF1659AE8F00F78932 /* second.png in Resources */,
 				B3D065D11659AE8F00F78932 /* second@2x.png in Resources */,
+				523B5329165ACFF60040A12A /* NigelsTableFull.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +487,7 @@
 				B3D065EB1659AE8F00F78932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3D065EC1659AE8F00F78932 /* Build configuration list for PBXNativeTarget "Scientific MethodTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				B3D065EE1659AE8F00F78932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
