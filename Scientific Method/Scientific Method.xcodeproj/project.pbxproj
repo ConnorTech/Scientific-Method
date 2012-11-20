@@ -30,6 +30,9 @@
 		B3D065DB1659AE8F00F78932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065A81659AE8F00F78932 /* Foundation.framework */; };
 		B3D065E31659AE8F00F78932 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3D065E11659AE8F00F78932 /* InfoPlist.strings */; };
 		B3D065E61659AE8F00F78932 /* Scientific_MethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D065E51659AE8F00F78932 /* Scientific_MethodTests.m */; };
+		B3EE52E3165BCF140091F3CB /* iphone icon .png in Resources */ = {isa = PBXBuildFile; fileRef = B3EE52E2165BCF140091F3CB /* iphone icon .png */; };
+		B3EE52E5165BCF270091F3CB /* iphone icon .png in Resources */ = {isa = PBXBuildFile; fileRef = B3EE52E4165BCF270091F3CB /* iphone icon .png */; };
+		B3EE52EB165BD1570091F3CB /* magnifier_24.png in Resources */ = {isa = PBXBuildFile; fileRef = B3EE52EA165BD1570091F3CB /* magnifier_24.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		B3D065E21659AE8F00F78932 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3D065E41659AE8F00F78932 /* Scientific_MethodTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scientific_MethodTests.h; sourceTree = "<group>"; };
 		B3D065E51659AE8F00F78932 /* Scientific_MethodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scientific_MethodTests.m; sourceTree = "<group>"; };
+		B3EE52E2165BCF140091F3CB /* iphone icon .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone icon .png"; path = "../../../../../Google Drive/School/High School/10th Grade/Semester 1/Biology/App/iphone icon .png"; sourceTree = "<group>"; };
+		B3EE52E4165BCF270091F3CB /* iphone icon .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone icon .png"; sourceTree = "<group>"; };
+		B3EE52EA165BD1570091F3CB /* magnifier_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magnifier_24.png; path = ../../../../../Desktop/magnifier_24.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 		B3D065971659AE8F00F78932 = {
 			isa = PBXGroup;
 			children = (
+				B3EE52E4165BCF270091F3CB /* iphone icon .png */,
+				B3EE52E2165BCF140091F3CB /* iphone icon .png */,
+				B3EE52EA165BD1570091F3CB /* magnifier_24.png */,
 				B3D065AC1659AE8F00F78932 /* Scientific Method */,
 				B3D065DE1659AE8F00F78932 /* Scientific MethodTests */,
 				B3D065A51659AE8F00F78932 /* Frameworks */,
@@ -265,6 +274,9 @@
 				B3D065CF1659AE8F00F78932 /* second.png in Resources */,
 				B3D065D11659AE8F00F78932 /* second@2x.png in Resources */,
 				523B5329165ACFF60040A12A /* NigelsTableFull.gif in Resources */,
+				B3EE52E3165BCF140091F3CB /* iphone icon .png in Resources */,
+				B3EE52E5165BCF270091F3CB /* iphone icon .png in Resources */,
+				B3EE52EB165BD1570091F3CB /* magnifier_24.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
