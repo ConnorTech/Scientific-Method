@@ -10,4 +10,6 @@
 
 @interface GlossaryViewController : UIViewController
 
+@property (nonatomic,retain) IBOutlet UITableView *glossary;
+
 @end
