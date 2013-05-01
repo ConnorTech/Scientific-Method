@@ -32,9 +32,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Overview" image="first" id="7"/>
-                    <connections>
-                        <outlet property="label1" destination="3lR-ZP-vYQ" id="e9e-45-sNr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
