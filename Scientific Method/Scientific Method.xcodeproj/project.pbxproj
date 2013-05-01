@@ -7,181 +7,175 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		523B5329165ACFF60040A12A /* NigelsTableFull.gif in Resources */ = {isa = PBXBuildFile; fileRef = 523B5328165ACFF60040A12A /* NigelsTableFull.gif */; };
-		B3D065A71659AE8F00F78932 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065A61659AE8F00F78932 /* UIKit.framework */; };
-		B3D065A91659AE8F00F78932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065A81659AE8F00F78932 /* Foundation.framework */; };
-		B3D065AB1659AE8F00F78932 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065AA1659AE8F00F78932 /* CoreGraphics.framework */; };
-		B3D065B11659AE8F00F78932 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3D065AF1659AE8F00F78932 /* InfoPlist.strings */; };
-		B3D065B31659AE8F00F78932 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D065B21659AE8F00F78932 /* main.m */; };
-		B3D065B71659AE8F00F78932 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D065B61659AE8F00F78932 /* AppDelegate.m */; };
-		B3D065B91659AE8F00F78932 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D065B81659AE8F00F78932 /* Default.png */; };
-		B3D065BB1659AE8F00F78932 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D065BA1659AE8F00F78932 /* Default@2x.png */; };
-		B3D065BD1659AE8F00F78932 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D065BC1659AE8F00F78932 /* Default-568h@2x.png */; };
-		B3D065C01659AE8F00F78932 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D065BE1659AE8F00F78932 /* MainStoryboard_iPhone.storyboard */; };
-		B3D065C31659AE8F00F78932 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D065C11659AE8F00F78932 /* MainStoryboard_iPad.storyboard */; };
-		B3D065C61659AE8F00F78932 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D065C51659AE8F00F78932 /* FirstViewController.m */; };
-		B3D065C81659AE8F00F78932 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D065C71659AE8F00F78932 /* first.png */; };
-		B3D065CA1659AE8F00F78932 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D065C91659AE8F00F78932 /* first@2x.png */; };
-		B3D065CD1659AE8F00F78932 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D065CC1659AE8F00F78932 /* SecondViewController.m */; };
-		B3D065CF1659AE8F00F78932 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D065CE1659AE8F00F78932 /* second.png */; };
-		B3D065D11659AE8F00F78932 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D065D01659AE8F00F78932 /* second@2x.png */; };
-		B3D065D91659AE8F00F78932 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065D81659AE8F00F78932 /* SenTestingKit.framework */; };
-		B3D065DA1659AE8F00F78932 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065A61659AE8F00F78932 /* UIKit.framework */; };
-		B3D065DB1659AE8F00F78932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D065A81659AE8F00F78932 /* Foundation.framework */; };
-		B3D065E31659AE8F00F78932 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3D065E11659AE8F00F78932 /* InfoPlist.strings */; };
-		B3D065E61659AE8F00F78932 /* Scientific_MethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D065E51659AE8F00F78932 /* Scientific_MethodTests.m */; };
-		B3EE52E5165BCF270091F3CB /* iphone icon .png in Resources */ = {isa = PBXBuildFile; fileRef = B3EE52E4165BCF270091F3CB /* iphone icon .png */; };
+		B3609BA217312481003A9744 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA117312481003A9744 /* UIKit.framework */; };
+		B3609BA417312481003A9744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA317312481003A9744 /* Foundation.framework */; };
+		B3609BA617312481003A9744 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA517312481003A9744 /* CoreGraphics.framework */; };
+		B3609BAC17312481003A9744 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3609BAA17312481003A9744 /* InfoPlist.strings */; };
+		B3609BAE17312481003A9744 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BAD17312481003A9744 /* main.m */; };
+		B3609BB217312481003A9744 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BB117312481003A9744 /* AppDelegate.m */; };
+		B3609BB417312481003A9744 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BB317312481003A9744 /* Default.png */; };
+		B3609BB617312481003A9744 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BB517312481003A9744 /* Default@2x.png */; };
+		B3609BB817312481003A9744 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BB717312481003A9744 /* Default-568h@2x.png */; };
+		B3609BBB17312481003A9744 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3609BB917312481003A9744 /* MainStoryboard_iPhone.storyboard */; };
+		B3609BBE17312481003A9744 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3609BBC17312481003A9744 /* MainStoryboard_iPad.storyboard */; };
+		B3609BC117312481003A9744 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BC017312481003A9744 /* FirstViewController.m */; };
+		B3609BC317312481003A9744 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BC217312481003A9744 /* first.png */; };
+		B3609BC517312481003A9744 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BC417312481003A9744 /* first@2x.png */; };
+		B3609BC817312481003A9744 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BC717312481003A9744 /* SecondViewController.m */; };
+		B3609BCA17312481003A9744 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BC917312481003A9744 /* second.png */; };
+		B3609BCC17312481003A9744 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BCB17312481003A9744 /* second@2x.png */; };
+		B3609BD417312481003A9744 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BD317312481003A9744 /* SenTestingKit.framework */; };
+		B3609BD517312481003A9744 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA117312481003A9744 /* UIKit.framework */; };
+		B3609BD617312481003A9744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA317312481003A9744 /* Foundation.framework */; };
+		B3609BDE17312481003A9744 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3609BDC17312481003A9744 /* InfoPlist.strings */; };
+		B3609BE117312481003A9744 /* Scientific_MethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BE017312481003A9744 /* Scientific_MethodTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B3D065DC1659AE8F00F78932 /* PBXContainerItemProxy */ = {
+		B3609BD717312481003A9744 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B3D065991659AE8F00F78932 /* Project object */;
+			containerPortal = B3609B9617312481003A9744 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B3D065A11659AE8F00F78932;
+			remoteGlobalIDString = B3609B9D17312481003A9744;
 			remoteInfo = "Scientific Method";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		523B5328165ACFF60040A12A /* NigelsTableFull.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = NigelsTableFull.gif; sourceTree = "<group>"; };
-		B3D065A21659AE8F00F78932 /* Scientific Method.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scientific Method.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3D065A61659AE8F00F78932 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B3D065A81659AE8F00F78932 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B3D065AA1659AE8F00F78932 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B3D065AE1659AE8F00F78932 /* Scientific Method-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scientific Method-Info.plist"; sourceTree = "<group>"; };
-		B3D065B01659AE8F00F78932 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B3D065B21659AE8F00F78932 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B3D065B41659AE8F00F78932 /* Scientific Method-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scientific Method-Prefix.pch"; sourceTree = "<group>"; };
-		B3D065B51659AE8F00F78932 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B3D065B61659AE8F00F78932 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B3D065B81659AE8F00F78932 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		B3D065BA1659AE8F00F78932 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		B3D065BC1659AE8F00F78932 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B3D065BF1659AE8F00F78932 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		B3D065C21659AE8F00F78932 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		B3D065C41659AE8F00F78932 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B3D065C51659AE8F00F78932 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		B3D065C71659AE8F00F78932 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		B3D065C91659AE8F00F78932 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		B3D065CB1659AE8F00F78932 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		B3D065CC1659AE8F00F78932 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		B3D065CE1659AE8F00F78932 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		B3D065D01659AE8F00F78932 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		B3D065D71659AE8F00F78932 /* Scientific MethodTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scientific MethodTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3D065D81659AE8F00F78932 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B3D065E01659AE8F00F78932 /* Scientific MethodTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scientific MethodTests-Info.plist"; sourceTree = "<group>"; };
-		B3D065E21659AE8F00F78932 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B3D065E41659AE8F00F78932 /* Scientific_MethodTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scientific_MethodTests.h; sourceTree = "<group>"; };
-		B3D065E51659AE8F00F78932 /* Scientific_MethodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scientific_MethodTests.m; sourceTree = "<group>"; };
-		B3EE52E4165BCF270091F3CB /* iphone icon .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone icon .png"; sourceTree = "<group>"; };
+		B3609B9E17312481003A9744 /* Scientific Method.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scientific Method.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3609BA117312481003A9744 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3609BA317312481003A9744 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3609BA517312481003A9744 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B3609BA917312481003A9744 /* Scientific Method-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scientific Method-Info.plist"; sourceTree = "<group>"; };
+		B3609BAB17312481003A9744 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3609BAD17312481003A9744 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3609BAF17312481003A9744 /* Scientific Method-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scientific Method-Prefix.pch"; sourceTree = "<group>"; };
+		B3609BB017312481003A9744 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3609BB117312481003A9744 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3609BB317312481003A9744 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B3609BB517312481003A9744 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B3609BB717312481003A9744 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B3609BBA17312481003A9744 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B3609BBD17312481003A9744 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B3609BBF17312481003A9744 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B3609BC017312481003A9744 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B3609BC217312481003A9744 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		B3609BC417312481003A9744 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		B3609BC617312481003A9744 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B3609BC717312481003A9744 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B3609BC917312481003A9744 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		B3609BCB17312481003A9744 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		B3609BD217312481003A9744 /* Scientific MethodTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scientific MethodTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3609BD317312481003A9744 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B3609BDB17312481003A9744 /* Scientific MethodTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scientific MethodTests-Info.plist"; sourceTree = "<group>"; };
+		B3609BDD17312481003A9744 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3609BDF17312481003A9744 /* Scientific_MethodTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scientific_MethodTests.h; sourceTree = "<group>"; };
+		B3609BE017312481003A9744 /* Scientific_MethodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scientific_MethodTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B3D0659F1659AE8F00F78932 /* Frameworks */ = {
+		B3609B9B17312481003A9744 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D065A71659AE8F00F78932 /* UIKit.framework in Frameworks */,
-				B3D065A91659AE8F00F78932 /* Foundation.framework in Frameworks */,
-				B3D065AB1659AE8F00F78932 /* CoreGraphics.framework in Frameworks */,
+				B3609BA217312481003A9744 /* UIKit.framework in Frameworks */,
+				B3609BA417312481003A9744 /* Foundation.framework in Frameworks */,
+				B3609BA617312481003A9744 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3D065D31659AE8F00F78932 /* Frameworks */ = {
+		B3609BCE17312481003A9744 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D065D91659AE8F00F78932 /* SenTestingKit.framework in Frameworks */,
-				B3D065DA1659AE8F00F78932 /* UIKit.framework in Frameworks */,
-				B3D065DB1659AE8F00F78932 /* Foundation.framework in Frameworks */,
+				B3609BD417312481003A9744 /* SenTestingKit.framework in Frameworks */,
+				B3609BD517312481003A9744 /* UIKit.framework in Frameworks */,
+				B3609BD617312481003A9744 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3D065971659AE8F00F78932 = {
+		B3609B9517312481003A9744 = {
 			isa = PBXGroup;
 			children = (
-				B3EE52E4165BCF270091F3CB /* iphone icon .png */,
-				B3D065AC1659AE8F00F78932 /* Scientific Method */,
-				B3D065DE1659AE8F00F78932 /* Scientific MethodTests */,
-				B3D065A51659AE8F00F78932 /* Frameworks */,
-				B3D065A31659AE8F00F78932 /* Products */,
+				B3609BA717312481003A9744 /* Scientific Method */,
+				B3609BD917312481003A9744 /* Scientific MethodTests */,
+				B3609BA017312481003A9744 /* Frameworks */,
+				B3609B9F17312481003A9744 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B3D065A31659AE8F00F78932 /* Products */ = {
+		B3609B9F17312481003A9744 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3D065A21659AE8F00F78932 /* Scientific Method.app */,
-				B3D065D71659AE8F00F78932 /* Scientific MethodTests.octest */,
+				B3609B9E17312481003A9744 /* Scientific Method.app */,
+				B3609BD217312481003A9744 /* Scientific MethodTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3D065A51659AE8F00F78932 /* Frameworks */ = {
+		B3609BA017312481003A9744 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3D065A61659AE8F00F78932 /* UIKit.framework */,
-				B3D065A81659AE8F00F78932 /* Foundation.framework */,
-				B3D065AA1659AE8F00F78932 /* CoreGraphics.framework */,
-				B3D065D81659AE8F00F78932 /* SenTestingKit.framework */,
+				B3609BA117312481003A9744 /* UIKit.framework */,
+				B3609BA317312481003A9744 /* Foundation.framework */,
+				B3609BA517312481003A9744 /* CoreGraphics.framework */,
+				B3609BD317312481003A9744 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B3D065AC1659AE8F00F78932 /* Scientific Method */ = {
+		B3609BA717312481003A9744 /* Scientific Method */ = {
 			isa = PBXGroup;
 			children = (
-				B3D065B51659AE8F00F78932 /* AppDelegate.h */,
-				B3D065B61659AE8F00F78932 /* AppDelegate.m */,
-				B3D065BE1659AE8F00F78932 /* MainStoryboard_iPhone.storyboard */,
-				B3D065C11659AE8F00F78932 /* MainStoryboard_iPad.storyboard */,
-				B3D065C41659AE8F00F78932 /* FirstViewController.h */,
-				B3D065C51659AE8F00F78932 /* FirstViewController.m */,
-				B3D065C71659AE8F00F78932 /* first.png */,
-				B3D065C91659AE8F00F78932 /* first@2x.png */,
-				B3D065CB1659AE8F00F78932 /* SecondViewController.h */,
-				523B5328165ACFF60040A12A /* NigelsTableFull.gif */,
-				B3D065CC1659AE8F00F78932 /* SecondViewController.m */,
-				B3D065CE1659AE8F00F78932 /* second.png */,
-				B3D065D01659AE8F00F78932 /* second@2x.png */,
-				B3D065AD1659AE8F00F78932 /* Supporting Files */,
+				B3609BB017312481003A9744 /* AppDelegate.h */,
+				B3609BB117312481003A9744 /* AppDelegate.m */,
+				B3609BB917312481003A9744 /* MainStoryboard_iPhone.storyboard */,
+				B3609BBC17312481003A9744 /* MainStoryboard_iPad.storyboard */,
+				B3609BBF17312481003A9744 /* FirstViewController.h */,
+				B3609BC017312481003A9744 /* FirstViewController.m */,
+				B3609BC217312481003A9744 /* first.png */,
+				B3609BC417312481003A9744 /* first@2x.png */,
+				B3609BC617312481003A9744 /* SecondViewController.h */,
+				B3609BC717312481003A9744 /* SecondViewController.m */,
+				B3609BC917312481003A9744 /* second.png */,
+				B3609BCB17312481003A9744 /* second@2x.png */,
+				B3609BA817312481003A9744 /* Supporting Files */,
 			);
 			path = "Scientific Method";
 			sourceTree = "<group>";
 		};
-		B3D065AD1659AE8F00F78932 /* Supporting Files */ = {
+		B3609BA817312481003A9744 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3D065AE1659AE8F00F78932 /* Scientific Method-Info.plist */,
-				B3D065AF1659AE8F00F78932 /* InfoPlist.strings */,
-				B3D065B21659AE8F00F78932 /* main.m */,
-				B3D065B41659AE8F00F78932 /* Scientific Method-Prefix.pch */,
-				B3D065B81659AE8F00F78932 /* Default.png */,
-				B3D065BA1659AE8F00F78932 /* Default@2x.png */,
-				B3D065BC1659AE8F00F78932 /* Default-568h@2x.png */,
+				B3609BA917312481003A9744 /* Scientific Method-Info.plist */,
+				B3609BAA17312481003A9744 /* InfoPlist.strings */,
+				B3609BAD17312481003A9744 /* main.m */,
+				B3609BAF17312481003A9744 /* Scientific Method-Prefix.pch */,
+				B3609BB317312481003A9744 /* Default.png */,
+				B3609BB517312481003A9744 /* Default@2x.png */,
+				B3609BB717312481003A9744 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B3D065DE1659AE8F00F78932 /* Scientific MethodTests */ = {
+		B3609BD917312481003A9744 /* Scientific MethodTests */ = {
 			isa = PBXGroup;
 			children = (
-				B3D065E41659AE8F00F78932 /* Scientific_MethodTests.h */,
-				B3D065E51659AE8F00F78932 /* Scientific_MethodTests.m */,
-				B3D065DF1659AE8F00F78932 /* Supporting Files */,
+				B3609BDF17312481003A9744 /* Scientific_MethodTests.h */,
+				B3609BE017312481003A9744 /* Scientific_MethodTests.m */,
+				B3609BDA17312481003A9744 /* Supporting Files */,
 			);
 			path = "Scientific MethodTests";
 			sourceTree = "<group>";
 		};
-		B3D065DF1659AE8F00F78932 /* Supporting Files */ = {
+		B3609BDA17312481003A9744 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3D065E01659AE8F00F78932 /* Scientific MethodTests-Info.plist */,
-				B3D065E11659AE8F00F78932 /* InfoPlist.strings */,
+				B3609BDB17312481003A9744 /* Scientific MethodTests-Info.plist */,
+				B3609BDC17312481003A9744 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,13 +183,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B3D065A11659AE8F00F78932 /* Scientific Method */ = {
+		B3609B9D17312481003A9744 /* Scientific Method */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3D065E91659AE8F00F78932 /* Build configuration list for PBXNativeTarget "Scientific Method" */;
+			buildConfigurationList = B3609BE417312481003A9744 /* Build configuration list for PBXNativeTarget "Scientific Method" */;
 			buildPhases = (
-				B3D0659E1659AE8F00F78932 /* Sources */,
-				B3D0659F1659AE8F00F78932 /* Frameworks */,
-				B3D065A01659AE8F00F78932 /* Resources */,
+				B3609B9A17312481003A9744 /* Sources */,
+				B3609B9B17312481003A9744 /* Frameworks */,
+				B3609B9C17312481003A9744 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -203,87 +197,85 @@
 			);
 			name = "Scientific Method";
 			productName = "Scientific Method";
-			productReference = B3D065A21659AE8F00F78932 /* Scientific Method.app */;
+			productReference = B3609B9E17312481003A9744 /* Scientific Method.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B3D065D61659AE8F00F78932 /* Scientific MethodTests */ = {
+		B3609BD117312481003A9744 /* Scientific MethodTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3D065EC1659AE8F00F78932 /* Build configuration list for PBXNativeTarget "Scientific MethodTests" */;
+			buildConfigurationList = B3609BE717312481003A9744 /* Build configuration list for PBXNativeTarget "Scientific MethodTests" */;
 			buildPhases = (
-				B3D065D21659AE8F00F78932 /* Sources */,
-				B3D065D31659AE8F00F78932 /* Frameworks */,
-				B3D065D41659AE8F00F78932 /* Resources */,
-				B3D065D51659AE8F00F78932 /* ShellScript */,
+				B3609BCD17312481003A9744 /* Sources */,
+				B3609BCE17312481003A9744 /* Frameworks */,
+				B3609BCF17312481003A9744 /* Resources */,
+				B3609BD017312481003A9744 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B3D065DD1659AE8F00F78932 /* PBXTargetDependency */,
+				B3609BD817312481003A9744 /* PBXTargetDependency */,
 			);
 			name = "Scientific MethodTests";
 			productName = "Scientific MethodTests";
-			productReference = B3D065D71659AE8F00F78932 /* Scientific MethodTests.octest */;
+			productReference = B3609BD217312481003A9744 /* Scientific MethodTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B3D065991659AE8F00F78932 /* Project object */ = {
+		B3609B9617312481003A9744 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Lordtechy Productions";
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Lordtechy;
 			};
-			buildConfigurationList = B3D0659C1659AE8F00F78932 /* Build configuration list for PBXProject "Scientific Method" */;
+			buildConfigurationList = B3609B9917312481003A9744 /* Build configuration list for PBXProject "Scientific Method" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B3D065971659AE8F00F78932;
-			productRefGroup = B3D065A31659AE8F00F78932 /* Products */;
+			mainGroup = B3609B9517312481003A9744;
+			productRefGroup = B3609B9F17312481003A9744 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3D065A11659AE8F00F78932 /* Scientific Method */,
-				B3D065D61659AE8F00F78932 /* Scientific MethodTests */,
+				B3609B9D17312481003A9744 /* Scientific Method */,
+				B3609BD117312481003A9744 /* Scientific MethodTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B3D065A01659AE8F00F78932 /* Resources */ = {
+		B3609B9C17312481003A9744 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D065B11659AE8F00F78932 /* InfoPlist.strings in Resources */,
-				B3D065B91659AE8F00F78932 /* Default.png in Resources */,
-				B3D065BB1659AE8F00F78932 /* Default@2x.png in Resources */,
-				B3D065BD1659AE8F00F78932 /* Default-568h@2x.png in Resources */,
-				B3D065C01659AE8F00F78932 /* MainStoryboard_iPhone.storyboard in Resources */,
-				B3D065C31659AE8F00F78932 /* MainStoryboard_iPad.storyboard in Resources */,
-				B3D065C81659AE8F00F78932 /* first.png in Resources */,
-				B3D065CA1659AE8F00F78932 /* first@2x.png in Resources */,
-				B3D065CF1659AE8F00F78932 /* second.png in Resources */,
-				B3D065D11659AE8F00F78932 /* second@2x.png in Resources */,
-				523B5329165ACFF60040A12A /* NigelsTableFull.gif in Resources */,
-				B3EE52E5165BCF270091F3CB /* iphone icon .png in Resources */,
+				B3609BAC17312481003A9744 /* InfoPlist.strings in Resources */,
+				B3609BB417312481003A9744 /* Default.png in Resources */,
+				B3609BB617312481003A9744 /* Default@2x.png in Resources */,
+				B3609BB817312481003A9744 /* Default-568h@2x.png in Resources */,
+				B3609BBB17312481003A9744 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B3609BBE17312481003A9744 /* MainStoryboard_iPad.storyboard in Resources */,
+				B3609BC317312481003A9744 /* first.png in Resources */,
+				B3609BC517312481003A9744 /* first@2x.png in Resources */,
+				B3609BCA17312481003A9744 /* second.png in Resources */,
+				B3609BCC17312481003A9744 /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3D065D41659AE8F00F78932 /* Resources */ = {
+		B3609BCF17312481003A9744 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D065E31659AE8F00F78932 /* InfoPlist.strings in Resources */,
+				B3609BDE17312481003A9744 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B3D065D51659AE8F00F78932 /* ShellScript */ = {
+		B3609BD017312481003A9744 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,64 +291,64 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B3D0659E1659AE8F00F78932 /* Sources */ = {
+		B3609B9A17312481003A9744 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D065B31659AE8F00F78932 /* main.m in Sources */,
-				B3D065B71659AE8F00F78932 /* AppDelegate.m in Sources */,
-				B3D065C61659AE8F00F78932 /* FirstViewController.m in Sources */,
-				B3D065CD1659AE8F00F78932 /* SecondViewController.m in Sources */,
+				B3609BAE17312481003A9744 /* main.m in Sources */,
+				B3609BB217312481003A9744 /* AppDelegate.m in Sources */,
+				B3609BC117312481003A9744 /* FirstViewController.m in Sources */,
+				B3609BC817312481003A9744 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3D065D21659AE8F00F78932 /* Sources */ = {
+		B3609BCD17312481003A9744 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D065E61659AE8F00F78932 /* Scientific_MethodTests.m in Sources */,
+				B3609BE117312481003A9744 /* Scientific_MethodTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B3D065DD1659AE8F00F78932 /* PBXTargetDependency */ = {
+		B3609BD817312481003A9744 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B3D065A11659AE8F00F78932 /* Scientific Method */;
-			targetProxy = B3D065DC1659AE8F00F78932 /* PBXContainerItemProxy */;
+			target = B3609B9D17312481003A9744 /* Scientific Method */;
+			targetProxy = B3609BD717312481003A9744 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B3D065AF1659AE8F00F78932 /* InfoPlist.strings */ = {
+		B3609BAA17312481003A9744 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3D065B01659AE8F00F78932 /* en */,
+				B3609BAB17312481003A9744 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B3D065BE1659AE8F00F78932 /* MainStoryboard_iPhone.storyboard */ = {
+		B3609BB917312481003A9744 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3D065BF1659AE8F00F78932 /* en */,
+				B3609BBA17312481003A9744 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		B3D065C11659AE8F00F78932 /* MainStoryboard_iPad.storyboard */ = {
+		B3609BBC17312481003A9744 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3D065C21659AE8F00F78932 /* en */,
+				B3609BBD17312481003A9744 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		B3D065E11659AE8F00F78932 /* InfoPlist.strings */ = {
+		B3609BDC17312481003A9744 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3D065E21659AE8F00F78932 /* en */,
+				B3609BDD17312481003A9744 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -364,14 +356,17 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B3D065E71659AE8F00F78932 /* Debug */ = {
+		B3609BE217312481003A9744 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -386,21 +381,24 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B3D065E81659AE8F00F78932 /* Release */ = {
+		B3609BE317312481003A9744 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -408,7 +406,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,31 +414,29 @@
 			};
 			name = Release;
 		};
-		B3D065EA1659AE8F00F78932 /* Debug */ = {
+		B3609BE517312481003A9744 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scientific Method/Scientific Method-Prefix.pch";
 				INFOPLIST_FILE = "Scientific Method/Scientific Method-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		B3D065EB1659AE8F00F78932 /* Release */ = {
+		B3609BE617312481003A9744 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scientific Method/Scientific Method-Prefix.pch";
 				INFOPLIST_FILE = "Scientific Method/Scientific Method-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		B3D065ED1659AE8F00F78932 /* Debug */ = {
+		B3609BE817312481003A9744 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Scientific Method.app/Scientific Method";
@@ -457,7 +453,7 @@
 			};
 			name = Debug;
 		};
-		B3D065EE1659AE8F00F78932 /* Release */ = {
+		B3609BE917312481003A9744 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Scientific Method.app/Scientific Method";
@@ -477,34 +473,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B3D0659C1659AE8F00F78932 /* Build configuration list for PBXProject "Scientific Method" */ = {
+		B3609B9917312481003A9744 /* Build configuration list for PBXProject "Scientific Method" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3D065E71659AE8F00F78932 /* Debug */,
-				B3D065E81659AE8F00F78932 /* Release */,
+				B3609BE217312481003A9744 /* Debug */,
+				B3609BE317312481003A9744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3D065E91659AE8F00F78932 /* Build configuration list for PBXNativeTarget "Scientific Method" */ = {
+		B3609BE417312481003A9744 /* Build configuration list for PBXNativeTarget "Scientific Method" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3D065EA1659AE8F00F78932 /* Debug */,
-				B3D065EB1659AE8F00F78932 /* Release */,
+				B3609BE517312481003A9744 /* Debug */,
+				B3609BE617312481003A9744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		B3D065EC1659AE8F00F78932 /* Build configuration list for PBXNativeTarget "Scientific MethodTests" */ = {
+		B3609BE717312481003A9744 /* Build configuration list for PBXNativeTarget "Scientific MethodTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3D065ED1659AE8F00F78932 /* Debug */,
-				B3D065EE1659AE8F00F78932 /* Release */,
+				B3609BE817312481003A9744 /* Debug */,
+				B3609BE917312481003A9744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B3D065991659AE8F00F78932 /* Project object */;
+	rootObject = B3609B9617312481003A9744 /* Project object */;
 }

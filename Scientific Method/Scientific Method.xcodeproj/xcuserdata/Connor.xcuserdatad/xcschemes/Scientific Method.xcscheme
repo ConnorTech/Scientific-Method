@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0450"
+   LastUpgradeVersion = "0460"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B3D065A11659AE8F00F78932"
+               BlueprintIdentifier = "B3609B9D17312481003A9744"
                BuildableName = "Scientific Method.app"
                BlueprintName = "Scientific Method"
                ReferencedContainer = "container:Scientific Method.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B3D065D61659AE8F00F78932"
+               BlueprintIdentifier = "B3609BD117312481003A9744"
                BuildableName = "Scientific MethodTests.octest"
                BlueprintName = "Scientific MethodTests"
                ReferencedContainer = "container:Scientific Method.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B3D065A11659AE8F00F78932"
+            BlueprintIdentifier = "B3609B9D17312481003A9744"
             BuildableName = "Scientific Method.app"
             BlueprintName = "Scientific Method"
             ReferencedContainer = "container:Scientific Method.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B3D065A11659AE8F00F78932"
+            BlueprintIdentifier = "B3609B9D17312481003A9744"
             BuildableName = "Scientific Method.app"
             BlueprintName = "Scientific Method"
             ReferencedContainer = "container:Scientific Method.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B3D065A11659AE8F00F78932"
+            BlueprintIdentifier = "B3609B9D17312481003A9744"
             BuildableName = "Scientific Method.app"
             BlueprintName = "Scientific Method"
             ReferencedContainer = "container:Scientific Method.xcodeproj">
