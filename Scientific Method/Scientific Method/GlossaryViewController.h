@@ -11,5 +11,6 @@
 @interface GlossaryViewController : UIViewController
 
 @property (nonatomic,retain) IBOutlet UITableView *glossary;
+@property (nonatomic,retain) IBOutlet UISearchBar *searchBar;
 
 @end
