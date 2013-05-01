@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */; };
+		52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1417314B9400E6EF41 /* ModelsViewController.m */; };
 		B3609BA217312481003A9744 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA117312481003A9744 /* UIKit.framework */; };
 		B3609BA417312481003A9744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA317312481003A9744 /* Foundation.framework */; };
 		B3609BA617312481003A9744 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA517312481003A9744 /* CoreGraphics.framework */; };
@@ -43,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52EE2C1017314B7B00E6EF41 /* GlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryViewController.h; sourceTree = "<group>"; };
+		52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewController.m; sourceTree = "<group>"; };
+		52EE2C1317314B9400E6EF41 /* ModelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelsViewController.h; sourceTree = "<group>"; };
+		52EE2C1417314B9400E6EF41 /* ModelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelsViewController.m; sourceTree = "<group>"; };
 		B3609B9E17312481003A9744 /* Scientific Method.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scientific Method.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3609BA117312481003A9744 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3609BA317312481003A9744 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,9 +139,13 @@
 		B3609BA717312481003A9744 /* Scientific Method */ = {
 			isa = PBXGroup;
 			children = (
+				52EE2C1017314B7B00E6EF41 /* GlossaryViewController.h */,
+				52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */,
 				B3609BB017312481003A9744 /* AppDelegate.h */,
 				B3609BB117312481003A9744 /* AppDelegate.m */,
 				B3609BB917312481003A9744 /* MainStoryboard_iPhone.storyboard */,
+				52EE2C1317314B9400E6EF41 /* ModelsViewController.h */,
+				52EE2C1417314B9400E6EF41 /* ModelsViewController.m */,
 				B3609BBC17312481003A9744 /* MainStoryboard_iPad.storyboard */,
 				B3609BBF17312481003A9744 /* FirstViewController.h */,
 				B3609BC017312481003A9744 /* FirstviewViewController.m */,
@@ -303,6 +313,8 @@
 				B3609BB217312481003A9744 /* AppDelegate.m in Sources */,
 				B3609BC117312481003A9744 /* FirstviewViewController.m in Sources */,
 				B3609BC817312481003A9744 /* SecondViewController.m in Sources */,
+				52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */,
+				52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
