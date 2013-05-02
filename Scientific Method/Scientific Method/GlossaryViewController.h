@@ -12,5 +12,8 @@
 
 @property (nonatomic,retain) IBOutlet UITableView *glossary;
 @property (nonatomic,retain) IBOutlet UISearchBar *searchBar;
+-(IBAction)cellSelect:(id)sender;
+@property (nonatomic) NSMutableDictionary *bic;
+
 
 @end
