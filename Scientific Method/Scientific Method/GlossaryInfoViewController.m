@@ -13,7 +13,7 @@
 @end
 
 @implementation GlossaryInfoViewController
-@synthesize selection,terms,termLabel,definition,navBar;
+@synthesize selection,terms,termLabel,definition,navBar,chapter;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,15 +33,18 @@
     
     selection = [plistDict objectForKey:@"selectedKey"];
     NSString *def;
+    NSString *chap;
     for (NSDictionary *term in self.terms)
     {
         NSLog(@"%@", term);
         if ([selection isEqualToString:[term objectForKey:@"term"]]) {
             def = [term objectForKey:@"def"];
+            chap = [term objectForKey:@"chapter"];
             break;
         }
     }
     NSLog(@"%@", selection);
+    chapter.text = chap;
     navBar.title = selection;
     termLabel.text = selection;
     definition.text = def;

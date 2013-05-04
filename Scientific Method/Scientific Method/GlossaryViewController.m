@@ -14,7 +14,7 @@
 @end
 
 @implementation GlossaryViewController
-@synthesize terms,sections;
+@synthesize terms,sections,glossary,searchBar,selection;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

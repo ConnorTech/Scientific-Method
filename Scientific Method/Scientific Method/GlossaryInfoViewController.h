@@ -18,5 +18,6 @@
 @property (nonatomic,retain) IBOutlet UINavigationItem *navBar;
 @property (nonatomic,retain) IBOutlet UILabel *termLabel;
 @property (nonatomic,retain) IBOutlet UITextView *definition;
+@property (nonatomic,retain) IBOutlet UILabel *chapter;
 
 @end

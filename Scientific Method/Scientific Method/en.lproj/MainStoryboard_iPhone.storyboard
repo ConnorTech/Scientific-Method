@@ -41,24 +41,32 @@
         <scene sceneID="1eL-Ij-dCf">
             <objects>
                 <tableViewController id="DHo-kK-nVZ" customClass="GlossaryViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="T4h-Ph-aDK">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T4h-Ph-aDK">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="n6g-ey-mrA">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="DHo-kK-nVZ" id="CiA-dt-pnM"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="nVW-Zi-a4D" detailTextLabel="dPT-fD-eRG" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="7Gp-kv-RsG">
-                                <rect key="frame" x="0.0" y="22" width="320" height="55"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="8P9-zN-VlH" detailTextLabel="Jsi-af-Guw" rowHeight="68" style="IBUITableViewCellStyleSubtitle" id="7Gp-kv-RsG">
+                                <rect key="frame" x="0.0" y="66" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="67"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVW-Zi-a4D">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-zN-VlH">
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPT-fD-eRG">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsi-af-Guw">
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -74,12 +82,32 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Glossary" id="Hb8-05-MPf"/>
-                    <navigationItem key="navigationItem" id="bpc-fC-t27"/>
+                    <navigationItem key="navigationItem" title="Glossary" id="bpc-fC-t27"/>
                     <connections>
+                        <outlet property="glossary" destination="T4h-Ph-aDK" id="epD-h7-MMs"/>
+                        <outlet property="searchBar" destination="n6g-ey-mrA" id="ZEc-KJ-H36"/>
+                        <outlet property="searchDisplayController" destination="9Mv-lh-MrX" id="tym-Jj-6sF"/>
                         <segue destination="pyu-c7-I34" kind="push" identifier="Go" id="oxp-4N-SLS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4T-ee-8dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="nIj-vQ-hSg">
+                    <connections>
+                        <outlet property="delegate" destination="DHo-kK-nVZ" id="Kmo-wc-cYB"/>
+                        <outlet property="searchContentsController" destination="DHo-kK-nVZ" id="PGA-nD-Dui"/>
+                        <outlet property="searchResultsDataSource" destination="DHo-kK-nVZ" id="Dbg-RU-VIc"/>
+                        <outlet property="searchResultsDelegate" destination="DHo-kK-nVZ" id="hZW-hc-lLM"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="9Mv-lh-MrX">
+                    <connections>
+                        <outlet property="delegate" destination="DHo-kK-nVZ" id="x3t-Ge-ht3"/>
+                        <outlet property="searchBar" destination="n6g-ey-mrA" id="pvp-nL-6M9"/>
+                        <outlet property="searchContentsController" destination="DHo-kK-nVZ" id="fUF-If-pTw"/>
+                        <outlet property="searchResultsDataSource" destination="DHo-kK-nVZ" id="B6B-mh-N2z"/>
+                        <outlet property="searchResultsDelegate" destination="DHo-kK-nVZ" id="FEk-kb-TH5"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="124" y="1591"/>
         </scene>
@@ -91,7 +119,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Term" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYE-J1-cEg">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="771" text="From Chapter:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYE-J1-cEg">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="ZTp-zP-s5T"/>
                                     <constraint firstAttribute="width" constant="231" id="gnA-qn-tdZ"/>
@@ -103,26 +131,37 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Defninition" translatesAutoresizingMaskIntoConstraints="NO" id="uUz-aZ-Q3j">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="376" id="hmO-d5-3Ee"/>
+                                    <constraint firstAttribute="height" constant="338" id="gcX-Iw-Aaj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="771" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aam-ns-Nw3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="0L5-QW-ve3"/>
+                                    <constraint firstAttribute="width" constant="62" id="5pU-DU-zk9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XYE-J1-cEg" firstAttribute="centerX" secondItem="uUz-aZ-Q3j" secondAttribute="centerX" type="default" id="EBd-0E-Mab"/>
-                            <constraint firstItem="uUz-aZ-Q3j" firstAttribute="trailing" secondItem="MVr-dw-8Qs" secondAttribute="trailing" type="default" id="RWT-Uc-8aN"/>
-                            <constraint firstItem="uUz-aZ-Q3j" firstAttribute="leading" secondItem="MVr-dw-8Qs" secondAttribute="leading" type="default" id="fEr-Ug-lk3"/>
-                            <constraint firstItem="XYE-J1-cEg" firstAttribute="top" secondItem="MVr-dw-8Qs" secondAttribute="top" type="default" id="gao-7p-XEp"/>
-                            <constraint firstItem="uUz-aZ-Q3j" firstAttribute="top" secondItem="MVr-dw-8Qs" secondAttribute="top" constant="40" id="rAI-TY-8pv"/>
+                            <constraint firstItem="XYE-J1-cEg" firstAttribute="centerX" secondItem="Aam-ns-Nw3" secondAttribute="centerX" type="default" id="EiX-rx-RFB"/>
+                            <constraint firstItem="uUz-aZ-Q3j" firstAttribute="top" secondItem="MVr-dw-8Qs" secondAttribute="top" constant="59" id="UZO-94-hVq"/>
+                            <constraint firstItem="XYE-J1-cEg" firstAttribute="top" secondItem="MVr-dw-8Qs" secondAttribute="top" type="default" id="V9b-Ss-WsR"/>
+                            <constraint firstItem="uUz-aZ-Q3j" firstAttribute="leading" secondItem="MVr-dw-8Qs" secondAttribute="leading" type="default" id="c7l-sX-UWv"/>
+                            <constraint firstItem="Aam-ns-Nw3" firstAttribute="top" secondItem="MVr-dw-8Qs" secondAttribute="top" constant="26" id="ci2-4b-kOr"/>
+                            <constraint firstItem="uUz-aZ-Q3j" firstAttribute="trailing" secondItem="MVr-dw-8Qs" secondAttribute="trailing" type="default" id="ede-wO-GAh"/>
+                            <constraint firstItem="Aam-ns-Nw3" firstAttribute="centerX" secondItem="uUz-aZ-Q3j" secondAttribute="centerX" type="default" id="iSJ-W9-2ZI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FiU-BH-DRq"/>
                     <connections>
+                        <outlet property="chapter" destination="Aam-ns-Nw3" id="72t-PR-CQO"/>
                         <outlet property="definition" destination="uUz-aZ-Q3j" id="VQX-c8-tb7"/>
                         <outlet property="navBar" destination="FiU-BH-DRq" id="qz6-3m-yKS"/>
-                        <outlet property="termLabel" destination="XYE-J1-cEg" id="rb4-s5-pXv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77C-Jc-wOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -194,6 +233,20 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGN-83-I6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7qu-Jf-ejd">
+                    <rect key="frame" x="0.0" y="0.0" width="38" height="22"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eq1-Dh-dKh">
+                    <rect key="frame" x="0.0" y="0.0" width="38" height="22"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
             </objects>
             <point key="canvasLocation" x="-225" y="740"/>
         </scene>
@@ -209,6 +262,7 @@
         <class className="GlossaryInfoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GlossaryInfoViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="chapter" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="definition" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
                 <relationship kind="outlet" name="termLabel" candidateClass="UILabel"/>
@@ -216,6 +270,11 @@
         </class>
         <class className="GlossaryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GlossaryViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="glossary" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+            </relationships>
         </class>
         <class className="ModelsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ModelsViewController.h"/>

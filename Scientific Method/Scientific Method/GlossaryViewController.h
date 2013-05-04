@@ -18,5 +18,7 @@
 @property (nonatomic,retain) NSMutableDictionary *sections;
 @property (nonatomic,retain) NSMutableArray *terms;
 @property (nonatomic,retain) NSString *selection;
-
+@property (nonatomic,retain) IBOutlet UINavigationBar* navBar;
+@property (nonatomic,retain) IBOutlet UITableView *glossary;
+@property (nonatomic,retain) IBOutlet UISearchBar *searchBar;
 @end
