@@ -9,13 +9,12 @@
 #import "GlossaryViewController.h"
 
 @interface GlossaryViewController (){
-    NSMutableArray *listOfItems;
 }
 
 @end
 
 @implementation GlossaryViewController
-@synthesize glossary,searchBar,bic;
+@synthesize terms,sections;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,55 +25,92 @@
     return self;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [listOfItems count];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    // now you can use cell.textLabel.text self.selection.
+    selection = cell.textLabel.text;
+    NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]];
+    
+    [plistDict setValue:selection forKey:@"selectedKey"];
+    [plistDict writeToFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"] atomically: YES];
+    [self performSegueWithIdentifier:@"Go" sender:self];
 }
 
+- (void)viewDidLoad
+{
+    self.terms = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"terms" ofType:@"plist"]];
+    self.sections = [[NSMutableDictionary alloc] init];
+    
+    BOOL found;
+    
+    for (NSDictionary *term in self.terms) {
+        NSString *c = [[term objectForKey:@"term"] substringToIndex:1];
+        
+        found = NO;
+        
+        for (NSString *str in [self.sections allKeys]) {
+            if ([str isEqualToString:c]) {
+                found = YES;
+            }
+        }
+        if (!found) {
+            [self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
+        }
+    }
+    
+    // Loop again and sort the books into their respective keys
+    for (NSDictionary *term in self.terms)
+    {
+        [[self.sections objectForKey:[[term objectForKey:@"term"] substringToIndex:1]] addObject:term];
+    }
+    
+    // Sort each section array
+    for (NSString *key in [self.sections allKeys])
+    {
+        [[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"term" ascending:YES]]];
+    }
+    
+    [super viewDidLoad];
+	// Do any additional setup after loading the view
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return [[self.sections allKeys] count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section]] count];
+}
+
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    return [[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+}
+
+// Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"" ascending:YES];
-    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    NSDictionary *term = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
     
-    [listOfItems sortUsingDescriptors:sortDescriptors];
-    
-    // Set up the cell...
-    NSString *cellValue = [listOfItems objectAtIndex:indexPath.row];
-    cell.text = cellValue;
+    cell.textLabel.text = [term objectForKey:@"term"];
+    cell.detailTextLabel.text = [term objectForKey:@"def"];
+	
     return cell;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view
-    
-    listOfItems = [[NSMutableArray alloc] init];
-    
-    //Add items
-    [listOfItems addObject:@"Theory"];
-    [listOfItems addObject:@"Law"];
-    [listOfItems addObject:@"Experiment"];
-    [listOfItems addObject:@"Emp"];
-    [listOfItems addObject:@"2"];
-    [listOfItems addObject:@"3"];
-    [listOfItems addObject:@"4"];
-    [listOfItems addObject:@"5"];
-    
-    self.navigationItem.title = @"Glossary";
-}
-
--(IBAction)cellSelect:(id)sender{
-    
-//    [bic setValue:a forKey:];
-//    
-//    NSLog(@"%@", [bic objectForKey:a]);
 }
 
 - (void)didReceiveMemoryWarning

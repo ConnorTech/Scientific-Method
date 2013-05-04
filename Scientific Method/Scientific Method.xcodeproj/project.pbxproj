@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		528C0AE81734703A00DD5225 /* GlossaryInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C0AE71734703A00DD5225 /* GlossaryInfoViewController.m */; };
+		528C0AEA173474F300DD5225 /* terms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AE9173474F300DD5225 /* terms.plist */; };
+		528C0AEC17347B8300DD5225 /* Selected.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AEB17347B8300DD5225 /* Selected.plist */; };
 		52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */; };
 		52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1417314B9400E6EF41 /* ModelsViewController.m */; };
 		B3609BA217312481003A9744 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA117312481003A9744 /* UIKit.framework */; };
@@ -46,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		528C0AE61734703A00DD5225 /* GlossaryInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryInfoViewController.h; sourceTree = "<group>"; };
+		528C0AE71734703A00DD5225 /* GlossaryInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryInfoViewController.m; sourceTree = "<group>"; };
+		528C0AE9173474F300DD5225 /* terms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = terms.plist; sourceTree = "<group>"; };
+		528C0AEB17347B8300DD5225 /* Selected.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Selected.plist; sourceTree = "<group>"; };
 		52EE2C1017314B7B00E6EF41 /* GlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryViewController.h; sourceTree = "<group>"; };
 		52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewController.m; sourceTree = "<group>"; };
 		52EE2C1317314B9400E6EF41 /* ModelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelsViewController.h; sourceTree = "<group>"; };
@@ -144,9 +151,13 @@
 			children = (
 				52EE2C1017314B7B00E6EF41 /* GlossaryViewController.h */,
 				52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */,
+				528C0AE9173474F300DD5225 /* terms.plist */,
+				528C0AEB17347B8300DD5225 /* Selected.plist */,
 				B3609BB017312481003A9744 /* AppDelegate.h */,
 				B3609BB117312481003A9744 /* AppDelegate.m */,
 				B3609BB917312481003A9744 /* MainStoryboard_iPhone.storyboard */,
+				528C0AE61734703A00DD5225 /* GlossaryInfoViewController.h */,
+				528C0AE71734703A00DD5225 /* GlossaryInfoViewController.m */,
 				52EE2C1317314B9400E6EF41 /* ModelsViewController.h */,
 				52EE2C1417314B9400E6EF41 /* ModelsViewController.m */,
 				B3609BBC17312481003A9744 /* MainStoryboard_iPad.storyboard */,
@@ -279,6 +290,8 @@
 				B3609BCC17312481003A9744 /* second@2x.png in Resources */,
 				B366A60817314C7D003CF7B5 /* Icon@2x.png in Resources */,
 				B366A60A17314D6E003CF7B5 /* Icon.png in Resources */,
+				528C0AEA173474F300DD5225 /* terms.plist in Resources */,
+				528C0AEC17347B8300DD5225 /* Selected.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +332,7 @@
 				B3609BC817312481003A9744 /* SecondViewController.m in Sources */,
 				52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */,
 				52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */,
+				528C0AE81734703A00DD5225 /* GlossaryInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

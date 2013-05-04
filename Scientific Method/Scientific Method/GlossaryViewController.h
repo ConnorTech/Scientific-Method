@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface GlossaryViewController : UIViewController
+{
+    NSMutableDictionary *sections;
+    NSMutableArray *terms;
+    NSString *selection;
+}
 
-@property (nonatomic,retain) IBOutlet UITableView *glossary;
-@property (nonatomic,retain) IBOutlet UISearchBar *searchBar;
--(IBAction)cellSelect:(id)sender;
-@property (nonatomic) NSMutableDictionary *bic;
-
+@property (nonatomic,retain) NSMutableDictionary *sections;
+@property (nonatomic,retain) NSMutableArray *terms;
+@property (nonatomic,retain) NSString *selection;
 
 @end
