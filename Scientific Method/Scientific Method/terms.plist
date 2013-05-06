@@ -54,5 +54,93 @@ Fossils can be date in what is called a fossil record, which is a concept where 
 		<key>chapter</key>
 		<string>3</string>
 	</dict>
+	<dict>
+		<key>term</key>
+		<string>Analysis</string>
+		<key>def</key>
+		<string>The breakdown of something that is complex into smaller parts in such a way that leads to a better understanding of the whole. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Classify</string>
+		<key>def</key>
+		<string>Grouping things together based on specific characteristics.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Compare</string>
+		<key>def</key>
+		<string>To examine the different and/or similar characteristics of things or events.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Control</string>
+		<key>def</key>
+		<string>The group or subject that is used as a standard for comparison in an experiment. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Critical thinking</string>
+		<key>def</key>
+		<string>Thinking that uses specific sets of skills to carefully analyze problems step-bystep; scientific methods are one type of critical thinking. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Data</string>
+		<key>def</key>
+		<string>Information, measurements and materials gathered from observations that are used to help answer questions.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Experimental error</string>
+		<key>def</key>
+		<string>Incorrect data in an experiment that may result from a variety of causes.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Experiment</string>
+		<key>def</key>
+		<string>A test using observations and controlled variables to discover answers to questions, and/or to check a hypothesis.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Hypothesis</string>
+		<key>def</key>
+		<string>A testable explanation for observations and questions about the physical universe. Note: “hypothesis” is very similar to “prediction,” and the two words are often used interchangeably.) </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Inference</string>
+		<key>def</key>
+		<string>A logical explanation or conclusion based on observations and/or facts.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Measure</string>
+		<key>def</key>
+		<string>To compare the characteristics of something (such as mass, length, volume) with a standard (such as grams, meters, liters).</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
 </array>
 </plist>
