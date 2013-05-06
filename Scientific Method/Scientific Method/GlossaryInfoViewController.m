@@ -36,14 +36,12 @@
     NSString *chap;
     for (NSDictionary *term in self.terms)
     {
-        NSLog(@"%@", term);
         if ([selection isEqualToString:[term objectForKey:@"term"]]) {
             def = [term objectForKey:@"def"];
             chap = [term objectForKey:@"chapter"];
             break;
         }
     }
-    NSLog(@"%@", selection);
     chapter.text = chap;
     navBar.title = selection;
     termLabel.text = selection;

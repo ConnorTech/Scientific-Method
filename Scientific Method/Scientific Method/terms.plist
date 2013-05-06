@@ -14,7 +14,9 @@
 		<key>term</key>
 		<string>Natural Selection</string>
 		<key>def</key>
-		<string>A process where, when accidental mutations are made in organisms, nature selects out the best organisms with the best mutations, therefor bringing evolution to be possible.Sometimes, these mutations will help in other ways. If a pandemic broke out, some of the organisms effected would have a mutation that protected them, and when the rest die off, the survivors will reproduce and pass down the gene.</string>
+		<string>A process where, when accidental mutations are made in organisms, nature selects out the best organisms with the best mutations, therefor bringing evolution to be possible.
+
+Sometimes, these mutations will help in other ways. If a pandemic broke out, some of the organisms effected would have a mutation that protected them, and when the rest die off, the survivors will reproduce and pass down the gene.</string>
 		<key>chapter</key>
 		<string>13</string>
 	</dict>
@@ -38,9 +40,19 @@
 		<key>term</key>
 		<string>Fossil</string>
 		<key>def</key>
-		<string>A preserved imprint or remains of an organism that lived in the past. This happens when an animal dies and is either sinks in mud or is covered in silt from a water body. The more an more layers are piled on, and the weight turns the ground very hard, so that when the bones dissolve, the impression of the bones stays	Fossils can be date in what is called a fossil record, which is a concept where scientists can locate the fossil in the multiple layers of the ground, and compare it to other fossils in the many layers.</string>
+		<string>A preserved imprint or remains of an organism that lived in the past. This happens when an animal dies and is either sinks in mud or is covered in silt from a water body. The more an more layers are piled on, and the weight turns the ground very hard, so that when the bones dissolve, the impression of the bones stays
+	
+Fossils can be date in what is called a fossil record, which is a concept where scientists can locate the fossil in the multiple layers of the ground, and compare it to other fossils in the many layers.</string>
 		<key>chapter</key>
 		<string>13</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Example</string>
+		<key>def</key>
+		<string>This is an example</string>
+		<key>chapter</key>
+		<string>3</string>
 	</dict>
 </array>
 </plist>
