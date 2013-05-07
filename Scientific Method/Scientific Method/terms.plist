@@ -142,5 +142,149 @@ Fossils can be date in what is called a fossil record, which is a concept where 
 		<key>chapter</key>
 		<string>3</string>
 	</dict>
+	<dict>
+		<key>term</key>
+		<string>Methods</string>
+		<key>def</key>
+		<string>An ordered series of steps followed to help answer a question.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Nature</string>
+		<key>def</key>
+		<string>The entire physical universe. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Observation</string>
+		<key>def</key>
+		<string> Noticing objects or events using the five senses. (2) The data collected by using the five senses to learn about objects and events.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Prediction</string>
+		<key>def</key>
+		<string>A statement made about the future outcome of an experiment based on past experiences or observations. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Procedure</string>
+		<key>def</key>
+		<string>An ordered series of steps followed to help answer a question. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Qualitative data</string>
+		<key>def</key>
+		<string>Data that is based on observable characteristics of things or events that can be collected using the five senses. Example: “The juice tastes sweet to me.” </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Quantitative data</string>
+		<key>def</key>
+		<string>Data that is based on measurable characteristics of things or events such as mass, volume, length, and quantity. Example: “There is one liter of juice in the carton.”</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Repeated trials</string>
+		<key>def</key>
+		<string>Experimental tests done more than once. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Replication</string>
+		<key>def</key>
+		<string>Repeated trials on more than one subject, as well as controls, in experimental tests.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Science</string>
+		<key>def</key>
+		<string>The study of nature and the physical world using the methods of science, or a “special method of finding things out.”</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Scientist</string>
+		<key>def</key>
+		<string>A person who “does” science and uses the methods of science.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Scientific law</string>
+		<key>def</key>
+		<string>A generalized pattern in nature. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Scientific method(s)</string>
+		<key>def</key>
+		<string>A process of critical thinking that uses observations and experiments to investigate testable predictions about the physical universe. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Scientific theory</string>
+		<key>def</key>
+		<string>A causal explanation for generalized patterns in nature that is supported by much scientific evidence based on data collected using scientific methods.</string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Variation</string>
+		<key>def</key>
+		<string>Slight differences among objects, organisms or events that are all of the same basic type. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Variable</string>
+		<key>def</key>
+		<string>Something that can affect a system being examined, and is therefore a factor that may change in an experiment. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Variable, independent</string>
+		<key>def</key>
+		<string>A factor that can be changed or manipulated in an experiment by the scientist; “you change it” variables. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>term</key>
+		<string>Variable, dependent</string>
+		<key>def</key>
+		<string>A factor that responds to changes in other variables in an experiment; “it changed” variables. </string>
+		<key>chapter</key>
+		<string>3</string>
+	</dict>
 </array>
 </plist>
