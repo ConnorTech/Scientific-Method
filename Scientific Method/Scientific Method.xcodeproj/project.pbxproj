@@ -12,6 +12,7 @@
 		528C0AEC17347B8300DD5225 /* Selected.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AEB17347B8300DD5225 /* Selected.plist */; };
 		52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */; };
 		52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1417314B9400E6EF41 /* ModelsViewController.m */; };
+		52F589FE17393282000B70BD /* Terms.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F589FD17393282000B70BD /* Terms.m */; };
 		B3609BA217312481003A9744 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA117312481003A9744 /* UIKit.framework */; };
 		B3609BA417312481003A9744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA317312481003A9744 /* Foundation.framework */; };
 		B3609BA617312481003A9744 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA517312481003A9744 /* CoreGraphics.framework */; };
@@ -57,6 +58,8 @@
 		52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewController.m; sourceTree = "<group>"; };
 		52EE2C1317314B9400E6EF41 /* ModelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelsViewController.h; sourceTree = "<group>"; };
 		52EE2C1417314B9400E6EF41 /* ModelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelsViewController.m; sourceTree = "<group>"; };
+		52F589FC17393282000B70BD /* Terms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terms.h; sourceTree = "<group>"; };
+		52F589FD17393282000B70BD /* Terms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Terms.m; sourceTree = "<group>"; };
 		B3609B9E17312481003A9744 /* Scientific Method.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scientific Method.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3609BA117312481003A9744 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3609BA317312481003A9744 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -151,6 +154,8 @@
 			children = (
 				52EE2C1017314B7B00E6EF41 /* GlossaryViewController.h */,
 				52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */,
+				52F589FC17393282000B70BD /* Terms.h */,
+				52F589FD17393282000B70BD /* Terms.m */,
 				528C0AE9173474F300DD5225 /* terms.plist */,
 				528C0AEB17347B8300DD5225 /* Selected.plist */,
 				B3609BB017312481003A9744 /* AppDelegate.h */,
@@ -333,6 +338,7 @@
 				52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */,
 				52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */,
 				528C0AE81734703A00DD5225 /* GlossaryInfoViewController.m in Sources */,
+				52F589FE17393282000B70BD /* Terms.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

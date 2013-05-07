@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GlossaryViewController : UIViewController
+@interface GlossaryViewController : UIViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 {
     NSMutableDictionary *sections;
     NSMutableArray *terms;
@@ -17,8 +17,12 @@
 
 @property (nonatomic,retain) NSMutableDictionary *sections;
 @property (nonatomic,retain) NSMutableArray *terms;
+@property (nonatomic,retain) NSMutableArray *terms2;
 @property (nonatomic,retain) NSString *selection;
 @property (nonatomic,retain) IBOutlet UINavigationBar* navBar;
 @property (nonatomic,retain) IBOutlet UITableView *glossary;
-@property (nonatomic,retain) IBOutlet UISearchBar *searchBar;
+@property (strong,nonatomic) NSMutableArray *filteredArray;
+@property IBOutlet UISearchBar *searchBar;
+@property (strong,nonatomic) NSMutableArray *termsFinal;
+
 @end
