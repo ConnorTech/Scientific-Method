@@ -11,9 +11,9 @@
 @implementation Terms
 @synthesize name;
 
-+ (id)termName:(NSString*)name{
++ (id)termName:(NSString*)type{
     Terms *newTerm = [[self alloc] init];
-    newTerm.name = name;
+    newTerm.name = type;
     return newTerm;
 }
 

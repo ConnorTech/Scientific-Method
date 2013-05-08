@@ -14,6 +14,6 @@
 
 @property (nonatomic, copy) NSString *name;
 
-+ (id)candyOfCategory:(NSString*)category name:(NSString*)name;
++ (id)termName:(NSString*)name;
 
 @end
