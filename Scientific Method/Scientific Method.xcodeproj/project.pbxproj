@@ -12,6 +12,8 @@
 		528C0AEC17347B8300DD5225 /* Selected.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AEB17347B8300DD5225 /* Selected.plist */; };
 		52C15892173AA1D3008CA7BD /* elements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52C15891173AA1D3008CA7BD /* elements.plist */; };
 		52C15896173B01DC008CA7BD /* ElementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */; };
+		52C1589A173B11BB008CA7BD /* Rectangle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52C15899173B11BB008CA7BD /* Rectangle.jpg */; };
+		52C1589C173B1388008CA7BD /* Rectangle copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C1589B173B1388008CA7BD /* Rectangle copy.png */; };
 		52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */; };
 		52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1417314B9400E6EF41 /* ModelsViewController.m */; };
 		B3609BA217312481003A9744 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA117312481003A9744 /* UIKit.framework */; };
@@ -58,6 +60,8 @@
 		52C15891173AA1D3008CA7BD /* elements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = elements.plist; sourceTree = "<group>"; };
 		52C15894173B01DB008CA7BD /* ElementsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsDetailViewController.h; sourceTree = "<group>"; };
 		52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsDetailViewController.m; sourceTree = "<group>"; };
+		52C15899173B11BB008CA7BD /* Rectangle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rectangle.jpg; sourceTree = "<group>"; };
+		52C1589B173B1388008CA7BD /* Rectangle copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle copy.png"; sourceTree = "<group>"; };
 		52EE2C1017314B7B00E6EF41 /* GlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryViewController.h; sourceTree = "<group>"; };
 		52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewController.m; sourceTree = "<group>"; };
 		52EE2C1317314B9400E6EF41 /* ModelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelsViewController.h; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				B3609BBC17312481003A9744 /* MainStoryboard_iPad.storyboard */,
 				52EE2C1317314B9400E6EF41 /* ModelsViewController.h */,
 				528C0AEB17347B8300DD5225 /* Selected.plist */,
+				52C15899173B11BB008CA7BD /* Rectangle.jpg */,
+				52C1589B173B1388008CA7BD /* Rectangle copy.png */,
 				52EE2C1417314B9400E6EF41 /* ModelsViewController.m */,
 				B3609BBF17312481003A9744 /* FirstViewController.h */,
 				B3609BC017312481003A9744 /* FirstviewViewController.m */,
@@ -317,6 +323,8 @@
 				528C0AEA173474F300DD5225 /* terms.plist in Resources */,
 				528C0AEC17347B8300DD5225 /* Selected.plist in Resources */,
 				52C15892173AA1D3008CA7BD /* elements.plist in Resources */,
+				52C1589A173B11BB008CA7BD /* Rectangle.jpg in Resources */,
+				52C1589C173B1388008CA7BD /* Rectangle copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

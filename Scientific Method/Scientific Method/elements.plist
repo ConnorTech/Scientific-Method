@@ -8,7 +8,7 @@
 		<key>abv</key>
 		<string>Si</string>
 		<key>desc</key>
-		<string></string>
+		<string>An element that is good for microchips</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -16,7 +16,7 @@
 		<key>abv</key>
 		<string>H</string>
 		<key>desc</key>
-		<string></string>
+		<string>Also found in water, or H20</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -24,7 +24,7 @@
 		<key>abv</key>
 		<string>He</string>
 		<key>desc</key>
-		<string></string>
+		<string>Makes your voice really high</string>
 	</dict>
 </array>
 </plist>
