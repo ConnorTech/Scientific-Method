@@ -40,6 +40,7 @@
 		B3609BE117312481003A9744 /* Scientific_MethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BE017312481003A9744 /* Scientific_MethodTests.m */; };
 		B366A60817314C7D003CF7B5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B366A60717314C7D003CF7B5 /* Icon@2x.png */; };
 		B366A60A17314D6E003CF7B5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B366A60917314D6E003CF7B5 /* Icon.png */; };
+		B3CB9799173B1804000F8468 /* background_big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CB9798173B1804000F8468 /* background_big.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		B3609BE017312481003A9744 /* Scientific_MethodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scientific_MethodTests.m; sourceTree = "<group>"; };
 		B366A60717314C7D003CF7B5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B366A60917314D6E003CF7B5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B3CB9798173B1804000F8468 /* background_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_big.png; path = "../../../../../ownCloud/Lordtechy Productions/Apps/stop watch/2.0/background_big.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				B366A60917314D6E003CF7B5 /* Icon.png */,
 				B366A60717314C7D003CF7B5 /* Icon@2x.png */,
+				B3CB9798173B1804000F8468 /* background_big.png */,
 				B3609BA717312481003A9744 /* Scientific Method */,
 				B3609BD917312481003A9744 /* Scientific MethodTests */,
 				B3609BA017312481003A9744 /* Frameworks */,
@@ -325,6 +328,7 @@
 				52C15892173AA1D3008CA7BD /* elements.plist in Resources */,
 				52C1589A173B11BB008CA7BD /* Rectangle.jpg in Resources */,
 				52C1589C173B1388008CA7BD /* Rectangle copy.png in Resources */,
+				B3CB9799173B1804000F8468 /* background_big.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
