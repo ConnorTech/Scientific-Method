@@ -10,6 +10,8 @@
 		528C0AE81734703A00DD5225 /* GlossaryInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C0AE71734703A00DD5225 /* GlossaryInfoViewController.m */; };
 		528C0AEA173474F300DD5225 /* terms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AE9173474F300DD5225 /* terms.plist */; };
 		528C0AEC17347B8300DD5225 /* Selected.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AEB17347B8300DD5225 /* Selected.plist */; };
+		52C15892173AA1D3008CA7BD /* elements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52C15891173AA1D3008CA7BD /* elements.plist */; };
+		52C15896173B01DC008CA7BD /* ElementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */; };
 		52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */; };
 		52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1417314B9400E6EF41 /* ModelsViewController.m */; };
 		B3609BA217312481003A9744 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA117312481003A9744 /* UIKit.framework */; };
@@ -26,7 +28,7 @@
 		B3609BC117312481003A9744 /* FirstviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BC017312481003A9744 /* FirstviewViewController.m */; };
 		B3609BC317312481003A9744 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BC217312481003A9744 /* first.png */; };
 		B3609BC517312481003A9744 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BC417312481003A9744 /* first@2x.png */; };
-		B3609BC817312481003A9744 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BC717312481003A9744 /* SecondViewController.m */; };
+		B3609BC817312481003A9744 /* ElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BC717312481003A9744 /* ElementsViewController.m */; };
 		B3609BCA17312481003A9744 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BC917312481003A9744 /* second.png */; };
 		B3609BCC17312481003A9744 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BCB17312481003A9744 /* second@2x.png */; };
 		B3609BD417312481003A9744 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BD317312481003A9744 /* SenTestingKit.framework */; };
@@ -53,6 +55,9 @@
 		528C0AE71734703A00DD5225 /* GlossaryInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryInfoViewController.m; sourceTree = "<group>"; };
 		528C0AE9173474F300DD5225 /* terms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = terms.plist; sourceTree = "<group>"; };
 		528C0AEB17347B8300DD5225 /* Selected.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Selected.plist; sourceTree = "<group>"; };
+		52C15891173AA1D3008CA7BD /* elements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = elements.plist; sourceTree = "<group>"; };
+		52C15894173B01DB008CA7BD /* ElementsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsDetailViewController.h; sourceTree = "<group>"; };
+		52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsDetailViewController.m; sourceTree = "<group>"; };
 		52EE2C1017314B7B00E6EF41 /* GlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryViewController.h; sourceTree = "<group>"; };
 		52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewController.m; sourceTree = "<group>"; };
 		52EE2C1317314B9400E6EF41 /* ModelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelsViewController.h; sourceTree = "<group>"; };
@@ -76,8 +81,8 @@
 		B3609BC017312481003A9744 /* FirstviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstviewViewController.m; sourceTree = "<group>"; };
 		B3609BC217312481003A9744 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		B3609BC417312481003A9744 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		B3609BC617312481003A9744 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		B3609BC717312481003A9744 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B3609BC617312481003A9744 /* ElementsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementsViewController.h; sourceTree = "<group>"; };
+		B3609BC717312481003A9744 /* ElementsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElementsViewController.m; sourceTree = "<group>"; };
 		B3609BC917312481003A9744 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		B3609BCB17312481003A9744 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		B3609BD217312481003A9744 /* Scientific MethodTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scientific MethodTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,11 +119,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52C15893173AA1DC008CA7BD /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				B3609BC617312481003A9744 /* ElementsViewController.h */,
+				B3609BC717312481003A9744 /* ElementsViewController.m */,
+				52C15894173B01DB008CA7BD /* ElementsDetailViewController.h */,
+				52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */,
+				52C15891173AA1D3008CA7BD /* elements.plist */,
+			);
+			name = Elements;
+			sourceTree = "<group>";
+		};
 		52D14152173A8165002C174F /* Glossary */ = {
 			isa = PBXGroup;
 			children = (
 				528C0AE9173474F300DD5225 /* terms.plist */,
-				528C0AEB17347B8300DD5225 /* Selected.plist */,
 				52EE2C1017314B7B00E6EF41 /* GlossaryViewController.h */,
 				52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */,
 				528C0AE61734703A00DD5225 /* GlossaryInfoViewController.h */,
@@ -168,13 +184,13 @@
 				B3609BB917312481003A9744 /* MainStoryboard_iPhone.storyboard */,
 				B3609BBC17312481003A9744 /* MainStoryboard_iPad.storyboard */,
 				52EE2C1317314B9400E6EF41 /* ModelsViewController.h */,
+				528C0AEB17347B8300DD5225 /* Selected.plist */,
 				52EE2C1417314B9400E6EF41 /* ModelsViewController.m */,
 				B3609BBF17312481003A9744 /* FirstViewController.h */,
 				B3609BC017312481003A9744 /* FirstviewViewController.m */,
 				B3609BC217312481003A9744 /* first.png */,
 				B3609BC417312481003A9744 /* first@2x.png */,
-				B3609BC617312481003A9744 /* SecondViewController.h */,
-				B3609BC717312481003A9744 /* SecondViewController.m */,
+				52C15893173AA1DC008CA7BD /* Elements */,
 				B3609BC917312481003A9744 /* second.png */,
 				B3609BCB17312481003A9744 /* second@2x.png */,
 				B3609BA817312481003A9744 /* Supporting Files */,
@@ -300,6 +316,7 @@
 				B366A60A17314D6E003CF7B5 /* Icon.png in Resources */,
 				528C0AEA173474F300DD5225 /* terms.plist in Resources */,
 				528C0AEC17347B8300DD5225 /* Selected.plist in Resources */,
+				52C15892173AA1D3008CA7BD /* elements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,10 +354,11 @@
 				B3609BAE17312481003A9744 /* main.m in Sources */,
 				B3609BB217312481003A9744 /* AppDelegate.m in Sources */,
 				B3609BC117312481003A9744 /* FirstviewViewController.m in Sources */,
-				B3609BC817312481003A9744 /* SecondViewController.m in Sources */,
+				B3609BC817312481003A9744 /* ElementsViewController.m in Sources */,
 				52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */,
 				52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */,
 				528C0AE81734703A00DD5225 /* GlossaryInfoViewController.m in Sources */,
+				52C15896173B01DC008CA7BD /* ElementsDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,5 +4,7 @@
 <dict>
 	<key>selectedKey</key>
 	<string></string>
+	<key>selectedKey2</key>
+	<string></string>
 </dict>
 </plist>

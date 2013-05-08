@@ -13,7 +13,7 @@
 @end
 
 @implementation GlossaryInfoViewController
-@synthesize selection,terms,termLabel,definition,navBar,chapter;
+@synthesize selection,terms,definition,navBar,chapter;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,7 +44,6 @@
     }
     chapter.text = chap;
     navBar.title = selection;
-    termLabel.text = selection;
     definition.text = def;
 }
 

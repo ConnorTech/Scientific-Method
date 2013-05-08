@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController{
+@interface ElementsViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>{
     NSMutableDictionary *sections;
     NSMutableDictionary *sections2;
     NSMutableArray *elements;
@@ -20,8 +20,11 @@
 @property (nonatomic,retain) NSMutableArray *elements;
 @property (nonatomic,retain) NSString *selection;
 @property (nonatomic,retain) IBOutlet UINavigationBar* navBar;
-@property (nonatomic,retain) IBOutlet UITableView *tableView;
+@property (nonatomic,retain) IBOutlet UITableView *elementsTableView;
 @property (strong,nonatomic) NSMutableArray *filteredArray;
 @property IBOutlet UISearchBar *searchBar;
+@property (strong,nonatomic) NSArray *elementsArray;
+@property (nonatomic,retain) NSMutableArray *elementsConversion;
+
 
 @end
