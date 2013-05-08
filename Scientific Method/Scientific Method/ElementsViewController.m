@@ -143,7 +143,7 @@
     NSLog(@"1 - %@", element);
     if (tableView == self.searchDisplayController.searchResultsTableView) {
     } else {
-        cell.detailTextLabel.text = [element objectForKey:@"name"];
+        cell.detailTextLabel.text = [element objectForKey:@"abv"];
     }
     cell.textLabel.text = [element objectForKey:@"name"];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];

@@ -28,19 +28,20 @@
 {
     self.selection = [NSString stringWithString:[[[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]] objectForKey:@"selectedKey2"]];
     self.elements = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"elements" ofType:@"plist"]];
-    NSString *desc;
+    NSString *descrip;
     NSString *abrev;
     
     for (NSDictionary *element in self.elements)
     {
         if ([selection isEqualToString:[element objectForKey:@"name"]]) {
-            desc = [element objectForKey:@"desc"];
+            descrip = [element objectForKey:@"desc"];
             abrev = [element objectForKey:@"abv"];
             break;
         }
     }
     
-    
+    abv.text = abrev;
+    desc.text = descrip;
     navBar.title = selection;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
