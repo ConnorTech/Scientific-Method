@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController{
+    NSMutableDictionary *sections;
+    NSMutableDictionary *sections2;
+    NSMutableArray *elements;
+    NSString *selection;
+}
+
+@property (nonatomic,retain) NSMutableDictionary *sections;
+@property (nonatomic,retain) NSMutableDictionary *sectionsSearch;
+@property (nonatomic,retain) NSMutableArray *elements;
+@property (nonatomic,retain) NSString *selection;
+@property (nonatomic,retain) IBOutlet UINavigationBar* navBar;
+@property (nonatomic,retain) IBOutlet UITableView *tableView;
+@property (strong,nonatomic) NSMutableArray *filteredArray;
+@property IBOutlet UISearchBar *searchBar;
 
 @end

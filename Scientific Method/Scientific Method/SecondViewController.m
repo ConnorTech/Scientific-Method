@@ -13,6 +13,7 @@
 @end
 
 @implementation SecondViewController
+@synthesize elements,sections,searchBar,sectionsSearch,selection,navBar,tableView,filteredArray;
 
 - (void)viewDidLoad
 {

@@ -7,7 +7,7 @@
 //
 
 #import "GlossaryViewController.h"
-#import "Terms.h"
+//#import "Terms.h"
 
 @interface GlossaryViewController (){
 }
@@ -15,7 +15,7 @@
 @end
 
 @implementation GlossaryViewController
-@synthesize terms,sections,glossary,searchBar,selection,filteredArray,termsArray,termsConversion,first,sections2;
+@synthesize terms,sections,glossary,searchBar,selection,filteredArray,termsArray,termsConversion,sectionsSearch;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,7 +42,7 @@
 {
     self.terms = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"terms" ofType:@"plist"]];
     self.sections = [[NSMutableDictionary alloc] init];
-    self.sections2 = [[NSMutableDictionary alloc] init];
+    self.sectionsSearch = [[NSMutableDictionary alloc] init];
     
     BOOL found;
     
@@ -103,7 +103,7 @@
     if (tableView != self.searchDisplayController.searchResultsTableView) {
         return [[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
     }else{
-        return [[[self.sections2 allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
+        return [[[self.sectionsSearch allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
     }
     
     //(@"5");
@@ -127,7 +127,7 @@
     if (tableView != self.searchDisplayController.searchResultsTableView){
         return [[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     }else{
-        return [[self.sections2 allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        return [[self.sectionsSearch allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     }
     //(@"9");
 }
@@ -150,11 +150,8 @@
     }
     // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
 
-    Terms *termName = nil;
     if (tableView == self.searchDisplayController.searchResultsTableView) {
-        termName = [filteredArray objectAtIndex:indexPath.row];
     } else {
-        termName = [termsArray objectAtIndex:indexPath.row];
         cell.detailTextLabel.text = [term objectForKey:@"def"];
     }
     cell.textLabel.text = [term objectForKey:@"term"];

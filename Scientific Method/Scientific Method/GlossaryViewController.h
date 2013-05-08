@@ -17,7 +17,7 @@
 }
 
 @property (nonatomic,retain) NSMutableDictionary *sections;
-@property (nonatomic,retain) NSMutableDictionary *sections2;
+@property (nonatomic,retain) NSMutableDictionary *sectionsSearch;
 @property (nonatomic,retain) NSMutableArray *terms;
 @property (nonatomic,retain) NSString *selection;
 @property (nonatomic,retain) IBOutlet UINavigationBar* navBar;
@@ -26,6 +26,5 @@
 @property IBOutlet UISearchBar *searchBar;
 @property (strong,nonatomic) NSArray *termsArray;
 @property (nonatomic,retain) NSMutableArray *termsConversion;
-@property (nonatomic,retain) NSMutableDictionary *first;
 
 @end
