@@ -34,11 +34,11 @@
     self.sectionsSearch = [[NSMutableDictionary alloc] init];
     
     BOOL found;
-    NSLog(@"%@", elements);
+    //(@"%@", elements);
     
     self.elementsConversion = [NSMutableArray array];
     for (NSDictionary *element in self.elements) {
-        NSLog(@"%@", element);
+        //(@"%@", element);
         [elementsConversion addObject:[element objectForKey:@"name"]];
     }
     
@@ -70,14 +70,14 @@
     self.elementsArray = [NSArray arrayWithArray:elementsConversion];
     [self.elementsTableView reloadData];
     self.filteredArray = [NSMutableArray array];
-    NSLog(@"1");
+    //(@"1");
     [super viewDidLoad];
 	// Do any additional setup after loading the view
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSLog(@"2");
+    //(@"2");
     if (tableView != self.searchDisplayController.searchResultsTableView){
         return [[self.sections allKeys] count];
     }else if (filteredArray != nil){
@@ -85,47 +85,47 @@
     }else{
         return [[self.sections allKeys] count];
     }
-    NSLog(@"3");
+    //(@"3");
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    NSLog(@"4");
+    //(@"4");
     if (tableView != self.searchDisplayController.searchResultsTableView) {
         return [[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
     }else{
         return @"Results";
     }
     
-    NSLog(@"5");
+    //(@"5");
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Check to see whether the normal table or search results table is being displayed and return the count from the appropriate array
     // Check to see whether the normal table or search results table is being displayed and return the count from the appropriate array
-    NSLog(@"6");
+    //(@"6");
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [filteredArray count];
     } else {
         return [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section]] count];
     }
-    NSLog(@"7");
+    //(@"7");
 }
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    NSLog(@"8");
+    //(@"8");
     if (tableView != self.searchDisplayController.searchResultsTableView){
         return [[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     }else{
         return [[self.sectionsSearch allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     }
-    NSLog(@"9");
+    //(@"9");
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"10");
+    //(@"10");
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -140,41 +140,41 @@
         element = [NSDictionary dictionaryWithObject:new forKey:@"name"];
     }
     // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
-    NSLog(@"1 - %@", element);
+    //(@"1 - %@", element);
     if (tableView == self.searchDisplayController.searchResultsTableView) {
     } else {
         cell.detailTextLabel.text = [element objectForKey:@"abv"];
     }
     cell.textLabel.text = [element objectForKey:@"name"];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-    NSLog(@"11");
+    //(@"11");
     return cell;
 }
 
 - (void)didReceiveMemoryWarning
 {
-    NSLog(@"12");
+    //(@"12");
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    NSLog(@"13");
+    //(@"13");
 }
 
 
 #pragma mark Content Filtering
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
-    NSLog(@"14");
+    //(@"14");
     // Update the filtered array based on the search text and scope.
     // Remove all objects from the filtered search array
     [self.filteredArray removeAllObjects];
     // Filter the array using NSPredicate
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@",searchText];
     filteredArray = [NSMutableArray arrayWithArray:[elementsArray filteredArrayUsingPredicate:predicate]];
-    NSLog(@"15");
+    //(@"15");
 }
 
 #pragma mark - UISearchDisplayController Delegate Methods
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
-    NSLog(@"16");
+    //(@"16");
     // Tells the table data source to reload when text changes
     [self filterContentForSearchText:searchString scope:
      [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
@@ -185,12 +185,12 @@
 }
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
-    NSLog(@"18");
+    //(@"18");
     // Tells the table data source to reload when scope bar selection changes
     [self filterContentForSearchText:self.searchDisplayController.searchBar.text scope:
      [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
     // Return YES to cause the search result table view to be reloaded.
-    NSLog(@"19");
+    //(@"19");
     return YES;
 }
 
