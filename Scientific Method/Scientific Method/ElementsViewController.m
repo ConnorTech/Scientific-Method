@@ -13,7 +13,11 @@
 @end
 
 @implementation ElementsViewController
-@synthesize elements,sections,searchBar,sectionsSearch,selection,navBar,elementsTableView,filteredArray,elementsArray,elementsConversion;
+@synthesize elements,sections,searchBar,sectionsSearch,selection,navBar,elementsTableView,filteredArray,elementsArray,choice,elementsConversion;
+
+-(IBAction)chooseSort:(id)sender{
+    [self performSegueWithIdentifier:@"Sort" sender:self];
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -37,36 +41,64 @@
     //(@"%@", elements);
     
     self.elementsConversion = [NSMutableArray array];
-    for (NSDictionary *element in self.elements) {
-        //(@"%@", element);
-        [elementsConversion addObject:[element objectForKey:@"name"]];
-    }
     
-    for (NSDictionary *element in self.elements) {
-        NSString *c = [[element objectForKey:@"name"] substringToIndex:1];
-        
-        found = NO;
-        
-        for (NSString *str in [self.sections allKeys]) {
-            if ([str isEqualToString:c]) {
-                found = YES;
+    [self.sections removeAllObjects];
+    
+    if (choice.selectedSegmentIndex == 0) {
+        for (NSDictionary *element in self.elements) {
+            int c = [[element objectForKey:@"atomicNumber"] intValue];
+            
+            found = NO;
+            
+            for (NSString *str in [self.sections allKeys]) {
+                int new = [str intValue];
+                if (new == c) {
+                    found = YES;
+                }
+            }
+            if (!found) {
+                [self.sections setValue:[[NSMutableArray alloc] init] forKey:[NSString stringWithFormat:@"%d", c]];
             }
         }
-        if (!found) {
-            [self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
+        
+        // Loop again and sort the elements into their respective keys
+        for (NSDictionary *element in self.elements)
+        {
+            [[self.sections objectForKey:[[element objectForKey:@"atomicNumber"] substringToIndex:1]] addObject:element];
+        }
+        // Sort each section array
+        for (NSString *key in [self.sections allKeys])
+        {
+            [[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"atomicNumber" ascending:YES]]];
+        }
+    }else{
+        for (NSDictionary *element in self.elements) {
+            NSString *c = [[element objectForKey:@"name"] substringToIndex:1];
+            
+            found = NO;
+            
+            for (NSString *str in [self.sections allKeys]) {
+                if ([str isEqualToString:c]) {
+                    found = YES;
+                }
+            }
+            if (!found) {
+                [self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
+            }
+        }
+        
+        // Loop again and sort the elements into their respective keys
+        for (NSDictionary *element in self.elements)
+        {
+            [[self.sections objectForKey:[[element objectForKey:@"name"] substringToIndex:1]] addObject:element];
+        }
+        // Sort each section array
+        for (NSString *key in [self.sections allKeys])
+        {
+            [[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
         }
     }
     
-    // Loop again and sort the elements into their respective keys
-    for (NSDictionary *element in self.elements)
-    {
-        [[self.sections objectForKey:[[element objectForKey:@"name"] substringToIndex:1]] addObject:element];
-    }
-    // Sort each section array
-    for (NSString *key in [self.sections allKeys])
-    {
-        [[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
-    }
     self.elementsArray = [NSArray arrayWithArray:elementsConversion];
     [self.elementsTableView reloadData];
     self.filteredArray = [NSMutableArray array];
@@ -143,7 +175,7 @@
     //(@"1 - %@", element);
     if (tableView == self.searchDisplayController.searchResultsTableView) {
     } else {
-        cell.detailTextLabel.text = [element objectForKey:@"abv"];
+        cell.detailTextLabel.text = [element objectForKey:@"atomicNumber"];
     }
     cell.textLabel.text = [element objectForKey:@"name"];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
@@ -163,10 +195,16 @@
 #pragma mark Content Filtering
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
     //(@"14");
+    /*
+    if () {
+        <#statements#>
+    }
+     */
     // Update the filtered array based on the search text and scope.
     // Remove all objects from the filtered search array
     [self.filteredArray removeAllObjects];
     // Filter the array using NSPredicate
+    NSLog(@"%@",elements);
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@",searchText];
     filteredArray = [NSMutableArray arrayWithArray:[elementsArray filteredArrayUsingPredicate:predicate]];
     //(@"15");

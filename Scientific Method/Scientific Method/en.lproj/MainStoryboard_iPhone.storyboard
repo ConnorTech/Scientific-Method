@@ -217,6 +217,10 @@
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Element Name</string>
+                                <string>Atomic Number</string>
+                            </scopeButtonTitles>
                             <connections>
                                 <outlet property="delegate" destination="3" id="OCz-jW-E4c"/>
                             </connections>
@@ -234,8 +238,20 @@
                         </prototypes>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Elements" id="6"/>
-                    <navigationItem key="navigationItem" title="Elements" id="lcM-MM-oq6"/>
+                    <navigationItem key="navigationItem" title="Elements" id="lcM-MM-oq6">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xZT-aX-RHK">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="1Ry-3k-wnN">
+                                <rect key="frame" x="220" y="6" width="95" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="#"/>
+                                    <segment title="Name"/>
+                                </segments>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="choice" destination="1Ry-3k-wnN" id="Yoe-zP-V30"/>
                         <outlet property="searchDisplayController" destination="NAA-kT-SLs" id="zwP-yC-WWb"/>
                         <segue destination="Oc6-4J-ZaK" kind="push" identifier="Go2" id="N0Q-j2-4qu"/>
                     </connections>
@@ -251,7 +267,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1215" y="471"/>
+            <point key="canvasLocation" x="1171" y="483"/>
         </scene>
         <!--Elements Detail View Controller-->
         <scene sceneID="GtU-AC-Yt5">
@@ -410,6 +426,8 @@
         <class className="ElementsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ElementsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="chooseSort:"/>
+                <relationship kind="outlet" name="choice" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="elementsTableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
