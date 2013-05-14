@@ -27,7 +27,7 @@
 		B3609BB817312481003A9744 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BB717312481003A9744 /* Default-568h@2x.png */; };
 		B3609BBB17312481003A9744 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3609BB917312481003A9744 /* MainStoryboard_iPhone.storyboard */; };
 		B3609BBE17312481003A9744 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3609BBC17312481003A9744 /* MainStoryboard_iPad.storyboard */; };
-		B3609BC117312481003A9744 /* FirstviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BC017312481003A9744 /* FirstviewViewController.m */; };
+		B3609BC117312481003A9744 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BC017312481003A9744 /* FirstViewController.m */; };
 		B3609BC317312481003A9744 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BC217312481003A9744 /* first.png */; };
 		B3609BC517312481003A9744 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3609BC417312481003A9744 /* first@2x.png */; };
 		B3609BC817312481003A9744 /* ElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BC717312481003A9744 /* ElementsViewController.m */; };
@@ -40,7 +40,6 @@
 		B3609BE117312481003A9744 /* Scientific_MethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3609BE017312481003A9744 /* Scientific_MethodTests.m */; };
 		B366A60817314C7D003CF7B5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B366A60717314C7D003CF7B5 /* Icon@2x.png */; };
 		B366A60A17314D6E003CF7B5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B366A60917314D6E003CF7B5 /* Icon.png */; };
-		B3CB9799173B1804000F8468 /* background_big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CB9798173B1804000F8468 /* background_big.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +82,7 @@
 		B3609BBA17312481003A9744 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B3609BBD17312481003A9744 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B3609BBF17312481003A9744 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B3609BC017312481003A9744 /* FirstviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstviewViewController.m; sourceTree = "<group>"; };
+		B3609BC017312481003A9744 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B3609BC217312481003A9744 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		B3609BC417312481003A9744 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		B3609BC617312481003A9744 /* ElementsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementsViewController.h; sourceTree = "<group>"; };
@@ -98,7 +97,6 @@
 		B3609BE017312481003A9744 /* Scientific_MethodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scientific_MethodTests.m; sourceTree = "<group>"; };
 		B366A60717314C7D003CF7B5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B366A60917314D6E003CF7B5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		B3CB9798173B1804000F8468 /* background_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_big.png; path = "../../../../../ownCloud/Lordtechy Productions/Apps/stop watch/2.0/background_big.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +152,6 @@
 			children = (
 				B366A60917314D6E003CF7B5 /* Icon.png */,
 				B366A60717314C7D003CF7B5 /* Icon@2x.png */,
-				B3CB9798173B1804000F8468 /* background_big.png */,
 				B3609BA717312481003A9744 /* Scientific Method */,
 				B3609BD917312481003A9744 /* Scientific MethodTests */,
 				B3609BA017312481003A9744 /* Frameworks */,
@@ -196,7 +193,7 @@
 				52C1589B173B1388008CA7BD /* Rectangle copy.png */,
 				52EE2C1417314B9400E6EF41 /* ModelsViewController.m */,
 				B3609BBF17312481003A9744 /* FirstViewController.h */,
-				B3609BC017312481003A9744 /* FirstviewViewController.m */,
+				B3609BC017312481003A9744 /* FirstViewController.m */,
 				B3609BC217312481003A9744 /* first.png */,
 				B3609BC417312481003A9744 /* first@2x.png */,
 				52C15893173AA1DC008CA7BD /* Elements */,
@@ -328,7 +325,6 @@
 				52C15892173AA1D3008CA7BD /* elements.plist in Resources */,
 				52C1589A173B11BB008CA7BD /* Rectangle.jpg in Resources */,
 				52C1589C173B1388008CA7BD /* Rectangle copy.png in Resources */,
-				B3CB9799173B1804000F8468 /* background_big.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +361,7 @@
 			files = (
 				B3609BAE17312481003A9744 /* main.m in Sources */,
 				B3609BB217312481003A9744 /* AppDelegate.m in Sources */,
-				B3609BC117312481003A9744 /* FirstviewViewController.m in Sources */,
+				B3609BC117312481003A9744 /* FirstViewController.m in Sources */,
 				B3609BC817312481003A9744 /* ElementsViewController.m in Sources */,
 				52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */,
 				52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */,
