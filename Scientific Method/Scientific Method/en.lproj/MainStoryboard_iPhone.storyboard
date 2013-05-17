@@ -60,7 +60,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="8P9-zN-VlH" detailTextLabel="Jsi-af-Guw" rowHeight="74" style="IBUITableViewCellStyleSubtitle" id="7Gp-kv-RsG">
+                            <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="8P9-zN-VlH" detailTextLabel="Jsi-af-Guw" rowHeight="74" style="IBUITableViewCellStyleSubtitle" id="7Gp-kv-RsG">
                                 <rect key="frame" x="0.0" y="66" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
