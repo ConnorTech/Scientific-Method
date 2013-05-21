@@ -10,7 +10,7 @@
 		<key>atomicMass</key>
 		<string>28.086</string>
 		<key>atomicNumber</key>
-		<string>14</string>
+		<integer>14</integer>
 		<key>desc</key>
 		<string>An element that is good for microchips. it is a semiconductor.</string>
 	</dict>
@@ -24,7 +24,7 @@
 		<key>atomicMass</key>
 		<string></string>
 		<key>atomicNumber</key>
-		<string></string>
+		<integer>1</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -36,7 +36,7 @@
 		<key>atomicMass</key>
 		<string>4.0026</string>
 		<key>atomicNumber</key>
-		<string>2</string>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -48,7 +48,7 @@
 		<key>atomicMass</key>
 		<string>6.941</string>
 		<key>atomicNumber</key>
-		<string>3</string>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -60,7 +60,7 @@
 		<key>atomicMass</key>
 		<string>9.0122</string>
 		<key>atomicNumber</key>
-		<string>4</string>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -72,7 +72,7 @@
 		<key>atomicMass</key>
 		<string>10.811</string>
 		<key>atomicNumber</key>
-		<string>5</string>
+		<integer>5</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -84,7 +84,7 @@
 		<key>atomicMass</key>
 		<string>12.011</string>
 		<key>atomicNumber</key>
-		<string>6</string>
+		<integer>6</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -96,7 +96,7 @@
 		<key>atomicMass</key>
 		<string>14.007</string>
 		<key>atomicNumber</key>
-		<string>7</string>
+		<integer>7</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -108,7 +108,7 @@
 		<key>atomicMass</key>
 		<string>15.999</string>
 		<key>atomicNumber</key>
-		<string>8</string>
+		<integer>8</integer>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -120,7 +120,7 @@
 		<key>atomicMass</key>
 		<string>18.998</string>
 		<key>atomicNumber</key>
-		<string>9</string>
+		<integer>9</integer>
 	</dict>
 </array>
 </plist>
