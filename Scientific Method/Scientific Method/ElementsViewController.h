@@ -25,7 +25,6 @@
 @property IBOutlet UISearchBar *searchBar;
 @property (strong,nonatomic) NSArray *elementsArray;
 @property (nonatomic,retain) NSMutableArray *elementsConversion;
--(IBAction)chooseSort:(id)sender;
 @property (nonatomic,retain) IBOutlet UISegmentedControl *choice;
 
 
