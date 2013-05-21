@@ -61,13 +61,8 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-<<<<<<< HEAD
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="8P9-zN-VlH" detailTextLabel="Jsi-af-Guw" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="7Gp-kv-RsG">
                                 <rect key="frame" x="0.0" y="66" width="320" height="64"/>
-=======
-                            <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="8P9-zN-VlH" detailTextLabel="Jsi-af-Guw" rowHeight="74" style="IBUITableViewCellStyleSubtitle" id="7Gp-kv-RsG">
-                                <rect key="frame" x="0.0" y="66" width="320" height="74"/>
->>>>>>> 5decf59bf6a322178e98d5d0309b177bee35a5d2
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="63"/>
