@@ -15,10 +15,6 @@
 @implementation ElementsViewController
 @synthesize elements,sections,searchBar,sectionsSearch,selection,navBar,elementsTableView,filteredArray,elementsArray,choice,elementsConversion;
 
--(IBAction)chooseSort:(id)sender{
-    [self performSegueWithIdentifier:@"Sort" sender:self];
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
@@ -29,6 +25,10 @@
     [plistDict setValue:selection forKey:@"selectedKey2"];
     [plistDict writeToFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"] atomically: YES];
     [self performSegueWithIdentifier:@"Go2" sender:self];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [self viewDidLoad];
 }
 
 - (void)viewDidLoad
@@ -44,66 +44,12 @@
     
     [self.sections removeAllObjects];
     
-    if (choice.selectedSegmentIndex == 0) {
-        for (NSDictionary *element in self.elements) {
-            int c = [[element objectForKey:@"atomicNumber"] intValue];
-            
-            found = NO;
-            
-            for (NSString *str in [self.sections allKeys]) {
-                int new = [str intValue];
-                if (new == c) {
-                    found = YES;
-                }
-            }
-            if (!found) {
-                [self.sections setValue:[[NSMutableArray alloc] init] forKey:[NSString stringWithFormat:@"%d", c]];
-            }
-        }
-        
-        // Loop again and sort the elements into their respective keys
-        for (NSDictionary *element in self.elements)
-        {
-            [[self.sections objectForKey:[[element objectForKey:@"atomicNumber"] substringToIndex:1]] addObject:element];
-        }
-        // Sort each section array
-        for (NSString *key in [self.sections allKeys])
-        {
-            [[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"atomicNumber" ascending:YES]]];
-        }
-    }else{
-        for (NSDictionary *element in self.elements) {
-            NSString *c = [[element objectForKey:@"name"] substringToIndex:1];
-            
-            found = NO;
-            
-            for (NSString *str in [self.sections allKeys]) {
-                if ([str isEqualToString:c]) {
-                    found = YES;
-                }
-            }
-            if (!found) {
-                [self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
-            }
-        }
-        
-        // Loop again and sort the elements into their respective keys
-        for (NSDictionary *element in self.elements)
-        {
-            [[self.sections objectForKey:[[element objectForKey:@"name"] substringToIndex:1]] addObject:element];
-        }
-        // Sort each section array
-        for (NSString *key in [self.sections allKeys])
-        {
-            [[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
-        }
-    }
-    
     self.elementsArray = [NSArray arrayWithArray:elementsConversion];
     [self.elementsTableView reloadData];
     self.filteredArray = [NSMutableArray array];
     //(@"1");
     [super viewDidLoad];
+
 	// Do any additional setup after loading the view
 }
 
@@ -196,9 +142,9 @@
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
     //(@"14");
     /*
-    if () {
-        <#statements#>
-    }
+     if () {
+     <#statements#>
+     }
      */
     // Update the filtered array based on the search text and scope.
     // Remove all objects from the filtered search array
@@ -217,7 +163,6 @@
     [self filterContentForSearchText:searchString scope:
      [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
     // Return YES to cause the search result table view to be reloaded.
-    [sections2 setValue:@"Results" forKey:@"Results"];
     
     return YES;
 }
