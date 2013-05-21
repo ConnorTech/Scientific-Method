@@ -37,12 +37,19 @@
     self.sections = [[NSMutableDictionary alloc] init];
     self.sectionsSearch = [[NSMutableDictionary alloc] init];
     
-    BOOL found;
-    //(@"%@", elements);
-    
     self.elementsConversion = [NSMutableArray array];
     
     [self.sections removeAllObjects];
+    
+    for (NSDictionary *element in self.elements)
+    {
+        [[self.sections objectForKey:[element objectForKey:@"atomicNumber"]] addObject:element];
+    }
+    // Sort each section array
+    for (NSString *key in [self.sections allKeys])
+    {
+        [[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"atomicNumber" ascending:YES]]];
+    }
     
     self.elementsArray = [NSArray arrayWithArray:elementsConversion];
     [self.elementsTableView reloadData];
@@ -115,7 +122,7 @@
     }else{
         NSString *new;
         new = [filteredArray objectAtIndex:indexPath.row];
-        element = [NSDictionary dictionaryWithObject:new forKey:@"name"];
+        element = [NSDictionary dictionaryWithObject:new forKey:@"atomicNumber"];
     }
     // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
     //(@"1 - %@", element);
@@ -123,7 +130,7 @@
     } else {
         cell.detailTextLabel.text = [element objectForKey:@"atomicNumber"];
     }
-    cell.textLabel.text = [element objectForKey:@"name"];
+    cell.textLabel.text = [element objectForKey:@"atomicNumber"];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     //(@"11");
     return cell;
