@@ -239,20 +239,8 @@
                         </prototypes>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Elements" id="6"/>
-                    <navigationItem key="navigationItem" title="Elements" id="lcM-MM-oq6">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="xZT-aX-RHK">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" id="1Ry-3k-wnN">
-                                <rect key="frame" x="220" y="6" width="95" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="#"/>
-                                    <segment title="Name"/>
-                                </segments>
-                            </segmentedControl>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Elements" id="lcM-MM-oq6"/>
                     <connections>
-                        <outlet property="choice" destination="1Ry-3k-wnN" id="rr5-xw-jf2"/>
                         <outlet property="elementsTableView" destination="LeT-wC-m9c" id="0GD-p6-qj7"/>
                         <outlet property="searchBar" destination="FyW-6g-whk" id="LbJ-xf-Cfu"/>
                         <outlet property="searchDisplayController" destination="NAA-kT-SLs" id="zwP-yC-WWb"/>

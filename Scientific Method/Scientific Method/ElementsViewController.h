@@ -15,17 +15,15 @@
     NSString *selection;
 }
 
-@property (nonatomic,retain) NSMutableDictionary *sections;
 @property (nonatomic,retain) NSMutableDictionary *sectionsSearch;
 @property (nonatomic,retain) NSMutableArray *elements;
-@property (nonatomic,retain) NSString *selection;
 @property (nonatomic,retain) IBOutlet UINavigationBar* navBar;
 @property (nonatomic,retain) IBOutlet UITableView *elementsTableView;
 @property (strong,nonatomic) NSMutableArray *filteredArray;
 @property IBOutlet UISearchBar *searchBar;
 @property (strong,nonatomic) NSArray *elementsArray;
 @property (nonatomic,retain) NSMutableArray *elementsConversion;
-@property (nonatomic,retain) IBOutlet UISegmentedControl *choice;
+@property(strong,nonatomic) NSMutableArray *sortedArray;
 
 
 
