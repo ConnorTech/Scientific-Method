@@ -42,7 +42,7 @@
     [self.sections removeAllObjects];
     
 <<<<<<< HEAD
-    for (NSDictionary *element in self.elements)
+    for (NSDictionary *element in self.elemednts)
     {
         [[self.sections objectForKey:[element objectForKey:@"atomicNumber"]] addObject:element];
     }
