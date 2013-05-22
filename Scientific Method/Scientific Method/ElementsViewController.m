@@ -118,7 +118,7 @@
     }
     NSDictionary *element;
     if (tableView != self.searchDisplayController.searchResultsTableView) {
-        element = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
+        element = [elements]
     }else{
         NSString *new;
         new = [filteredArray objectAtIndex:indexPath.row];
