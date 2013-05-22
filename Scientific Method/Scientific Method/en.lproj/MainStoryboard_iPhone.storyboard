@@ -41,7 +41,7 @@
         <scene sceneID="1eL-Ij-dCf">
             <objects>
                 <tableViewController id="DHo-kK-nVZ" customClass="GlossaryViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" id="T4h-Ph-aDK">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="74" sectionHeaderHeight="22" sectionFooterHeight="22" id="T4h-Ph-aDK">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,11 +61,11 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="8P9-zN-VlH" detailTextLabel="Jsi-af-Guw" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="7Gp-kv-RsG">
-                                <rect key="frame" x="0.0" y="66" width="320" height="64"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="8P9-zN-VlH" detailTextLabel="Jsi-af-Guw" rowHeight="74" style="IBUITableViewCellStyleSubtitle" id="7Gp-kv-RsG">
+                                <rect key="frame" x="0.0" y="66" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="63"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="73"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-zN-VlH">
@@ -239,8 +239,20 @@
                         </prototypes>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Elements" id="6"/>
-                    <navigationItem key="navigationItem" title="Elements" id="lcM-MM-oq6"/>
+                    <navigationItem key="navigationItem" title="Elements" id="lcM-MM-oq6">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xZT-aX-RHK">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" id="1Ry-3k-wnN">
+                                <rect key="frame" x="220" y="6" width="95" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="#"/>
+                                    <segment title="Name"/>
+                                </segments>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="choice" destination="1Ry-3k-wnN" id="rr5-xw-jf2"/>
                         <outlet property="elementsTableView" destination="LeT-wC-m9c" id="0GD-p6-qj7"/>
                         <outlet property="searchBar" destination="FyW-6g-whk" id="LbJ-xf-Cfu"/>
                         <outlet property="searchDisplayController" destination="NAA-kT-SLs" id="zwP-yC-WWb"/>
@@ -417,6 +429,7 @@
         <class className="ElementsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ElementsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="chooseSort:"/>
                 <relationship kind="outlet" name="choice" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="elementsTableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
