@@ -41,37 +41,15 @@
     
     [self.sortedArray removeAllObjects];
     
-    BOOL found;
+    NSMutableArray *new = [[NSMutableArray alloc] init];
     
-    for (NSDictionary *element in self.elements)
-    {
-        [self.sortedArray addObject:element];
-    }
     for (NSDictionary *element in self.elements) {
-        NSString *c = [[element objectForKey:@"name"] substringToIndex:1];
-        
-        found = NO;
-        
-        for (NSString *str in [self.sections allKeys]) {
-            if ([str isEqualToString:c]) {
-                found = YES;
-            }
-        }
-        if (!found) {
-            [self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
-        }
+        //[self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
+        [new addObject:element];
     }
     
-    // Loop again and sort the elements into their respective keys
-    for (NSDictionary *element in self.elements)
-    {
-        [[self.sections objectForKey:[[element objectForKey:@"name"] substringToIndex:1]] addObject:element];
-    }
-    // Sort each section array
-    for (NSString *key in [self.sections allKeys])
-    {
-        [[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
-    }
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"atomicNumber" ascending:YES];
+    self.sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]]];
     
     self.elementsArray = [NSArray arrayWithArray:elementsConversion];
     [self.elementsTableView reloadData];
@@ -84,13 +62,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     //(@"2");
-    if (tableView != self.searchDisplayController.searchResultsTableView){
-        return [[self.sections allKeys] count];
-    }else if (filteredArray != nil){
-        return 1;
-    }else{
-        return [[self.sections allKeys] count];
-    }
+    return 1;
     //(@"3");
 }
 
@@ -98,7 +70,7 @@
 {
     //(@"4");
     if (tableView != self.searchDisplayController.searchResultsTableView) {
-        return [[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
+        return NULL;
     }else{
         return @"Results";
     }
@@ -114,7 +86,7 @@
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [filteredArray count];
     } else {
-        return [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section]] count];
+        return [sortedArray count];
     }
     //(@"7");
 }
@@ -122,7 +94,7 @@
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     //(@"8");
     if (tableView != self.searchDisplayController.searchResultsTableView){
-        return [[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        return NULL;
     }else{
         return [[self.sectionsSearch allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     }
@@ -139,19 +111,17 @@
     }
     NSDictionary *element;
     if (tableView != self.searchDisplayController.searchResultsTableView) {
-        element = [elements objectAtIndex:indexPath];
+        element = [sortedArray objectAtIndex:indexPath.row];
     }else{
-        NSString *new;
-        new = [filteredArray objectAtIndex:indexPath.row];
-        element = [NSDictionary dictionaryWithObject:new forKey:@"atomicNumber"];
+        element = [filteredArray objectAtIndex:indexPath.row];
     }
     // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
     //(@"1 - %@", element);
     if (tableView == self.searchDisplayController.searchResultsTableView) {
     } else {
-        cell.detailTextLabel.text = [element objectForKey:@"atomicNumber"];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [element objectForKey:@"atomicNumber"]];
     }
-    cell.textLabel.text = [element objectForKey:@"atomicNumber"];
+    cell.textLabel.text = [element objectForKey:@"name"];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     //(@"11");
     return cell;
