@@ -19,5 +19,7 @@
 @property (nonatomic,retain) IBOutlet UILabel *elementsLabel;
 @property (nonatomic,retain) IBOutlet UITextView *desc;
 @property (nonatomic,retain) IBOutlet UILabel *abv;
+@property (nonatomic,retain) IBOutlet UILabel *atomicNum;
+@property (nonatomic,retain) IBOutlet UILabel *atomicMass;
 
 @end
