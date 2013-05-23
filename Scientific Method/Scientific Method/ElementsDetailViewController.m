@@ -13,7 +13,7 @@
 @end
 
 @implementation ElementsDetailViewController
-@synthesize selection,elements,elementsLabel,desc,navBar,abv;
+@synthesize selection,elements,elementsLabel,desc,navBar,abv,atomicNum;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,6 +36,8 @@
         if ([selection isEqualToString:[element objectForKey:@"name"]]) {
             descrip = [element objectForKey:@"desc"];
             abrev = [element objectForKey:@"abv"];
+            atomicNum.text = [NSString stringWithFormat:@"%@",[element objectForKey:@"atomicNumber"]];
+            self.atomicMass.text = [NSString stringWithFormat:@"%@", [element objectForKey:@"atomicMass"]];
             break;
         }
     }

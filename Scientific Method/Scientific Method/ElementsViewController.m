@@ -13,7 +13,11 @@
 @end
 
 @implementation ElementsViewController
-@synthesize elements,sections,searchBar,sectionsSearch,selection,navBar,elementsTableView,filteredArray,elementsArray,choice,elementsConversion;
+@synthesize elements,searchBar,sectionsSearch,navBar,elementsTableView,filteredArray,elementsArray,elementsConversion,sortedArray;
+
+-(IBAction)chooseSort:(id)sender{
+    [self performSegueWithIdentifier:@"Sort" sender:self];
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -27,49 +31,38 @@
     [self performSegueWithIdentifier:@"Go2" sender:self];
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    [self viewDidLoad];
-}
-
 - (void)viewDidLoad
 {
     self.elements = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"elements" ofType:@"plist"]];
-    self.sections = [[NSMutableDictionary alloc] init];
+    self.sortedArray = [[NSMutableArray alloc] init];
     self.sectionsSearch = [[NSMutableDictionary alloc] init];
     
     self.elementsConversion = [NSMutableArray array];
     
-    [self.sections removeAllObjects];
+    [self.sortedArray removeAllObjects];
     
-    for (NSDictionary *element in self.elements)
-    {
-        [[self.sections objectForKey:[element objectForKey:@"atomicNumber"]] addObject:element];
+    NSMutableArray *new = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *element in self.elements) {
+        //[self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
+        [new addObject:element];
     }
-    // Sort each section array
-    for (NSString *key in [self.sections allKeys])
-    {
-        [[self.sections objectForKey:key] sortUsingDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"atomicNumber" ascending:YES]]];
-    }
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"atomicNumber" ascending:YES];
+    self.sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]]];
     
     self.elementsArray = [NSArray arrayWithArray:elementsConversion];
     [self.elementsTableView reloadData];
     self.filteredArray = [NSMutableArray array];
     //(@"1");
     [super viewDidLoad];
-
-	// Do any additional setup after loading the view
+    // Do any additional setup after loading the view
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     //(@"2");
-    if (tableView != self.searchDisplayController.searchResultsTableView){
-        return [[self.sections allKeys] count];
-    }else if (filteredArray != nil){
-        return 1;
-    }else{
-        return [[self.sections allKeys] count];
-    }
+    return 1;
     //(@"3");
 }
 
@@ -77,7 +70,7 @@
 {
     //(@"4");
     if (tableView != self.searchDisplayController.searchResultsTableView) {
-        return [[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
+        return NULL;
     }else{
         return @"Results";
     }
@@ -93,7 +86,7 @@
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [filteredArray count];
     } else {
-        return [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section]] count];
+        return [sortedArray count];
     }
     //(@"7");
 }
@@ -101,7 +94,7 @@
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     //(@"8");
     if (tableView != self.searchDisplayController.searchResultsTableView){
-        return [[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        return NULL;
     }else{
         return [[self.sectionsSearch allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     }
@@ -118,19 +111,17 @@
     }
     NSDictionary *element;
     if (tableView != self.searchDisplayController.searchResultsTableView) {
-        element = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
+        element = [sortedArray objectAtIndex:indexPath.row];
     }else{
-        NSString *new;
-        new = [filteredArray objectAtIndex:indexPath.row];
-        element = [NSDictionary dictionaryWithObject:new forKey:@"atomicNumber"];
+        element = [filteredArray objectAtIndex:indexPath.row];
     }
     // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
     //(@"1 - %@", element);
     if (tableView == self.searchDisplayController.searchResultsTableView) {
     } else {
-        cell.detailTextLabel.text = [element objectForKey:@"atomicNumber"];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [element objectForKey:@"atomicNumber"]];
     }
-    cell.textLabel.text = [element objectForKey:@"atomicNumber"];
+    cell.textLabel.text = [element objectForKey:@"name"];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     //(@"11");
     return cell;
@@ -170,6 +161,7 @@
     [self filterContentForSearchText:searchString scope:
      [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
     // Return YES to cause the search result table view to be reloaded.
+    [sections2 setValue:@"Results" forKey:@"Results"];
     
     return YES;
 }
