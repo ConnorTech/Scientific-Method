@@ -13,7 +13,7 @@
 @end
 
 @implementation ElementsViewController
-@synthesize elements,searchBar,sectionsSearch,navBar,elementsTableView,filteredArray,elementsArray,elementsConversion,sortedArray;
+@synthesize elements,searchBar,sectionsSearch,navBar,elementsTableView,filteredArray,elementsArray,elementsConversion,sortedArray,myTry;
 
 -(IBAction)chooseSort:(id)sender{
     [self performSegueWithIdentifier:@"Sort" sender:self];
@@ -36,10 +36,19 @@
     self.elements = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"elements" ofType:@"plist"]];
     self.sortedArray = [[NSMutableArray alloc] init];
     self.sectionsSearch = [[NSMutableDictionary alloc] init];
+    self.myTry = [NSArray array];
     
     self.elementsConversion = [NSMutableArray array];
+    NSMutableArray *newConverter = [NSMutableArray array];
     
     [self.sortedArray removeAllObjects];
+    
+    for (NSMutableDictionary *element in self.elements) {
+        [elementsConversion addObject:[element objectForKey:@"name"]];
+    }
+    for (NSMutableDictionary *element in self.elements) {
+        [newConverter addObject:[element objectForKey:@"atomicNumber"]];
+    }
     
     NSMutableArray *new = [[NSMutableArray alloc] init];
     
@@ -49,8 +58,11 @@
     }
     
     NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"atomicNumber" ascending:YES];
+    NSSortDescriptor *sort2 = [[NSSortDescriptor alloc] initWithKey:@"" ascending:YES];
     self.sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]]];
     
+    
+    self.myTry = [NSArray arrayWithArray:[newConverter sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort2]]];
     self.elementsArray = [NSArray arrayWithArray:elementsConversion];
     [self.elementsTableView reloadData];
     self.filteredArray = [NSMutableArray array];
@@ -61,9 +73,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    //(@"2");
     return 1;
-    //(@"3");
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -112,16 +122,30 @@
     NSDictionary *element;
     if (tableView != self.searchDisplayController.searchResultsTableView) {
         element = [sortedArray objectAtIndex:indexPath.row];
+    }else if (searchBar.selectedScopeButtonIndex == 0){
+        for (NSDictionary *element in self.elements) {
+            if ([[element objectForKey:@"name"] isEqualToString:[filteredArray objectAtIndex:indexPath.row]]) {
+                cell.textLabel.text = [element objectForKey:@"name"];
+                cell.detailTextLabel.text = [filteredArray objectAtIndex:indexPath.row];
+            }
+        }
     }else{
-        element = [filteredArray objectAtIndex:indexPath.row];
+        for (NSDictionary *element in self.elements) {
+            if ([element objectForKey:@"atomicNumber"]) {
+                //(@"%@", [element objectForKey:@"atomicNumber"]);
+                cell.textLabel.text = [element objectForKey:@"name"];
+                cell.detailTextLabel.text = [filteredArray objectAtIndex:indexPath.row];
+                NSLog(@"------------------ %@", [element objectForKey:@"atomicNumber"]);
+            }
+            NSLog(@"============== %@", [element objectForKey:@"atomicNumber"]);
+        }
     }
     // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
-    //(@"1 - %@", element);
     if (tableView == self.searchDisplayController.searchResultsTableView) {
     } else {
         cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [element objectForKey:@"atomicNumber"]];
+        cell.textLabel.text = [element objectForKey:@"name"];
     }
-    cell.textLabel.text = [element objectForKey:@"name"];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     //(@"11");
     return cell;
@@ -139,18 +163,25 @@
 #pragma mark Content Filtering
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
     //(@"14");
-    /*
-     if () {
-     <#statements#>
-     }
-     */
     // Update the filtered array based on the search text and scope.
     // Remove all objects from the filtered search array
     [self.filteredArray removeAllObjects];
     // Filter the array using NSPredicate
-    NSLog(@"%@",elements);
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@",searchText];
-    filteredArray = [NSMutableArray arrayWithArray:[elementsArray filteredArrayUsingPredicate:predicate]];
+    
+    NSPredicate *predicate;
+    if (searchBar.selectedScopeButtonIndex == 0){
+        predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@",searchText];
+        filteredArray = [NSMutableArray arrayWithArray:[elementsArray filteredArrayUsingPredicate:predicate]];
+    }else{
+        //(@"%@", myTry);
+        for (NSString *b in self.myTry) {
+            NSNumber *try;
+            try = [NSNumber numberWithInt:[b integerValue]];
+            if (try == [NSNumber numberWithInt:[searchText integerValue]]) {
+                [filteredArray addObject:try];
+            }
+        }
+    }
     //(@"15");
 }
 

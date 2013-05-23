@@ -4,18 +4,6 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Silicon</string>
-		<key>abv</key>
-		<string>Si</string>
-		<key>atomicMass</key>
-		<string>28.086</string>
-		<key>atomicNumber</key>
-		<integer>14</integer>
-		<key>desc</key>
-		<string>An element that is good for microchips. it is a semiconductor.</string>
-	</dict>
-	<dict>
-		<key>name</key>
 		<string>Hydrogen</string>
 		<key>abv</key>
 		<string>H</string>
@@ -121,6 +109,18 @@
 		<string>18.998</string>
 		<key>atomicNumber</key>
 		<integer>9</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Silicon</string>
+		<key>abv</key>
+		<string>Si</string>
+		<key>atomicMass</key>
+		<string>28.086</string>
+		<key>atomicNumber</key>
+		<integer>14</integer>
+		<key>desc</key>
+		<string>An element that is good for microchips. it is a semiconductor.</string>
 	</dict>
 </array>
 </plist>

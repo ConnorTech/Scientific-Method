@@ -14,6 +14,8 @@
 		52C15896173B01DC008CA7BD /* ElementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */; };
 		52C1589A173B11BB008CA7BD /* Rectangle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52C15899173B11BB008CA7BD /* Rectangle.jpg */; };
 		52C1589C173B1388008CA7BD /* Rectangle copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C1589B173B1388008CA7BD /* Rectangle copy.png */; };
+		52CDAFC4174E575A00D5C8F3 /* ConceptsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDAFC3174E575A00D5C8F3 /* ConceptsViewController.m */; };
+		52CDAFC8174E62E800D5C8F3 /* ConceptsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDAFC7174E62E800D5C8F3 /* ConceptsDetailViewController.m */; };
 		52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */; };
 		52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1417314B9400E6EF41 /* ModelsViewController.m */; };
 		B3227889174C30EC00C836C3 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B3227888174C30EC00C836C3 /* Background.png */; };
@@ -63,6 +65,10 @@
 		52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsDetailViewController.m; sourceTree = "<group>"; };
 		52C15899173B11BB008CA7BD /* Rectangle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rectangle.jpg; sourceTree = "<group>"; };
 		52C1589B173B1388008CA7BD /* Rectangle copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle copy.png"; sourceTree = "<group>"; };
+		52CDAFC2174E575A00D5C8F3 /* ConceptsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConceptsViewController.h; sourceTree = "<group>"; };
+		52CDAFC3174E575A00D5C8F3 /* ConceptsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConceptsViewController.m; sourceTree = "<group>"; };
+		52CDAFC6174E62E800D5C8F3 /* ConceptsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConceptsDetailViewController.h; sourceTree = "<group>"; };
+		52CDAFC7174E62E800D5C8F3 /* ConceptsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConceptsDetailViewController.m; sourceTree = "<group>"; };
 		52EE2C1017314B7B00E6EF41 /* GlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryViewController.h; sourceTree = "<group>"; };
 		52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewController.m; sourceTree = "<group>"; };
 		52EE2C1317314B9400E6EF41 /* ModelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelsViewController.h; sourceTree = "<group>"; };
@@ -137,6 +143,17 @@
 			name = Elements;
 			sourceTree = "<group>";
 		};
+		52CDAFC5174E62CE00D5C8F3 /* Concepts */ = {
+			isa = PBXGroup;
+			children = (
+				52CDAFC2174E575A00D5C8F3 /* ConceptsViewController.h */,
+				52CDAFC3174E575A00D5C8F3 /* ConceptsViewController.m */,
+				52CDAFC6174E62E800D5C8F3 /* ConceptsDetailViewController.h */,
+				52CDAFC7174E62E800D5C8F3 /* ConceptsDetailViewController.m */,
+			);
+			name = Concepts;
+			sourceTree = "<group>";
+		};
 		52D14152173A8165002C174F /* Glossary */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +202,9 @@
 		B3609BA717312481003A9744 /* Scientific Method */ = {
 			isa = PBXGroup;
 			children = (
+				52C15893173AA1DC008CA7BD /* Elements */,
 				52D14152173A8165002C174F /* Glossary */,
+				52CDAFC5174E62CE00D5C8F3 /* Concepts */,
 				B3609BB017312481003A9744 /* AppDelegate.h */,
 				B3609BB117312481003A9744 /* AppDelegate.m */,
 				B3609BB917312481003A9744 /* MainStoryboard_iPhone.storyboard */,
@@ -199,7 +218,6 @@
 				B3609BC017312481003A9744 /* FirstViewController.m */,
 				B3609BC217312481003A9744 /* first.png */,
 				B3609BC417312481003A9744 /* first@2x.png */,
-				52C15893173AA1DC008CA7BD /* Elements */,
 				B3609BC917312481003A9744 /* second.png */,
 				B3609BCB17312481003A9744 /* second@2x.png */,
 				B3609BA817312481003A9744 /* Supporting Files */,
@@ -371,6 +389,8 @@
 				52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */,
 				528C0AE81734703A00DD5225 /* GlossaryInfoViewController.m in Sources */,
 				52C15896173B01DC008CA7BD /* ElementsDetailViewController.m in Sources */,
+				52CDAFC4174E575A00D5C8F3 /* ConceptsViewController.m in Sources */,
+				52CDAFC8174E62E800D5C8F3 /* ConceptsDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
