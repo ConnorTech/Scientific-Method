@@ -488,13 +488,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background.png" width="16" height="16"/>
-        <image name="Rectangle copy.png" width="16" height="16"/>
-        <image name="first.png" width="16" height="16"/>
-        <image name="second.png" width="16" height="16"/>
+        <image name="Background.png" width="640" height="1136"/>
+        <image name="Rectangle copy.png" width="204" height="204"/>
+        <image name="first.png" width="30" height="30"/>
+        <image name="second.png" width="30" height="30"/>
     </resources>
-<<<<<<< HEAD
-=======
     <classes>
         <class className="ElementsDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ElementsDetailViewController.h"/>
@@ -538,7 +536,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
->>>>>>> parent of 3b9c3e7... Merge branch 'master' of https://github.com/ConnorTech/Scientific-Method
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
