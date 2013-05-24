@@ -126,18 +126,15 @@
         for (NSDictionary *element in self.elements) {
             if ([[element objectForKey:@"name"] isEqualToString:[filteredArray objectAtIndex:indexPath.row]]) {
                 cell.textLabel.text = [element objectForKey:@"name"];
-                cell.detailTextLabel.text = [filteredArray objectAtIndex:indexPath.row];
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",[element objectForKey:@"atomicNumber"]];
             }
         }
     }else{
         for (NSDictionary *element in self.elements) {
-            if ([element objectForKey:@"atomicNumber"]) {
-                //(@"%@", [element objectForKey:@"atomicNumber"]);
+            if ([element objectForKey:@"atomicNumber"] == [filteredArray objectAtIndex:indexPath.row]) {
                 cell.textLabel.text = [element objectForKey:@"name"];
-                cell.detailTextLabel.text = [filteredArray objectAtIndex:indexPath.row];
-                NSLog(@"------------------ %@", [element objectForKey:@"atomicNumber"]);
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",[filteredArray objectAtIndex:indexPath.row]];
             }
-            NSLog(@"============== %@", [element objectForKey:@"atomicNumber"]);
         }
     }
     // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
