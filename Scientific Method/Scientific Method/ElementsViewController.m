@@ -15,10 +15,6 @@
 @implementation ElementsViewController
 @synthesize elements,searchBar,sectionsSearch,navBar,elementsTableView,filteredArray,elementsArray,elementsConversion,sortedArray,myTry;
 
--(IBAction)chooseSort:(id)sender{
-    [self performSegueWithIdentifier:@"Sort" sender:self];
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
@@ -59,10 +55,14 @@
     
     NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"atomicNumber" ascending:YES];
     NSSortDescriptor *sort2 = [[NSSortDescriptor alloc] initWithKey:@"" ascending:YES];
-    self.sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]]];
+    NSLog(@"%@", [NSArray arrayWithObject:sort]);
+    //self.sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]]];
+    self.sortedArray = new;
+    //[sortedArray sortUsingDescriptors:[NSArray arrayWithObject:sort]];
     
+    self.myTry = newConverter;
     
-    self.myTry = [NSArray arrayWithArray:[newConverter sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort2]]];
+    //self.myTry = [NSArray arrayWithArray:[newConverter sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort2]]];
     self.elementsArray = [NSArray arrayWithArray:elementsConversion];
     [self.elementsTableView reloadData];
     self.filteredArray = [NSMutableArray array];

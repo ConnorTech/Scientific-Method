@@ -90,7 +90,7 @@
 		<key>name</key>
 		<string>Oxygen</string>
 		<key>desc</key>
-		<string></string>
+		<string>Oxygen is a Group 16 element. While about one fifth of the atmosphere is oxygen gas, the atmosphere of Mars contains only about 0.15% oxygen. Oxygen is the third most abundant element found in the sun, and it plays a part in the carbon-nitrogen cycle, one process responsible for stellar energy production. Oxygen in excited states is responsible for the bright red and yellow-green colours of the aurora. About two thirds of the human body, and nine tenths of water, is oxygen. The gas is colourless, odourless, and tasteless. Liquid and solid oxygen are pale blue and strongly paramagnetic (contains unpaired electrons).</string>
 		<key>abv</key>
 		<string>O</string>
 		<key>atomicMass</key>
@@ -102,13 +102,27 @@
 		<key>name</key>
 		<string>Flourine</string>
 		<key>desc</key>
-		<string></string>
+		<string>Fluorine is a Group 17 element. Fluorine is the most electronegative and reactive of all elements. It is a pale yellow, corrosive gas, which reacts with practically all organic and inorganic substances. Finely divided metals, glass, ceramics, carbon, and even water burn in fluorine with a bright flame. It is not uncommon to see fluorine spelled incorrectly as flourine.</string>
 		<key>abv</key>
 		<string>F</string>
 		<key>atomicMass</key>
 		<string>18.998</string>
 		<key>atomicNumber</key>
 		<integer>9</integer>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>Neon is a very inert element. Neon forms an unstable hydrate. In a vacuum discharge tube, neon glows reddish orange. Of all the rare gases, the discharge of neon is the most intense at ordinary voltages and currents. It is present in the atmosphere as 1 part in 65000.
+
+Liquid neon has over 40 times more refrigerating capacity than liquid helium, and more than 3 times that of liquid hydrogen.</string>
+		<key>name</key>
+		<string>Neon</string>
+		<key>abv</key>
+		<string>Ne</string>
+		<key>atomicMass</key>
+		<string>20.1797</string>
+		<key>atomicNumber</key>
+		<string>10</string>
 	</dict>
 	<dict>
 		<key>name</key>
