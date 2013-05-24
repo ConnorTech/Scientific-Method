@@ -13,7 +13,7 @@
 @end
 
 @implementation ElementsViewController
-@synthesize elements,searchBar,sectionsSearch,navBar,elementsTableView,filteredArray,elementsArray,elementsConversion,sortedArray,myTry;
+@synthesize elements,searchBar,sectionsSearch,elementsTableView,filteredArray,elementsArray,elementsConversion,sortedArray,myTry;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -29,6 +29,7 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     self.elements = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"elements" ofType:@"plist"]];
     self.sortedArray = [[NSMutableArray alloc] init];
     self.sectionsSearch = [[NSMutableDictionary alloc] init];
@@ -53,21 +54,22 @@
         [new addObject:element];
     }
     
-    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"atomicNumber" ascending:YES];
-    NSSortDescriptor *sort2 = [[NSSortDescriptor alloc] initWithKey:@"" ascending:YES];
-    NSLog(@"%@", [NSArray arrayWithObject:sort]);
-    //self.sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]]];
-    self.sortedArray = new;
-    //[sortedArray sortUsingDescriptors:[NSArray arrayWithObject:sort]];
+//    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"atomicNumber" ascending:YES];
+//    NSSortDescriptor *sort2 = [[NSSortDescriptor alloc] initWithKey:@"" ascending:YES];
+//    NSLog(@"%@", [NSArray arrayWithObject:sort]);
+//    //self.sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]]];
+//    NSArray *sorts = [NSArray arrayWithObject:sort];
+//    NSArray *sorts2 = [NSArray arrayWithObject:sort2];
+//    sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:sorts]];
     
     self.myTry = newConverter;
+    self.sortedArray = [NSMutableArray arrayWithArray:new];
     
     //self.myTry = [NSArray arrayWithArray:[newConverter sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort2]]];
     self.elementsArray = [NSArray arrayWithArray:elementsConversion];
     [self.elementsTableView reloadData];
     self.filteredArray = [NSMutableArray array];
     //(@"1");
-    [super viewDidLoad];
     // Do any additional setup after loading the view
 }
 
@@ -140,7 +142,7 @@
     // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
     if (tableView == self.searchDisplayController.searchResultsTableView) {
     } else {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [element objectForKey:@"atomicNumber"]];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"Atomic Number: %@", [element objectForKey:@"atomicNumber"]];
         cell.textLabel.text = [element objectForKey:@"name"];
     }
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
