@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>info</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Observation</string>
+				<key>details</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Question</string>
+				<key>details</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Hypothesis</string>
+				<key>details</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Prediction</string>
+				<key>details</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Experiment</string>
+				<key>details</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Results</string>
+				<key>details</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Analysis</string>
+				<key>details</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>type</key>
+		<string>process</string>
+		<key>name</key>
+		<string>Scientific Method</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Variables</string>
+		<key>type</key>
+		<string></string>
+		<key>info</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string></string>
+				<key>details</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
