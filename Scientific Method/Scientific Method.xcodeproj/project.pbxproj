@@ -45,6 +45,7 @@
 		B366A60A17314D6E003CF7B5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B366A60917314D6E003CF7B5 /* Icon.png */; };
 		B3ECD5B7174F753A00634E21 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = B3ECD5B6174F753A00634E21 /* background2.png */; };
 		B3ECD5B9174F76AD00634E21 /* TabBarBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = B3ECD5B8174F76AD00634E21 /* TabBarBackground3.png */; };
+		B3ECD5BB174F790700634E21 /* TabBarBackground6.png in Resources */ = {isa = PBXBuildFile; fileRef = B3ECD5BA174F790700634E21 /* TabBarBackground6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		B366A60917314D6E003CF7B5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B3ECD5B6174F753A00634E21 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = SOURCE_ROOT; };
 		B3ECD5B8174F76AD00634E21 /* TabBarBackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarBackground3.png; sourceTree = SOURCE_ROOT; };
+		B3ECD5BA174F790700634E21 /* TabBarBackground6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarBackground6.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				B3227888174C30EC00C836C3 /* Background.png */,
 				B3ECD5B6174F753A00634E21 /* background2.png */,
 				B3ECD5B8174F76AD00634E21 /* TabBarBackground3.png */,
+				B3ECD5BA174F790700634E21 /* TabBarBackground6.png */,
 				B3609BA717312481003A9744 /* Scientific Method */,
 				B3609BD917312481003A9744 /* Scientific MethodTests */,
 				B3609BA017312481003A9744 /* Frameworks */,
@@ -355,6 +358,7 @@
 				B3227889174C30EC00C836C3 /* Background.png in Resources */,
 				B3ECD5B7174F753A00634E21 /* background2.png in Resources */,
 				B3ECD5B9174F76AD00634E21 /* TabBarBackground3.png in Resources */,
+				B3ECD5BB174F790700634E21 /* TabBarBackground6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,8 +23,8 @@
     
     tabBarItem1.title = @"Overview";
     tabBarItem2.title = @"Concepts";
-    tabBarItem3.title = @"Elements";
-    tabBarItem4.title = @"Glossery";
+    tabBarItem3.title = @"Glossery";
+    tabBarItem4.title = @"Elements";
     //tabBarItem5.title = @"about";
     
     [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
@@ -39,14 +39,14 @@
     [tabBarItem3 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor, nil] forState:UIControlStateSelected];
     [tabBarItem3 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[self colorWithHexString:@"838080"],UITextAttributeTextColor, nil] forState:UIControlStateNormal];
     
-    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@"more_black.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"more_gray.png"]];
+    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
     [tabBarItem4 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor, nil] forState:UIControlStateSelected];
     [tabBarItem4 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[self colorWithHexString:@"838080"],UITextAttributeTextColor, nil] forState:UIControlStateNormal];
     
     
     
     
-    [[tabBarController tabBar]setBackgroundImage:[UIImage imageNamed:@"TabBarBackground3.png"]];
+    [[tabBarController tabBar]setBackgroundImage:[UIImage imageNamed:@"TabBarBackground6.png"]];
     return YES;
 }
 
