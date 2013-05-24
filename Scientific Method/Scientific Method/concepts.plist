@@ -53,5 +53,20 @@
 		<key>name</key>
 		<string>Scientific Method</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>Variables</string>
+		<key>type</key>
+		<string></string>
+		<key>info</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string></string>
+				<key>details</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>
