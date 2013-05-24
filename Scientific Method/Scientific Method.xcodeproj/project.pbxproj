@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521EA05E174F98C30015D83B /* concepts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 521EA05D174F98C30015D83B /* concepts.plist */; };
 		528C0AE81734703A00DD5225 /* GlossaryInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C0AE71734703A00DD5225 /* GlossaryInfoViewController.m */; };
 		528C0AEA173474F300DD5225 /* terms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AE9173474F300DD5225 /* terms.plist */; };
 		528C0AEC17347B8300DD5225 /* Selected.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AEB17347B8300DD5225 /* Selected.plist */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		521EA05D174F98C30015D83B /* concepts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = concepts.plist; sourceTree = "<group>"; };
 		528C0AE61734703A00DD5225 /* GlossaryInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryInfoViewController.h; sourceTree = "<group>"; };
 		528C0AE71734703A00DD5225 /* GlossaryInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryInfoViewController.m; sourceTree = "<group>"; };
 		528C0AE9173474F300DD5225 /* terms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = terms.plist; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		52CDAFC5174E62CE00D5C8F3 /* Concepts */ = {
 			isa = PBXGroup;
 			children = (
+				521EA05D174F98C30015D83B /* concepts.plist */,
 				52CDAFC2174E575A00D5C8F3 /* ConceptsViewController.h */,
 				52CDAFC3174E575A00D5C8F3 /* ConceptsViewController.m */,
 				52CDAFC6174E62E800D5C8F3 /* ConceptsDetailViewController.h */,
@@ -359,6 +362,7 @@
 				B3ECD5B7174F753A00634E21 /* background2.png in Resources */,
 				B3ECD5B9174F76AD00634E21 /* TabBarBackground3.png in Resources */,
 				B3ECD5BB174F790700634E21 /* TabBarBackground6.png in Resources */,
+				521EA05E174F98C30015D83B /* concepts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
