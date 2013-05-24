@@ -57,15 +57,18 @@
 		<key>name</key>
 		<string>Variables</string>
 		<key>type</key>
+		<string>concept</string>
+		<key>info</key>
 		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Experiment</string>
+		<key>type</key>
+		<string>process</string>
 		<key>info</key>
 		<array>
-			<dict>
-				<key>name</key>
-				<string></string>
-				<key>details</key>
-				<string></string>
-			</dict>
+			<dict/>
 		</array>
 	</dict>
 </array>
