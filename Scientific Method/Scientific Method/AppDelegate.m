@@ -19,13 +19,11 @@
     UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
     UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
     UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
-    //UITabBarItem *tabBarItem5 = [tabBar.items objectAtIndex:4];
     
     tabBarItem1.title = @"Overview";
     tabBarItem2.title = @"Concepts";
     tabBarItem3.title = @"Glossery";
     tabBarItem4.title = @"Elements";
-    //tabBarItem5.title = @"about";
     
     [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
     [tabBarItem1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor, nil] forState:UIControlStateSelected];
