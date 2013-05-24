@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="2dI-Qq-I5E">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="2dI-Qq-I5E" userLabel="Image View - Background2.png">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="505" id="dxO-AF-p94"/>
                                 </constraints>
@@ -31,11 +31,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JZy-dK-Ada" firstAttribute="top" secondItem="16" secondAttribute="top" constant="20" symbolic="YES" type="default" id="4Dz-ZU-XW2"/>
-                            <constraint firstItem="JZy-dK-Ada" firstAttribute="centerX" secondItem="2dI-Qq-I5E" secondAttribute="centerX" type="default" id="ar8-jN-MVs"/>
-                            <constraint firstItem="2dI-Qq-I5E" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="jnB-to-6tW"/>
-                            <constraint firstItem="2dI-Qq-I5E" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="kDu-b6-m3O"/>
+                            <constraint firstItem="2dI-Qq-I5E" firstAttribute="centerX" secondItem="JZy-dK-Ada" secondAttribute="centerX" type="default" id="GOf-W7-pPC"/>
+                            <constraint firstItem="2dI-Qq-I5E" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="UeU-tN-wob"/>
+                            <constraint firstItem="2dI-Qq-I5E" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="YMv-6B-MZa"/>
+                            <constraint firstItem="2dI-Qq-I5E" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="dMq-IO-yub"/>
                             <constraint firstAttribute="bottom" secondItem="3lR-ZP-vYQ" secondAttribute="bottom" constant="185" id="qnx-5s-LA9"/>
-                            <constraint firstItem="2dI-Qq-I5E" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="vcG-2X-YTb"/>
                             <constraint firstAttribute="trailing" secondItem="3lR-ZP-vYQ" secondAttribute="trailing" constant="37" id="ztd-pl-XsO"/>
                         </constraints>
                     </view>
