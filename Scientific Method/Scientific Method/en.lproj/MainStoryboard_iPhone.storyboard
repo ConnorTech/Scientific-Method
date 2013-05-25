@@ -505,49 +505,6 @@
         <image name="first.png" width="30" height="30"/>
         <image name="second.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="ElementsDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ElementsDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="abv" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="atomicMass" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="atomicNum" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="desc" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="elementsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="ElementsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ElementsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="elementsTableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="FirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-        </class>
-        <class className="GlossaryInfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GlossaryInfoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="chapter" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="definition" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="GlossaryViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GlossaryViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="glossary" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
