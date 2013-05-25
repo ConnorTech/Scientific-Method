@@ -639,6 +639,8 @@
         <image name="first.png" width="30" height="30"/>
         <image name="second.png" width="30" height="30"/>
     </resources>
+<<<<<<< HEAD
+<<<<<<< HEAD
     <classes>
         <class className="ConceptsDetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ConceptsDetailViewController.h"/>
@@ -694,6 +696,10 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
+=======
+>>>>>>> 44ab7964dabd828ed752dd1d3589ced9591ee8fc
+=======
+>>>>>>> 44ab7964dabd828ed752dd1d3589ced9591ee8fc
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
