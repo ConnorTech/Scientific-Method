@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ConceptsDetailViewController : UIViewController
+@interface ConceptsDetailViewController : UITableViewController
+
+@property (nonatomic,retain) IBOutlet UILabel *label1;
+@property (nonatomic,retain) NSArray *concepts;
 
 @end

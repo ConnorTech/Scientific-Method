@@ -49,7 +49,7 @@
 			</dict>
 		</array>
 		<key>type</key>
-		<string>process</string>
+		<string>Process</string>
 		<key>name</key>
 		<string>Scientific Method</string>
 	</dict>
@@ -57,18 +57,33 @@
 		<key>name</key>
 		<string>Variables</string>
 		<key>type</key>
-		<string>concept</string>
-		<key>info</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Experiment</string>
-		<key>type</key>
-		<string>process</string>
+		<string>Sectioned</string>
 		<key>info</key>
 		<array>
-			<dict/>
+			<dict>
+				<key>name</key>
+				<string>Independent Variable</string>
+				<key>details</key>
+				<string>The variable that you change in your experiment to effect the dependent variable</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Dependant Variable</string>
+				<key>details</key>
+				<string>The variable that you are focusing on and taking data on.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Controlled Variable</string>
+				<key>details</key>
+				<string>Also known as a constant, a controlled variable is a variable of the environment of testing that you keep constant or the same through out your experiment, like temperature or altitude</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Standardized Variable</string>
+				<key>details</key>
+				<string>Similar to a controlled variable, a standardized variable is a variable that you keep the same for all the tests, but is a little more general than a controlled variable. It encompasses the test subject (or object) and it&apos;s origin. Some examples are the speceise of animal or location that it came from.</string>
+			</dict>
 		</array>
 	</dict>
 </array>
