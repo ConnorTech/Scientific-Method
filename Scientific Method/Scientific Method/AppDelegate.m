@@ -33,11 +33,11 @@
     [tabBarItem2 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor, nil] forState:UIControlStateSelected];
     [tabBarItem2 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[self colorWithHexString:@"838080"],UITextAttributeTextColor, nil] forState:UIControlStateNormal];
     
-    [tabBarItem3 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
+    [tabBarItem3 setFinishedSelectedImage:[UIImage imageNamed:@"glossery_black_small.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Glossery_grey_small.png"]];
     [tabBarItem3 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor, nil] forState:UIControlStateSelected];
     [tabBarItem3 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[self colorWithHexString:@"838080"],UITextAttributeTextColor, nil] forState:UIControlStateNormal];
     
-    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
+    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@"Atom_black_small.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"Atom_grey_small.png"]];
     [tabBarItem4 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor, nil] forState:UIControlStateSelected];
     [tabBarItem4 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[self colorWithHexString:@"838080"],UITextAttributeTextColor, nil] forState:UIControlStateNormal];
     

@@ -48,6 +48,10 @@
 		B366A60A17314D6E003CF7B5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B366A60917314D6E003CF7B5 /* Icon.png */; };
 		B3ECD5B9174F76AD00634E21 /* TabBarBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = B3ECD5B8174F76AD00634E21 /* TabBarBackground3.png */; };
 		B3ECD5BB174F790700634E21 /* TabBarBackground6.png in Resources */ = {isa = PBXBuildFile; fileRef = B3ECD5BA174F790700634E21 /* TabBarBackground6.png */; };
+		B3EFE20F1750D2D2002957B2 /* glossery_grey_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B3EFE20B1750D2D2002957B2 /* glossery_grey_small.png */; };
+		B3EFE2101750D2D2002957B2 /* glossery_black_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B3EFE20C1750D2D2002957B2 /* glossery_black_small.png */; };
+		B3EFE2111750D2D2002957B2 /* Atom_black_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B3EFE20D1750D2D2002957B2 /* Atom_black_small.png */; };
+		B3EFE2121750D2D2002957B2 /* Atom_grey_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B3EFE20E1750D2D2002957B2 /* Atom_grey_small.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +120,10 @@
 		B366A60917314D6E003CF7B5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B3ECD5B8174F76AD00634E21 /* TabBarBackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarBackground3.png; sourceTree = SOURCE_ROOT; };
 		B3ECD5BA174F790700634E21 /* TabBarBackground6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarBackground6.png; sourceTree = SOURCE_ROOT; };
+		B3EFE20B1750D2D2002957B2 /* glossery_grey_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = glossery_grey_small.png; path = TabBarIcons/glossery_grey_small.png; sourceTree = SOURCE_ROOT; };
+		B3EFE20C1750D2D2002957B2 /* glossery_black_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = glossery_black_small.png; path = TabBarIcons/glossery_black_small.png; sourceTree = SOURCE_ROOT; };
+		B3EFE20D1750D2D2002957B2 /* Atom_black_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Atom_black_small.png; path = TabBarIcons/Atom_black_small.png; sourceTree = SOURCE_ROOT; };
+		B3EFE20E1750D2D2002957B2 /* Atom_grey_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Atom_grey_small.png; path = TabBarIcons/Atom_grey_small.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +197,7 @@
 				B3227888174C30EC00C836C3 /* Background.png */,
 				B3ECD5B8174F76AD00634E21 /* TabBarBackground3.png */,
 				B3ECD5BA174F790700634E21 /* TabBarBackground6.png */,
+				B3EFE2131750D2DD002957B2 /* TabBarIcons */,
 				B3609BA717312481003A9744 /* Scientific Method */,
 				B3609BD917312481003A9744 /* Scientific MethodTests */,
 				B3609BA017312481003A9744 /* Frameworks */,
@@ -273,6 +282,18 @@
 				B3609BDC17312481003A9744 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3EFE2131750D2DD002957B2 /* TabBarIcons */ = {
+			isa = PBXGroup;
+			children = (
+				B3EFE20B1750D2D2002957B2 /* glossery_grey_small.png */,
+				B3EFE20C1750D2D2002957B2 /* glossery_black_small.png */,
+				B3EFE20D1750D2D2002957B2 /* Atom_black_small.png */,
+				B3EFE20E1750D2D2002957B2 /* Atom_grey_small.png */,
+			);
+			name = TabBarIcons;
+			path = "Scientific Method";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +389,10 @@
 				B3ECD5BB174F790700634E21 /* TabBarBackground6.png in Resources */,
 				520D1508174F9FA5009DC801 /* concepts.plist in Resources */,
 				B363ABC2174FA163004313D0 /* background2.png in Resources */,
+				B3EFE20F1750D2D2002957B2 /* glossery_grey_small.png in Resources */,
+				B3EFE2101750D2D2002957B2 /* glossery_black_small.png in Resources */,
+				B3EFE2111750D2D2002957B2 /* Atom_black_small.png in Resources */,
+				B3EFE2121750D2D2002957B2 /* Atom_grey_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
