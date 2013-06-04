@@ -2,7 +2,7 @@
 //  ConceptsTableViewController.m
 //  Scientific Method
 //
-//  Created by John Kotz on 5/24/13.
+//  Created by John Kotz on 6/4/13.
 //  Copyright (c) 2013 Lordtechy. All rights reserved.
 //
 
@@ -13,7 +13,6 @@
 @end
 
 @implementation ConceptsTableViewController
-@synthesize label;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,7 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    label.text = @"It works!!";
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
