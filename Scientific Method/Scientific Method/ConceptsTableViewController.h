@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ConceptsTableViewController : UITableViewController
+@property (nonatomic,retain) IBOutlet UILabel *label;
 
 @end
