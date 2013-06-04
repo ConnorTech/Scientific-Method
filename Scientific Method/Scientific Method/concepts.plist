@@ -9,55 +9,53 @@
 				<key>name</key>
 				<string>Observation</string>
 				<key>details</key>
-				<string></string>
+				<string>First, you need an observation of something. This allows for a question about it and a hypothesis to be made.</string>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>Question</string>
 				<key>details</key>
-				<string></string>
+				<string>You then need a question that you hope to answer in your investigation that is based off of your observations.</string>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>Hypothesis</string>
 				<key>details</key>
-				<string></string>
+				<string>A hypothesis is what you think the answer to the question will be. This allows you to create an experiment to answer the question.</string>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>Prediction</string>
 				<key>details</key>
-				<string></string>
+				<string>Here, you make a prediction for how your experiment will turn out. This is not an answer to the question, just what you think will happen in the experiment.</string>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>Experiment</string>
 				<key>details</key>
-				<string></string>
+				<string>An experiment is then formulated using the multiple variables and hypothesis to do so.</string>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>Results</string>
 				<key>details</key>
-				<string></string>
+				<string>The experiment is done and the data is then collected to be anylized</string>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>Analysis</string>
 				<key>details</key>
-				<string></string>
+				<string>The data from the experiment then discussed and a conclusion is made about whether or not the hypthesis was correct.</string>
 			</dict>
 		</array>
+		<key>infoPrefix</key>
+		<string>Steps</string>
 		<key>type</key>
 		<string>Process</string>
 		<key>name</key>
 		<string>Scientific Method</string>
 	</dict>
 	<dict>
-		<key>name</key>
-		<string>Variables</string>
-		<key>type</key>
-		<string>Sectioned</string>
 		<key>info</key>
 		<array>
 			<dict>
@@ -85,6 +83,12 @@
 				<string>Similar to a controlled variable, a standardized variable is a variable that you keep the same for all the tests, but is a little more general than a controlled variable. It encompasses the test subject (or object) and it&apos;s origin. Some examples are the speceise of animal or location that it came from.</string>
 			</dict>
 		</array>
+		<key>infoPrefix</key>
+		<string>Types</string>
+		<key>type</key>
+		<string>Sectioned</string>
+		<key>name</key>
+		<string>Variables</string>
 	</dict>
 </array>
 </plist>

@@ -43,11 +43,7 @@
             info = [concept objectForKey:@"info"];
             break;
         }
-    }
-    if ([type isEqualToString:@"Process"]) {
-        label1.text = [NSString stringWithFormat:@"Steps"];
-    }else if ([type isEqualToString:@"Sectioned"]){
-        label1.text = [NSString stringWithFormat:@"Types"];
+        label1.text = [concept objectForKey:@"infoPrefix"];
     }
 }
 

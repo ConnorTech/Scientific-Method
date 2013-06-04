@@ -55,7 +55,6 @@
     
     NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"atomicNumber" ascending:YES];
     NSSortDescriptor *sort2 = [[NSSortDescriptor alloc] initWithKey:@"" ascending:YES];
-    NSLog(@"%@", [NSArray arrayWithObject:sort]);
     //self.sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]]];
     self.sortedArray = new;
     //[sortedArray sortUsingDescriptors:[NSArray arrayWithObject:sort]];

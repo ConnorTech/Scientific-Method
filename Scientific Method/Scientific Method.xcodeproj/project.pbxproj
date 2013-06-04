@@ -11,6 +11,7 @@
 		528C0AE81734703A00DD5225 /* GlossaryInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528C0AE71734703A00DD5225 /* GlossaryInfoViewController.m */; };
 		528C0AEA173474F300DD5225 /* terms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AE9173474F300DD5225 /* terms.plist */; };
 		528C0AEC17347B8300DD5225 /* Selected.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528C0AEB17347B8300DD5225 /* Selected.plist */; };
+		529CD797175E538900552176 /* ConceptsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529CD796175E538900552176 /* ConceptsTableViewController.m */; };
 		52C15892173AA1D3008CA7BD /* elements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52C15891173AA1D3008CA7BD /* elements.plist */; };
 		52C15896173B01DC008CA7BD /* ElementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */; };
 		52C1589A173B11BB008CA7BD /* Rectangle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52C15899173B11BB008CA7BD /* Rectangle.jpg */; };
@@ -19,7 +20,6 @@
 		52CDAFC8174E62E800D5C8F3 /* ConceptsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDAFC7174E62E800D5C8F3 /* ConceptsDetailViewController.m */; };
 		52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */; };
 		52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1417314B9400E6EF41 /* ModelsViewController.m */; };
-		52FE6A52175050EB00750972 /* ConceptsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FE6A51175050EB00750972 /* ConceptsTableViewController.m */; };
 		B3227889174C30EC00C836C3 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B3227888174C30EC00C836C3 /* Background.png */; };
 		B3609BA217312481003A9744 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA117312481003A9744 /* UIKit.framework */; };
 		B3609BA417312481003A9744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3609BA317312481003A9744 /* Foundation.framework */; };
@@ -70,6 +70,8 @@
 		528C0AE71734703A00DD5225 /* GlossaryInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryInfoViewController.m; sourceTree = "<group>"; };
 		528C0AE9173474F300DD5225 /* terms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = terms.plist; sourceTree = "<group>"; };
 		528C0AEB17347B8300DD5225 /* Selected.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Selected.plist; sourceTree = "<group>"; };
+		529CD795175E538900552176 /* ConceptsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConceptsTableViewController.h; sourceTree = "<group>"; };
+		529CD796175E538900552176 /* ConceptsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConceptsTableViewController.m; sourceTree = "<group>"; };
 		52C15891173AA1D3008CA7BD /* elements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = elements.plist; sourceTree = "<group>"; };
 		52C15894173B01DB008CA7BD /* ElementsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsDetailViewController.h; sourceTree = "<group>"; };
 		52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsDetailViewController.m; sourceTree = "<group>"; };
@@ -83,8 +85,6 @@
 		52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewController.m; sourceTree = "<group>"; };
 		52EE2C1317314B9400E6EF41 /* ModelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelsViewController.h; sourceTree = "<group>"; };
 		52EE2C1417314B9400E6EF41 /* ModelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelsViewController.m; sourceTree = "<group>"; };
-		52FE6A50175050EB00750972 /* ConceptsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConceptsTableViewController.h; sourceTree = "<group>"; };
-		52FE6A51175050EB00750972 /* ConceptsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConceptsTableViewController.m; sourceTree = "<group>"; };
 		B3227888174C30EC00C836C3 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = SOURCE_ROOT; };
 		B3609B9E17312481003A9744 /* Scientific Method.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scientific Method.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3609BA117312481003A9744 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -170,8 +170,8 @@
 				52CDAFC3174E575A00D5C8F3 /* ConceptsViewController.m */,
 				52CDAFC6174E62E800D5C8F3 /* ConceptsDetailViewController.h */,
 				52CDAFC7174E62E800D5C8F3 /* ConceptsDetailViewController.m */,
-				52FE6A50175050EB00750972 /* ConceptsTableViewController.h */,
-				52FE6A51175050EB00750972 /* ConceptsTableViewController.m */,
+				529CD795175E538900552176 /* ConceptsTableViewController.h */,
+				529CD796175E538900552176 /* ConceptsTableViewController.m */,
 			);
 			name = Concepts;
 			sourceTree = "<group>";
@@ -437,7 +437,7 @@
 				52C15896173B01DC008CA7BD /* ElementsDetailViewController.m in Sources */,
 				52CDAFC4174E575A00D5C8F3 /* ConceptsViewController.m in Sources */,
 				52CDAFC8174E62E800D5C8F3 /* ConceptsDetailViewController.m in Sources */,
-				52FE6A52175050EB00750972 /* ConceptsTableViewController.m in Sources */,
+				529CD797175E538900552176 /* ConceptsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
