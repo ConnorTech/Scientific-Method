@@ -31,7 +31,14 @@
     NSString *descrip;
     NSString *abrev;
     if (elements != nil) {
-            NSLog(@"Plist file is accessable");
+        NSLog(@"Element plist file is accessable");
+    }else{
+        NSLog(@"Element plist file is not accessable");
+    }
+    if (selection != nil) {
+        NSLog(@"Selected plist file is accessable");
+    }else{
+        NSLog(@"Selected plist file is not accessable");
     }
     
     BOOL found = false;

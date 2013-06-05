@@ -34,10 +34,6 @@
     self.sectionsSearch = [[NSMutableDictionary alloc] init];
     self.myTry = [NSArray array];
     
-    if (elements != nil) {
-        NSLog(@"Plist file is accessable");
-    }
-    
     if (elements == nil) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
                                                        delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
