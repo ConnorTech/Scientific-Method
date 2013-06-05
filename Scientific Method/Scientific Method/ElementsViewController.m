@@ -162,6 +162,19 @@
 }
 //h
 
+- (void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope{
+    NSLog(@"f");
+    if (selectedScope == 1) {
+        self.searchBar.keyboardType = UIKeyboardTypeNumberPad;
+        NSLog(@"s");
+    }else{
+        self.searchBar.keyboardType = UIKeyboardTypeDefault;
+    }
+    self.searchBar.text = NULL;
+    [self.searchBar resignFirstResponder];
+    [self.searchBar becomeFirstResponder];
+}
+
 #pragma mark Content Filtering
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
     //(@"14");
