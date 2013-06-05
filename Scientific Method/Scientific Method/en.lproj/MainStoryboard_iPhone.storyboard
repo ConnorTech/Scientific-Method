@@ -34,28 +34,29 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This app is brought to you by:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4X-4n-q1a">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="s5b-dD-Aqz"/>
+                                    <constraint firstAttribute="width" constant="290" id="z3V-Oc-bRz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Coded By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqC-xR-ZBo">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="And was coded By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqC-xR-ZBo">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="d68-rX-AKb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Rectangle copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-2u-XeR">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="OTR-du-6Zk"/>
-                                    <constraint firstAttribute="height" constant="195" id="T3W-oa-SiV"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbt-7K-rQD">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="251" id="VD3-KQ-xAL"/>
+                                    <constraint firstAttribute="height" constant="195" id="YyJ-Lm-UlP"/>
                                 </constraints>
                                 <string key="text">This app is meant to help students in highschool and onward with the scientific method. It includes a glossary with many common terms found when dealing with the scientific method, as well as a list of elements with details on each one. We have also included a tab for concepts that one should know when dealing with this feild of science.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -66,21 +67,21 @@
                                     <constraint firstAttribute="width" constant="111" id="LBm-8i-EXl"/>
                                     <constraint firstAttribute="height" constant="27" id="S5V-pT-qbQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgC-Nf-7Lm">
-                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgC-Nf-7Lm">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="L1l-O2-xZj"/>
-                                    <constraint firstAttribute="width" constant="180" id="jKA-hI-CyG"/>
+                                    <constraint firstAttribute="height" constant="32" id="OUE-M0-hpg"/>
+                                    <constraint firstAttribute="width" constant="128" id="udr-rs-eHi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" backgroundImage="Background.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" image="lordtechy_invert.png" backgroundImage="Button_background.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="lordtechy.png" backgroundImage="Button_background.png"/>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -88,35 +89,30 @@
                                     <action selector="goLordtechy:" destination="2" eventType="touchUpInside" id="dV6-JN-1Yb"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="lordtechy.png" translatesAutoresizingMaskIntoConstraints="NO" id="cfe-z0-wiE"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mgC-Nf-7Lm" firstAttribute="top" secondItem="cfe-z0-wiE" secondAttribute="top" type="default" id="0TU-gY-lA2"/>
-                            <constraint firstItem="mgC-Nf-7Lm" firstAttribute="trailing" secondItem="cfe-z0-wiE" secondAttribute="trailing" type="default" id="0pr-EN-dWh"/>
+                            <constraint firstItem="yac-2N-XYA" firstAttribute="centerX" secondItem="Zbt-7K-rQD" secondAttribute="centerX" type="default" id="3Qh-E2-qCB"/>
                             <constraint firstItem="zqC-xR-ZBo" firstAttribute="trailing" secondItem="A4X-4n-q1a" secondAttribute="trailing" type="default" id="42X-l6-Cqc"/>
-                            <constraint firstItem="mgC-Nf-7Lm" firstAttribute="leading" secondItem="cfe-z0-wiE" secondAttribute="leading" type="default" id="7c3-Iv-3ek"/>
-                            <constraint firstItem="mgC-Nf-7Lm" firstAttribute="bottom" secondItem="cfe-z0-wiE" secondAttribute="bottom" type="default" id="7y9-qt-aVE"/>
-                            <constraint firstAttribute="bottom" secondItem="mgC-Nf-7Lm" secondAttribute="bottom" constant="55" id="8Lk-gB-eJ9"/>
                             <constraint firstAttribute="trailing" secondItem="3lR-ZP-vYQ" secondAttribute="trailing" constant="35" id="ENk-Gw-0J2"/>
                             <constraint firstItem="zqC-xR-ZBo" firstAttribute="leading" secondItem="A4X-4n-q1a" secondAttribute="leading" type="default" id="GeP-Wa-k7Z"/>
                             <constraint firstItem="JZy-dK-Ada" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="NCa-Zx-YJV"/>
+                            <constraint firstAttribute="bottom" secondItem="A4X-4n-q1a" secondAttribute="bottom" constant="82" id="QWh-aa-3dY"/>
                             <constraint firstItem="2dI-Qq-I5E" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="RX1-IG-gCV"/>
                             <constraint firstAttribute="bottom" secondItem="3lR-ZP-vYQ" secondAttribute="bottom" constant="185" id="RrK-Kd-Kvk"/>
+                            <constraint firstItem="mgC-Nf-7Lm" firstAttribute="centerX" secondItem="2dI-Qq-I5E" secondAttribute="centerX" type="default" id="Uw5-82-l72"/>
                             <constraint firstItem="gdn-2u-XeR" firstAttribute="top" secondItem="16" secondAttribute="top" constant="54" id="a53-ay-Kna"/>
                             <constraint firstItem="2dI-Qq-I5E" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="dMq-IO-yub"/>
-                            <constraint firstItem="JZy-dK-Ada" firstAttribute="centerX" secondItem="2dI-Qq-I5E" secondAttribute="centerX" type="default" id="gnC-Qv-5sX"/>
+                            <constraint firstAttribute="bottom" secondItem="zqC-xR-ZBo" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="fPG-oV-4K7"/>
+                            <constraint firstAttribute="bottom" secondItem="mgC-Nf-7Lm" secondAttribute="bottom" constant="49" id="glD-tG-kpx"/>
+                            <constraint firstAttribute="bottom" secondItem="yac-2N-XYA" secondAttribute="bottom" constant="7" id="hc7-SN-Ia3"/>
                             <constraint firstItem="2dI-Qq-I5E" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="izQ-Yy-lOm"/>
                             <constraint firstItem="gdn-2u-XeR" firstAttribute="trailing" secondItem="Zbt-7K-rQD" secondAttribute="trailing" type="default" id="j7p-CW-Eyy"/>
                             <constraint firstItem="JZy-dK-Ada" firstAttribute="centerX" secondItem="gdn-2u-XeR" secondAttribute="centerX" type="default" id="lcp-Is-uFq"/>
-                            <constraint firstItem="yac-2N-XYA" firstAttribute="centerX" secondItem="zqC-xR-ZBo" secondAttribute="centerX" type="default" id="o3J-Nn-qPC"/>
                             <constraint firstItem="gdn-2u-XeR" firstAttribute="bottom" secondItem="Zbt-7K-rQD" secondAttribute="bottom" type="default" id="ogq-MD-NEA"/>
-                            <constraint firstAttribute="bottom" secondItem="yac-2N-XYA" secondAttribute="bottom" constant="9" id="r0w-0q-59f"/>
-                            <constraint firstAttribute="bottom" secondItem="A4X-4n-q1a" secondAttribute="bottom" constant="91" id="r8k-dk-NZi"/>
-                            <constraint firstItem="zqC-xR-ZBo" firstAttribute="centerX" secondItem="cfe-z0-wiE" secondAttribute="centerX" type="default" id="rXM-LQ-ciH"/>
-                            <constraint firstItem="A4X-4n-q1a" firstAttribute="centerX" secondItem="gdn-2u-XeR" secondAttribute="centerX" type="default" id="rYL-2g-OTD"/>
+                            <constraint firstItem="mgC-Nf-7Lm" firstAttribute="centerX" secondItem="zqC-xR-ZBo" secondAttribute="centerX" type="default" id="tUR-rO-eM0"/>
                             <constraint firstItem="Zbt-7K-rQD" firstAttribute="top" secondItem="gdn-2u-XeR" secondAttribute="top" type="default" id="tqv-eq-RK4"/>
-                            <constraint firstAttribute="bottom" secondItem="zqC-xR-ZBo" secondAttribute="bottom" constant="30" id="v7d-aT-0hZ"/>
+                            <constraint firstItem="gdn-2u-XeR" firstAttribute="centerX" secondItem="A4X-4n-q1a" secondAttribute="centerX" type="default" id="xS2-TN-H23"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Overview" image="second.png" id="7"/>
@@ -682,9 +678,11 @@
     </scenes>
     <resources>
         <image name="Background.png" width="640" height="1136"/>
+        <image name="Button_background.png" width="320" height="49"/>
         <image name="Rectangle copy.png" width="204" height="204"/>
         <image name="first.png" width="30" height="30"/>
         <image name="lordtechy.png" width="300" height="84"/>
+        <image name="lordtechy_invert.png" width="300" height="84"/>
         <image name="second.png" width="30" height="30"/>
     </resources>
     <classes>
