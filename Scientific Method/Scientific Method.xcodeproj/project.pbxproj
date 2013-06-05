@@ -20,6 +20,7 @@
 		52CDAFC8174E62E800D5C8F3 /* ConceptsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDAFC7174E62E800D5C8F3 /* ConceptsDetailViewController.m */; };
 		52EE2C1217314B7B00E6EF41 /* GlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */; };
 		52EE2C1517314B9400E6EF41 /* ModelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EE2C1417314B9400E6EF41 /* ModelsViewController.m */; };
+		52F1B433175FA4FB002949F7 /* lordtechy.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F1B432175FA4FB002949F7 /* lordtechy.png */; };
 		B3227889174C30EC00C836C3 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B3227888174C30EC00C836C3 /* Background.png */; };
 		B347236E175F707200E4957C /* Atom_grey_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B3472369175F707200E4957C /* Atom_grey_small.png */; };
 		B347236F175F707200E4957C /* glossery_black_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B347236A175F707200E4957C /* glossery_black_small.png */; };
@@ -87,6 +88,7 @@
 		52EE2C1117314B7B00E6EF41 /* GlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewController.m; sourceTree = "<group>"; };
 		52EE2C1317314B9400E6EF41 /* ModelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelsViewController.h; sourceTree = "<group>"; };
 		52EE2C1417314B9400E6EF41 /* ModelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelsViewController.m; sourceTree = "<group>"; };
+		52F1B432175FA4FB002949F7 /* lordtechy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lordtechy.png; sourceTree = "<group>"; };
 		B3227888174C30EC00C836C3 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = SOURCE_ROOT; };
 		B3472369175F707200E4957C /* Atom_grey_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Atom_grey_small.png; path = ../TabBarIcons/Atom_grey_small.png; sourceTree = "<group>"; };
 		B347236A175F707200E4957C /* glossery_black_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = glossery_black_small.png; path = ../TabBarIcons/glossery_black_small.png; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				B366A60917314D6E003CF7B5 /* Icon.png */,
 				B366A60717314C7D003CF7B5 /* Icon@2x.png */,
 				B3227888174C30EC00C836C3 /* Background.png */,
+				52F1B432175FA4FB002949F7 /* lordtechy.png */,
 				B3ECD5B8174F76AD00634E21 /* TabBarBackground3.png */,
 				B3ECD5BA174F790700634E21 /* TabBarBackground6.png */,
 				B3EFE2131750D2DD002957B2 /* TabBarIcons */,
@@ -401,6 +404,7 @@
 				B3472371175F707200E4957C /* Atom_black_small.png in Resources */,
 				B3472375175F73AD00E4957C /* concepts_black.png in Resources */,
 				B3472376175F73AD00E4957C /* concepts_grey.png in Resources */,
+				52F1B433175FA4FB002949F7 /* lordtechy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
