@@ -50,17 +50,17 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Rectangle copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-2u-XeR">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="9Ka-rS-pHb"/>
                                     <constraint firstAttribute="width" constant="260" id="OTR-du-6Zk"/>
-                                    <constraint firstAttribute="height" constant="206" id="rfs-uA-Lvb"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbt-7K-rQD">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="MYX-bP-EOj"/>
                                     <constraint firstAttribute="width" constant="241" id="ZHs-al-MLm"/>
-                                    <constraint firstAttribute="height" constant="187" id="eCB-Y5-ekW"/>
                                 </constraints>
-                                <string key="text">This app meant to help students in highschool and onward with scientific method. It includes a glossary with many common terms found when dealing with scientific method, as well as a list of elements with details on each one. We have also included a tab for concepts that one should know when dealing with this feild of science.</string>
+                                <string key="text">This app is meant to help students in highschool and onward with the scientific method. It includes a glossary with many common terms found when dealing with the scientific method, as well as a list of elements with details on each one. We have also included a tab for concepts that one should know when dealing with this feild of science.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -94,23 +94,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="zqC-xR-ZBo" secondAttribute="bottom" constant="21" id="1cc-YY-g8H"/>
-                            <constraint firstItem="A4X-4n-q1a" firstAttribute="centerX" secondItem="2dI-Qq-I5E" secondAttribute="centerX" type="default" id="5L1-bg-A51"/>
-                            <constraint firstItem="A4X-4n-q1a" firstAttribute="centerX" secondItem="gdn-2u-XeR" secondAttribute="centerX" type="default" id="CLG-ro-8os"/>
                             <constraint firstAttribute="bottom" secondItem="A4X-4n-q1a" secondAttribute="bottom" constant="81" id="Dbb-kL-Hgz"/>
                             <constraint firstItem="zqC-xR-ZBo" firstAttribute="leading" secondItem="A4X-4n-q1a" secondAttribute="leading" type="default" id="GeP-Wa-k7Z"/>
                             <constraint firstItem="zqC-xR-ZBo" firstAttribute="trailing" secondItem="mgC-Nf-7Lm" secondAttribute="trailing" type="default" id="Hx6-1T-wVP"/>
+                            <constraint firstItem="JZy-dK-Ada" firstAttribute="centerX" secondItem="Zbt-7K-rQD" secondAttribute="centerX" type="default" id="MiS-5q-iJc"/>
                             <constraint firstItem="JZy-dK-Ada" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="NCa-Zx-YJV"/>
-                            <constraint firstItem="gdn-2u-XeR" firstAttribute="top" secondItem="16" secondAttribute="top" constant="60" id="NUe-US-dRp"/>
                             <constraint firstAttribute="bottom" secondItem="yac-2N-XYA" secondAttribute="bottom" constant="7" id="O00-na-9d7"/>
+                            <constraint firstItem="Zbt-7K-rQD" firstAttribute="top" secondItem="16" secondAttribute="top" constant="61" id="Qxb-3K-J22"/>
                             <constraint firstItem="2dI-Qq-I5E" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="RX1-IG-gCV"/>
+                            <constraint firstItem="Zbt-7K-rQD" firstAttribute="centerX" secondItem="A4X-4n-q1a" secondAttribute="centerX" type="default" id="Rnz-pu-wSB"/>
                             <constraint firstAttribute="bottom" secondItem="3lR-ZP-vYQ" secondAttribute="bottom" constant="185" id="RrK-Kd-Kvk"/>
                             <constraint firstItem="A4X-4n-q1a" firstAttribute="trailing" secondItem="mgC-Nf-7Lm" secondAttribute="trailing" type="default" id="X9d-kr-O7l"/>
                             <constraint firstItem="2dI-Qq-I5E" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="dMq-IO-yub"/>
-                            <constraint firstItem="JZy-dK-Ada" firstAttribute="centerX" secondItem="gdn-2u-XeR" secondAttribute="centerX" type="default" id="emb-W9-fVU"/>
                             <constraint firstItem="2dI-Qq-I5E" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="izQ-Yy-lOm"/>
+                            <constraint firstItem="Zbt-7K-rQD" firstAttribute="centerX" secondItem="2dI-Qq-I5E" secondAttribute="centerX" type="default" id="mJN-cV-ri8"/>
                             <constraint firstItem="yac-2N-XYA" firstAttribute="centerX" secondItem="zqC-xR-ZBo" secondAttribute="centerX" type="default" id="nyc-fi-frp"/>
+                            <constraint firstItem="gdn-2u-XeR" firstAttribute="top" secondItem="16" secondAttribute="top" constant="54" id="oRC-rY-3hW"/>
                             <constraint firstAttribute="bottom" secondItem="mgC-Nf-7Lm" secondAttribute="bottom" constant="50" id="qV7-FB-eNp"/>
-                            <constraint firstItem="Zbt-7K-rQD" firstAttribute="top" secondItem="16" secondAttribute="top" constant="68" id="sK1-Jp-ZDa"/>
                             <constraint firstAttribute="trailing" secondItem="3lR-ZP-vYQ" secondAttribute="trailing" constant="35" id="u7a-ni-SyV"/>
                             <constraint firstItem="Zbt-7K-rQD" firstAttribute="centerX" secondItem="gdn-2u-XeR" secondAttribute="centerX" type="default" id="vng-yF-s2g"/>
                         </constraints>
@@ -686,11 +686,57 @@
         <image name="second.png" width="30" height="30"/>
     </resources>
     <classes>
+        <class className="ConceptsDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConceptsDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="label1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
+            </relationships>
+        </class>
+        <class className="ConceptsTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConceptsTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ConceptsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConceptsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ElementsDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ElementsDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="abv" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="atomicMass" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="atomicNum" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="desc" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="elementsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
+            </relationships>
+        </class>
+        <class className="ElementsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ElementsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="elementsTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
         <class className="FirstViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="goLordtechy:"/>
+            </relationships>
         </class>
         <class className="GlossaryInfoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GlossaryInfoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="chapter" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="definition" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
+            </relationships>
         </class>
         <class className="GlossaryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GlossaryViewController.h"/>
