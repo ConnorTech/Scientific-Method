@@ -36,7 +36,6 @@
     selection = [plistDict objectForKey:@"selectedKey"];
     NSArray *info;
     NSString *type;
-    BOOL found = false;
     for (NSDictionary *concept in self.concepts)
     {
         if ([selection isEqualToString:[concept objectForKey:@"name"]]) {
@@ -44,14 +43,8 @@
             type = [concept objectForKey:@"type"];
             info = [concept objectForKey:@"info"];
             label1.text = [NSString stringWithFormat:@"%@:",[concept objectForKey:@"infoPrefix"]];
-            found = true;
             break;
         }
-    }
-    if (!found) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
-                                                       delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
-        [alert show];
     }
 }
 
