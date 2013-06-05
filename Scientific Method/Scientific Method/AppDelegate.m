@@ -29,7 +29,7 @@
     [tabBarItem1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor, nil] forState:UIControlStateSelected];
     [tabBarItem1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[self colorWithHexString:@"838080"],UITextAttributeTextColor, nil] forState:UIControlStateNormal];
     
-    [tabBarItem2 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
+    [tabBarItem2 setFinishedSelectedImage:[UIImage imageNamed:@"concepts_black.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"concepts_grey.png"]];
     [tabBarItem2 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor, nil] forState:UIControlStateSelected];
     [tabBarItem2 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[self colorWithHexString:@"838080"],UITextAttributeTextColor, nil] forState:UIControlStateNormal];
     
