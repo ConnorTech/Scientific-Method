@@ -31,6 +31,8 @@
     NSString *descrip;
     NSString *abrev;
     
+    BOOL found = false;
+    
     for (NSDictionary *element in self.elements)
     {
         if ([selection isEqualToString:[element objectForKey:@"name"]]) {
@@ -38,8 +40,15 @@
             abrev = [element objectForKey:@"abv"];
             atomicNum.text = [NSString stringWithFormat:@"%@",[element objectForKey:@"atomicNumber"]];
             self.atomicMass.text = [NSString stringWithFormat:@"%@", [element objectForKey:@"atomicMass"]];
+            found = true;
             break;
         }
+    }
+    
+    if (!found) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+                                                       delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
+                              [alert show];
     }
     
     abv.text = abrev;

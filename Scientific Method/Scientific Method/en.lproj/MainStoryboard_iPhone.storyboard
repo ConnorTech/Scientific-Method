@@ -78,10 +78,10 @@
                                     <constraint firstAttribute="height" constant="36" id="K6V-SX-gQ8"/>
                                     <constraint firstAttribute="width" constant="205" id="Qxx-vE-2FF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="Lordtechy Productions" backgroundImage="Background.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -686,57 +686,11 @@
         <image name="second.png" width="30" height="30"/>
     </resources>
     <classes>
-        <class className="ConceptsDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConceptsDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="label1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="ConceptsTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConceptsTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ConceptsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConceptsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ElementsDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ElementsDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="abv" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="atomicMass" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="atomicNum" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="desc" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="elementsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="ElementsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ElementsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="elementsTableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
         <class className="FirstViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="goLordtechy:"/>
-            </relationships>
         </class>
         <class className="GlossaryInfoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GlossaryInfoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="chapter" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="definition" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
-            </relationships>
         </class>
         <class className="GlossaryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GlossaryViewController.h"/>
