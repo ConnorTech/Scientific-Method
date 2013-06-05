@@ -115,7 +115,7 @@
                             <constraint firstItem="Zbt-7K-rQD" firstAttribute="centerX" secondItem="gdn-2u-XeR" secondAttribute="centerX" type="default" id="vng-yF-s2g"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Overview" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Overview" image="first.png" id="7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -373,6 +373,7 @@
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uue-Bg-lAy">
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="103" id="Jgl-0G-cQg"/>
                                             <constraint firstAttribute="height" constant="21" id="YQ1-m9-4y5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
@@ -414,17 +415,16 @@
                                     <constraint firstItem="HJw-kh-pMe" firstAttribute="top" secondItem="sZu-AO-cmk" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1Tc-ul-wpb"/>
                                     <constraint firstItem="G6d-zt-GJz" firstAttribute="top" secondItem="eW2-K7-gwJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2GY-N6-GNE"/>
                                     <constraint firstItem="Ypw-qI-IyK" firstAttribute="top" secondItem="Gtn-ON-ZNf" secondAttribute="top" type="default" id="3zO-dY-rGw"/>
-                                    <constraint firstItem="Juc-UJ-vMX" firstAttribute="centerX" secondItem="82X-nG-C6T" secondAttribute="centerX" type="default" id="6E0-tr-iUZ"/>
                                     <constraint firstItem="Yc9-K2-8R6" firstAttribute="trailing" secondItem="sZu-AO-cmk" secondAttribute="trailing" type="default" id="Ac8-9T-EEg"/>
                                     <constraint firstItem="eW2-K7-gwJ" firstAttribute="centerX" secondItem="HJw-kh-pMe" secondAttribute="centerX" type="default" id="Af0-Py-VRK"/>
-                                    <constraint firstItem="uue-Bg-lAy" firstAttribute="leading" secondItem="82X-nG-C6T" secondAttribute="leading" type="default" id="CSL-ZZ-5qb"/>
+                                    <constraint firstItem="uue-Bg-lAy" firstAttribute="centerX" secondItem="6hQ-7B-7UX" secondAttribute="centerX" type="default" id="BEF-fq-zq5"/>
                                     <constraint firstItem="Yc9-K2-8R6" firstAttribute="leading" secondItem="sZu-AO-cmk" secondAttribute="leading" type="default" id="Clj-Wf-1Gc"/>
                                     <constraint firstItem="Yc9-K2-8R6" firstAttribute="centerX" secondItem="HJw-kh-pMe" secondAttribute="centerX" type="default" id="IEs-GZ-fUy"/>
                                     <constraint firstItem="Yc9-K2-8R6" firstAttribute="top" secondItem="Gtn-ON-ZNf" secondAttribute="top" constant="71" id="JBC-PN-oE0"/>
-                                    <constraint firstItem="82X-nG-C6T" firstAttribute="centerX" secondItem="6hQ-7B-7UX" secondAttribute="centerX" type="default" id="Kjg-T4-H71"/>
                                     <constraint firstItem="G6d-zt-GJz" firstAttribute="leading" secondItem="Gtn-ON-ZNf" secondAttribute="leading" constant="116" id="KlP-Yw-bk0"/>
                                     <constraint firstItem="VY8-Q9-uZE" firstAttribute="top" secondItem="Gtn-ON-ZNf" secondAttribute="top" type="default" id="Lak-Cw-1wj"/>
                                     <constraint firstItem="82X-nG-C6T" firstAttribute="top" secondItem="Juc-UJ-vMX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Lhq-ip-yVq"/>
+                                    <constraint firstItem="82X-nG-C6T" firstAttribute="leading" secondItem="Gtn-ON-ZNf" secondAttribute="leading" constant="108" id="Nm2-Up-AIH"/>
                                     <constraint firstItem="uue-Bg-lAy" firstAttribute="centerX" secondItem="Gtn-ON-ZNf" secondAttribute="centerX" type="default" id="RhN-Be-FsY"/>
                                     <constraint firstItem="sZu-AO-cmk" firstAttribute="top" secondItem="Gtn-ON-ZNf" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Sxb-u2-feG"/>
                                     <constraint firstItem="Juc-UJ-vMX" firstAttribute="top" secondItem="eW2-K7-gwJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XEh-jD-XlN"/>
@@ -433,13 +433,13 @@
                                     <constraint firstAttribute="trailing" secondItem="Juc-UJ-vMX" secondAttribute="trailing" constant="19" id="aUl-Cz-YBW"/>
                                     <constraint firstItem="Juc-UJ-vMX" firstAttribute="leading" secondItem="Gtn-ON-ZNf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="adK-KC-sSe"/>
                                     <constraint firstItem="sZu-AO-cmk" firstAttribute="centerX" secondItem="Ypw-qI-IyK" secondAttribute="centerX" type="default" id="aur-D5-Bfq"/>
+                                    <constraint firstItem="Juc-UJ-vMX" firstAttribute="centerX" secondItem="Yc9-K2-8R6" secondAttribute="centerX" type="default" id="bR5-gS-1Sf"/>
                                     <constraint firstItem="6hQ-7B-7UX" firstAttribute="top" secondItem="Juc-UJ-vMX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eXE-Fg-Ngs"/>
-                                    <constraint firstItem="82X-nG-C6T" firstAttribute="trailing" secondItem="uue-Bg-lAy" secondAttribute="trailing" type="default" id="fHY-ed-3y0"/>
                                     <constraint firstItem="Ypw-qI-IyK" firstAttribute="leading" secondItem="6hQ-7B-7UX" secondAttribute="leading" type="default" id="i7J-at-MR6"/>
-                                    <constraint firstItem="sZu-AO-cmk" firstAttribute="centerX" secondItem="VY8-Q9-uZE" secondAttribute="centerX" type="default" id="nFy-nk-N0g"/>
                                     <constraint firstAttribute="bottom" secondItem="6hQ-7B-7UX" secondAttribute="bottom" constant="386" id="qe0-9j-4Wp"/>
                                     <constraint firstItem="Ypw-qI-IyK" firstAttribute="trailing" secondItem="6hQ-7B-7UX" secondAttribute="trailing" type="default" id="qwK-wU-xVC"/>
                                     <constraint firstItem="G6I-hy-I1l" firstAttribute="top" secondItem="Gtn-ON-ZNf" secondAttribute="top" constant="128" id="sRe-y9-Cag"/>
+                                    <constraint firstItem="82X-nG-C6T" firstAttribute="centerX" secondItem="VY8-Q9-uZE" secondAttribute="centerX" type="default" id="tWI-qf-kqN"/>
                                     <constraint firstItem="uue-Bg-lAy" firstAttribute="top" secondItem="Gtn-ON-ZNf" secondAttribute="top" constant="406" id="uWm-CO-S7t"/>
                                     <constraint firstItem="G6I-hy-I1l" firstAttribute="leading" secondItem="Gtn-ON-ZNf" secondAttribute="leading" constant="41" id="ws4-nD-zTI"/>
                                 </constraints>
@@ -574,7 +574,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Concepts" id="3vi-a4-B7U"/>
+                    <tabBarItem key="tabBarItem" title="Concepts" image="second.png" id="3vi-a4-B7U"/>
                     <navigationItem key="navigationItem" title="Concepts" id="zCk-rg-9iV"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="T63-5D-BfB" id="Enp-LM-VfZ"/>
