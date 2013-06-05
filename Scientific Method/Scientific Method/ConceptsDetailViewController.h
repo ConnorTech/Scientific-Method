@@ -12,5 +12,6 @@
 
 @property (nonatomic,retain) IBOutlet UILabel *label1;
 @property (nonatomic,retain) NSArray *concepts;
+@property (nonatomic,retain) IBOutlet UINavigationItem *navBar;
 
 @end

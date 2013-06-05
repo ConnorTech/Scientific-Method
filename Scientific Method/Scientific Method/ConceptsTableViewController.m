@@ -73,7 +73,7 @@
     cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
     cell.detailTextLabel.numberOfLines = 0;
     cell.detailTextLabel.text = [[[conceptSelected objectForKey:@"info"] objectAtIndex:indexPath.row] objectForKey:@"details"];
-    cell.textLabel.text = [[[conceptSelected objectForKey:@"info"] objectAtIndex:indexPath.row] objectForKey:@"name"];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@:",[[[conceptSelected objectForKey:@"info"] objectAtIndex:indexPath.row] objectForKey:@"name"]];
     //(@"11");
     return cell;
 }

@@ -14,7 +14,7 @@
 
 @implementation ConceptsDetailViewController
 
-@synthesize label1,concepts;
+@synthesize label1,concepts,navBar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,11 +39,12 @@
     for (NSDictionary *concept in self.concepts)
     {
         if ([selection isEqualToString:[concept objectForKey:@"name"]]) {
+            navBar.title = [concept objectForKey:@"name"];
             type = [concept objectForKey:@"type"];
             info = [concept objectForKey:@"info"];
+            label1.text = [NSString stringWithFormat:@"%@:",[concept objectForKey:@"infoPrefix"]];
             break;
         }
-        label1.text = [concept objectForKey:@"infoPrefix"];
     }
 }
 

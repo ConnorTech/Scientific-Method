@@ -103,7 +103,7 @@
     if (tableView != self.searchDisplayController.searchResultsTableView) {
         return [[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
     }else{
-        return [[[self.sectionsSearch allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:section];
+        return @"Results";
     }
     
     //(@"5");

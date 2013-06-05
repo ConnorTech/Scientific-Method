@@ -10,4 +10,6 @@
 
 @interface FirstViewController : UIViewController
 
+-(IBAction)goLordtechy:(id)sender;
+
 @end
