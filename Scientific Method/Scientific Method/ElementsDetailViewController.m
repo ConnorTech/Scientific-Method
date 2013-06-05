@@ -30,8 +30,9 @@
     self.elements = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"elements" ofType:@"plist"]];
     NSString *descrip;
     NSString *abrev;
-    
-    NSLog(@"Plist file is: %@",elements);
+    if (elements != nil) {
+            NSLog(@"Plist file is accessable");
+    }
     
     BOOL found = false;
     
