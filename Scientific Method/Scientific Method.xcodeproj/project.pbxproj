@@ -153,11 +153,11 @@
 		52C15893173AA1DC008CA7BD /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				52C15891173AA1D3008CA7BD /* elements.plist */,
 				B3609BC617312481003A9744 /* ElementsViewController.h */,
 				B3609BC717312481003A9744 /* ElementsViewController.m */,
 				52C15894173B01DB008CA7BD /* ElementsDetailViewController.h */,
 				52C15895173B01DC008CA7BD /* ElementsDetailViewController.m */,
-				52C15891173AA1D3008CA7BD /* elements.plist */,
 			);
 			name = Elements;
 			sourceTree = "<group>";

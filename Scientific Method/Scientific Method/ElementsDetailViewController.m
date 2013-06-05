@@ -31,6 +31,8 @@
     NSString *descrip;
     NSString *abrev;
     
+    NSLog(@"Plist file is: %@",elements);
+    
     BOOL found = false;
     
     for (NSDictionary *element in self.elements)
