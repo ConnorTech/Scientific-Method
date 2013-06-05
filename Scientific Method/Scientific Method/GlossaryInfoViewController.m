@@ -34,13 +34,20 @@
     selection = [plistDict objectForKey:@"selectedKey"];
     NSString *def;
     NSString *chap;
+    BOOL found = false;
     for (NSDictionary *term in self.terms)
     {
         if ([selection isEqualToString:[term objectForKey:@"term"]]) {
             def = [term objectForKey:@"def"];
             chap = [term objectForKey:@"chapter"];
+            found = true;
             break;
         }
+    }
+    if (!found) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+                                                       delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
+        [alert show];
     }
     chapter.text = chap;
     navBar.title = selection;

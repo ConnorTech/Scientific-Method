@@ -29,12 +29,18 @@
     [super viewDidLoad];
     NSString *mmm = [NSString stringWithString:[[NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]] objectForKey:@"selectedKey"]];
     self.concepts = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"concepts" ofType:@"plist"]];
-    
+    BOOL found = false;
     
     for (NSDictionary *new in self.concepts) {
         if ([[new objectForKey:@"name"] isEqualToString:mmm]) {
             self.conceptSelected = [NSMutableDictionary dictionaryWithDictionary:new];
+            found = true;
         }
+    }
+    if (!found) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+                                                       delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
+        [alert show];
     }
     
     [self.table reloadData];

@@ -38,6 +38,12 @@
         [termsConversion addObject:[concept objectForKey:@"name"]];
     }
     
+    if (concepts == nil) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+                                                       delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
+        [alert show];
+    }
+    
     BOOL found;
     
     for (NSDictionary *concept in self.concepts) {
