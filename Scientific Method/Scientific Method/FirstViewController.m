@@ -30,4 +30,8 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.lordtechy.com"]];
 }
 
+-(IBAction)showActionSheet:(id)sender{
+    
+}
+
 @end
