@@ -31,7 +31,11 @@
 }
 
 -(IBAction)showActionSheet:(id)sender{
-    
+    NSArray *activityItems = @[@"Check out this cool app:\n\nURL GOES HERE"];
+    NSArray *applicationItems = [[NSArray alloc] initWithObjects:/*UIActivityTypePostToFacebook, UIActivityTypePostToTwitter, UIActivityTypePostToWeibo, UIActivityTypeMessage, UIActivityTypeMail, UIActivityTypePrint, UIActivityTypeCopyToPasteboard, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, */nil];
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:applicationItems];
+    activityViewController.excludedActivityTypes = @[UIActivityTypePostToWeibo, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard];
+    [self presentViewController:activityViewController animated:YES completion:NULL];
 }
 
 @end
