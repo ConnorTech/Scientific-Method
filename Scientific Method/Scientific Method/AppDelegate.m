@@ -25,7 +25,7 @@
     tabBarItem3.title = @"Glossery";
     tabBarItem4.title = @"Elements";
     
-    [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@"main_logo_black.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"main_logo_grey.png"]];
+    [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@"overview_black.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"overview_grey.png"]];
     [tabBarItem1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],UITextAttributeTextColor, nil] forState:UIControlStateSelected];
     [tabBarItem1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[self colorWithHexString:@"838080"],UITextAttributeTextColor, nil] forState:UIControlStateNormal];
     
