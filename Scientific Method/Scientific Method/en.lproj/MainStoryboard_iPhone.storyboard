@@ -22,7 +22,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scientific Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZy-dK-Ada">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZy-dK-Ada">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="Tit-fS-wct"/>
                                     <constraint firstAttribute="width" constant="222" id="jjY-24-nXN"/>
@@ -51,12 +51,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Rectangle copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-2u-XeR">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="OTR-du-6Zk"/>
+                                    <constraint firstAttribute="height" constant="195" id="gFO-S7-9os"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbt-7K-rQD">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="251" id="VD3-KQ-xAL"/>
-                                    <constraint firstAttribute="height" constant="195" id="YyJ-Lm-UlP"/>
                                 </constraints>
                                 <string key="text">This app is meant to help students in highschool and onward with the scientific method. It includes a glossary with many common terms found when dealing with the scientific method, as well as a list of elements with details on each one. We have also included a tab for concepts that one should know when dealing with this feild of science.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -89,29 +89,43 @@
                                     <action selector="goLordtechy:" destination="2" eventType="touchUpInside" id="dV6-JN-1Yb"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="Zb9-CS-eyx">
+                                <items>
+                                    <navigationItem title="Scientific Method" id="zg1-nI-VX7">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="5Wc-en-gW3">
+                                            <connections>
+                                                <action selector="showActionSheet:" destination="2" id="CNm-c5-eDM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yac-2N-XYA" firstAttribute="centerX" secondItem="Zbt-7K-rQD" secondAttribute="centerX" type="default" id="3Qh-E2-qCB"/>
                             <constraint firstItem="zqC-xR-ZBo" firstAttribute="trailing" secondItem="A4X-4n-q1a" secondAttribute="trailing" type="default" id="42X-l6-Cqc"/>
+                            <constraint firstItem="Zb9-CS-eyx" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="4ZK-ML-D2s"/>
+                            <constraint firstItem="gdn-2u-XeR" firstAttribute="top" secondItem="16" secondAttribute="top" constant="52" id="9e9-uq-dcX"/>
+                            <constraint firstItem="JZy-dK-Ada" firstAttribute="centerX" secondItem="gdn-2u-XeR" secondAttribute="centerX" type="default" id="Al8-Tf-WnG"/>
+                            <constraint firstItem="JZy-dK-Ada" firstAttribute="top" secondItem="Zb9-CS-eyx" secondAttribute="bottom" type="default" id="Aoy-36-sbm"/>
                             <constraint firstAttribute="trailing" secondItem="3lR-ZP-vYQ" secondAttribute="trailing" constant="35" id="ENk-Gw-0J2"/>
                             <constraint firstItem="zqC-xR-ZBo" firstAttribute="leading" secondItem="A4X-4n-q1a" secondAttribute="leading" type="default" id="GeP-Wa-k7Z"/>
-                            <constraint firstItem="JZy-dK-Ada" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="NCa-Zx-YJV"/>
+                            <constraint firstItem="Zb9-CS-eyx" firstAttribute="centerX" secondItem="JZy-dK-Ada" secondAttribute="centerX" type="default" id="I7S-Be-Dd6"/>
                             <constraint firstAttribute="bottom" secondItem="A4X-4n-q1a" secondAttribute="bottom" constant="82" id="QWh-aa-3dY"/>
                             <constraint firstItem="2dI-Qq-I5E" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="RX1-IG-gCV"/>
                             <constraint firstAttribute="bottom" secondItem="3lR-ZP-vYQ" secondAttribute="bottom" constant="185" id="RrK-Kd-Kvk"/>
-                            <constraint firstItem="mgC-Nf-7Lm" firstAttribute="centerX" secondItem="2dI-Qq-I5E" secondAttribute="centerX" type="default" id="Uw5-82-l72"/>
-                            <constraint firstItem="gdn-2u-XeR" firstAttribute="top" secondItem="16" secondAttribute="top" constant="54" id="a53-ay-Kna"/>
+                            <constraint firstItem="2dI-Qq-I5E" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="Z3v-c5-5d9"/>
                             <constraint firstItem="2dI-Qq-I5E" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="dMq-IO-yub"/>
                             <constraint firstAttribute="bottom" secondItem="zqC-xR-ZBo" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="fPG-oV-4K7"/>
                             <constraint firstAttribute="bottom" secondItem="mgC-Nf-7Lm" secondAttribute="bottom" constant="49" id="glD-tG-kpx"/>
                             <constraint firstAttribute="bottom" secondItem="yac-2N-XYA" secondAttribute="bottom" constant="7" id="hc7-SN-Ia3"/>
-                            <constraint firstItem="2dI-Qq-I5E" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="izQ-Yy-lOm"/>
                             <constraint firstItem="gdn-2u-XeR" firstAttribute="trailing" secondItem="Zbt-7K-rQD" secondAttribute="trailing" type="default" id="j7p-CW-Eyy"/>
-                            <constraint firstItem="JZy-dK-Ada" firstAttribute="centerX" secondItem="gdn-2u-XeR" secondAttribute="centerX" type="default" id="lcp-Is-uFq"/>
                             <constraint firstItem="gdn-2u-XeR" firstAttribute="bottom" secondItem="Zbt-7K-rQD" secondAttribute="bottom" type="default" id="ogq-MD-NEA"/>
+                            <constraint firstItem="Zb9-CS-eyx" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="rV8-Xd-0yf"/>
                             <constraint firstItem="mgC-Nf-7Lm" firstAttribute="centerX" secondItem="zqC-xR-ZBo" secondAttribute="centerX" type="default" id="tUR-rO-eM0"/>
                             <constraint firstItem="Zbt-7K-rQD" firstAttribute="top" secondItem="gdn-2u-XeR" secondAttribute="top" type="default" id="tqv-eq-RK4"/>
+                            <constraint firstItem="Zb9-CS-eyx" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="wF7-YQ-QoT"/>
                             <constraint firstItem="gdn-2u-XeR" firstAttribute="centerX" secondItem="A4X-4n-q1a" secondAttribute="centerX" type="default" id="xS2-TN-H23"/>
                         </constraints>
                     </view>
@@ -728,6 +742,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
             <relationships>
                 <relationship kind="action" name="goLordtechy:"/>
+                <relationship kind="action" name="showActionSheet:"/>
             </relationships>
         </class>
         <class className="GlossaryInfoViewController" superclassName="UIViewController">
