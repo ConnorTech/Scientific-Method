@@ -26,24 +26,13 @@
 
 - (void)viewDidLoad
 {
-    self.selection = [NSString stringWithString:[[[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]] objectForKey:@"selectedKey2"]];
+    NSString *path = [(NSString *) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"Selected.plist"];
+    self.selection = [NSString stringWithString:[[[NSMutableDictionary alloc] initWithContentsOfFile:path] objectForKey:@"selectedKey"]];
     self.elements = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"elements" ofType:@"plist"]];
-    
     
     
     NSString *descrip;
     NSString *abrev;
-    NSLog(@"%@",name);
-    if (elements != nil) {
-        NSLog(@"Element plist file is accessable");
-    }else{
-        NSLog(@"Element plist file is not accessable");
-    }
-    if (selection != nil) {
-        NSLog(@"Selected plist file is accessable");
-    }else{
-        NSLog(@"Selected plist file is not accessable");
-    }
     
     BOOL found = false;
     
@@ -60,7 +49,7 @@
     }
     
     if (!found) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to files!" message:@"The files could not be accessed. Please contact developer for more information."
                                                        delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
                               [alert show];
     }

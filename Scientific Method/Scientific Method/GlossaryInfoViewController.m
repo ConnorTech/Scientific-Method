@@ -28,7 +28,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]];
+    NSString *path = [(NSString *) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"Selected.plist"];
+    NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     self.terms = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"terms" ofType:@"plist"]];
     
     selection = [plistDict objectForKey:@"selectedKey"];
@@ -45,7 +46,7 @@
         }
     }
     if (!found) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to files!" message:@"The files could not be accessed. Please contact developer for more information."
                                                        delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
         [alert show];
     }

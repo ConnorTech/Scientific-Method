@@ -36,6 +36,7 @@
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:applicationItems];
     activityViewController.excludedActivityTypes = @[UIActivityTypePostToWeibo, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard];
     [self presentViewController:activityViewController animated:YES completion:NULL];
+    activityViewController.title = @"Share this app!";
 }
 
 @end

@@ -27,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *mmm = [NSString stringWithString:[[NSMutableDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]] objectForKey:@"selectedKey"]];
+    NSString *path = [(NSString *) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"Selected.plist"];
+    NSString *mmm = [NSString stringWithString:[[NSMutableDictionary dictionaryWithContentsOfFile:path] objectForKey:@"selectedKey"]];
     self.concepts = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"concepts" ofType:@"plist"]];
     BOOL found = false;
     
@@ -38,7 +39,7 @@
         }
     }
     if (!found) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to files!" message:@"The files could not be accessed. Please contact developer for more information."
                                                        delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
         [alert show];
     }
@@ -76,7 +77,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
+    //cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
     cell.detailTextLabel.numberOfLines = 0;
     cell.detailTextLabel.text = [[[conceptSelected objectForKey:@"info"] objectAtIndex:indexPath.row] objectForKey:@"details"];
     cell.textLabel.text = [NSString stringWithFormat:@"%@:",[[[conceptSelected objectForKey:@"info"] objectAtIndex:indexPath.row] objectForKey:@"name"]];

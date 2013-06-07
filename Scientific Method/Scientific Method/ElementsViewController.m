@@ -24,11 +24,15 @@
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     selection = cell.textLabel.text;
     
-    ElementsDetailViewController *detail = [[ElementsDetailViewController alloc] initWithNibName:@"ElementsDetailViewController" bundle:nil];
+    NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]];
     
-    [detail setSelection:selection];
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self.navigationController pushViewController:detail animated:YES];
+    [plistDict setValue:selection forKey:@"selectedKey"];
+    
+    NSString *path = [(NSString *) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"Selected.plist"];
+    
+    [plistDict writeToFile:path atomically:YES];
+    
+    [self performSegueWithIdentifier:@"Go2" sender:self];
 }
 
 - (void)viewDidLoad
@@ -39,7 +43,7 @@
     self.myTry = [NSArray array];
     
     if (elements == nil) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to files!" message:@"The files could not be accessed. Please contact developer for more information."
                                                        delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
         [alert show];
     }
@@ -62,9 +66,6 @@
         //[self.sections setValue:[[NSMutableArray alloc] init] forKey:c];
         [new addObject:element];
     }
-    
-    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"atomicNumber" ascending:YES];
-    NSSortDescriptor *sort2 = [[NSSortDescriptor alloc] initWithKey:@"" ascending:YES];
     //self.sortedArray = [NSMutableArray arrayWithArray:[new sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]]];
     self.sortedArray = new;
     //[sortedArray sortUsingDescriptors:[NSArray arrayWithObject:sort]];

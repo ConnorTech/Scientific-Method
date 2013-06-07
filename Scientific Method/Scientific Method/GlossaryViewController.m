@@ -36,21 +36,10 @@
     
     [plistDict setValue:selection forKey:@"selectedKey"];
     
-    NSString * path = nil;
-    path = [(NSString *) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"Selected.plist"];
+    NSString *path = [(NSString *) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"Selected.plist"];
     
     
-    NSLog(@"%@", plistDict);
     [plistDict writeToFile:path atomically:YES];
-    if ([plistDict writeToFile:path atomically:YES]) {
-        NSLog(@"H");
-        NSLog(@"%@",path);
-        [plistDict writeToFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"] atomically:YES];
-    }
-    
-    plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]];
-    
-    NSLog(@"%@", plistDict);
     
     [self performSegueWithIdentifier:@"Go" sender:self];
 }
@@ -62,7 +51,7 @@
     self.sectionsSearch = [[NSMutableDictionary alloc] init];
     
     if (terms == nil) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to files!" message:@"The files could not be accessed. Please contact developer for more information."
                                                            delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
         [alert show];
     }

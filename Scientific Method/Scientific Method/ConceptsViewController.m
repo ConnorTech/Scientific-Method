@@ -39,7 +39,7 @@
     }
     
     if (concepts == nil) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to plist files!" message:@"The plist files could not be accessed. Please contact developer for more information."
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No access to files!" message:@"The files could not be accessed. Please contact developer for more information."
                                                        delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
         [alert show];
     }
@@ -149,15 +149,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    // now you can use cell.textLabel.text self.selection.
-    NSString *selection;
-    selection = cell.textLabel.text;
+    NSString *selection = cell.textLabel.text;
+    
     NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]];
     
     [plistDict setValue:selection forKey:@"selectedKey"];
-    [plistDict writeToFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"] atomically: YES];
+    
+    NSString *path = [(NSString *) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"Selected.plist"];
+    
+    [plistDict writeToFile:path atomically:YES];
+    
     [self performSegueWithIdentifier:@"concepts" sender:self];
 }
 
