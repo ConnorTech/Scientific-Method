@@ -29,12 +29,29 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    // now you can use cell.textLabel.text self.selection.
+
     selection = cell.textLabel.text;
+    
     NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]];
     
     [plistDict setValue:selection forKey:@"selectedKey"];
-    [plistDict writeToFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"] atomically: YES];
+    
+    NSString * path = nil;
+    path = [(NSString *) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"Selected.plist"];
+    
+    
+    NSLog(@"%@", plistDict);
+    [plistDict writeToFile:path atomically:YES];
+    if ([plistDict writeToFile:path atomically:YES]) {
+        NSLog(@"H");
+        NSLog(@"%@",path);
+        [plistDict writeToFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"] atomically:YES];
+    }
+    
+    plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]];
+    
+    NSLog(@"%@", plistDict);
+    
     [self performSegueWithIdentifier:@"Go" sender:self];
 }
 

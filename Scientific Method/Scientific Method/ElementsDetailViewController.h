@@ -21,5 +21,6 @@
 @property (nonatomic,retain) IBOutlet UILabel *abv;
 @property (nonatomic,retain) IBOutlet UILabel *atomicNum;
 @property (nonatomic,retain) IBOutlet UILabel *atomicMass;
+@property(nonatomic) NSString *name;
 
 @end

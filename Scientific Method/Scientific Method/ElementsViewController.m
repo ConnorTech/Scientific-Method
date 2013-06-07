@@ -7,6 +7,7 @@
 //
 
 #import "ElementsViewController.h"
+#import "ElementsDetailViewController.h"
 
 @interface ElementsViewController ()
 
@@ -15,16 +16,19 @@
 @implementation ElementsViewController
 @synthesize elements,searchBar,sectionsSearch,navBar,elementsTableView,filteredArray,elementsArray,elementsConversion,sortedArray,myTry;
 
+-(IBAction)periodicTable:(id)sender{
+    [self performSegueWithIdentifier:@"perTable" sender:self];
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    // now you can use cell.textLabel.text self.selection.
     selection = cell.textLabel.text;
-    NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]];
     
-    [plistDict setValue:selection forKey:@"selectedKey2"];
-    [plistDict writeToFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"] atomically: YES];
-    [self performSegueWithIdentifier:@"Go2" sender:self];
+    ElementsDetailViewController *detail = [[ElementsDetailViewController alloc] initWithNibName:@"ElementsDetailViewController" bundle:nil];
+    
+    [detail setSelection:selection];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 - (void)viewDidLoad

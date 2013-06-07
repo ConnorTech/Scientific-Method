@@ -13,7 +13,7 @@
 @end
 
 @implementation ElementsDetailViewController
-@synthesize selection,elements,elementsLabel,desc,navBar,abv,atomicNum;
+@synthesize selection,elements,elementsLabel,desc,navBar,abv,atomicNum,name;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,8 +28,12 @@
 {
     self.selection = [NSString stringWithString:[[[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Selected" ofType:@"plist"]] objectForKey:@"selectedKey2"]];
     self.elements = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"elements" ofType:@"plist"]];
+    
+    
+    
     NSString *descrip;
     NSString *abrev;
+    NSLog(@"%@",name);
     if (elements != nil) {
         NSLog(@"Element plist file is accessable");
     }else{

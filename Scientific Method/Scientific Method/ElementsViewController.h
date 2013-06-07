@@ -25,6 +25,7 @@
 @property (nonatomic,retain) NSMutableArray *elementsConversion;
 @property (nonatomic,retain) NSArray *myTry;
 @property(strong,nonatomic) NSMutableArray *sortedArray;
+-(IBAction)periodicTable:(id)sender;
 
 
 
