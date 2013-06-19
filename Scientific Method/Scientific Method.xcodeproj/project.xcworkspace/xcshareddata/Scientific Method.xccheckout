@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>621BC6F2-F7E6-467F-A711-A7A13CF99D88</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Scientific Method</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7CA13602-5592-457E-BD7E-B4F2C5AC7C29</key>
+		<string>https://github.com/ConnorTech/Scientific-Method.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Scientific Method/Scientific Method.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7CA13602-5592-457E-BD7E-B4F2C5AC7C29</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ConnorTech/Scientific-Method.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7CA13602-5592-457E-BD7E-B4F2C5AC7C29</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7CA13602-5592-457E-BD7E-B4F2C5AC7C29</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Scientific-Method</string>
+		</dict>
+	</array>
+</dict>
+</plist>
